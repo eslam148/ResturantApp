@@ -15,5 +15,6 @@ namespace VCproj.DataBase
         public int Phone { get; set; }
         public string Address { get; set; }
         public List<Seller> Sellers { get; set; }
+        public List<Bill> Bills { get; set; }
     }
 }

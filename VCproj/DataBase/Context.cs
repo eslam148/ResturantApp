@@ -18,6 +18,7 @@ namespace VCproj.DataBase
         DbSet<Seller> sellers { get; set; }
         DbSet<Customer> customers { get; set; }
         DbSet<Supplier> suppliers { get; set; }
+        DbSet<Bill> Bills { get; set; }
 
 
     }

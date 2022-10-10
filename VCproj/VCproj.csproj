@@ -56,9 +56,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataBase\Bill.cs" />
     <Compile Include="DataBase\Category.cs" />
     <Compile Include="DataBase\Context.cs" />
     <Compile Include="DataBase\Customer.cs" />
+    <Compile Include="DataBase\ForeignKeyAttribute.cs" />
     <Compile Include="DataBase\Item.cs" />
     <Compile Include="DataBase\Seller.cs" />
     <Compile Include="DataBase\Supplier.cs" />
@@ -72,11 +74,18 @@
     <Compile Include="Migrations\202210081650025_init.designer.cs">
       <DependentUpon>202210081650025_init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202210092322304_init2.cs" />
+    <Compile Include="Migrations\202210092322304_init2.designer.cs">
+      <DependentUpon>202210092322304_init2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Migrations\202210081650025_init.resx">
       <DependentUpon>202210081650025_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210092322304_init2.resx">
+      <DependentUpon>202210092322304_init2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

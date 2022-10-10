@@ -14,3 +14,4 @@ F:\1\Course\ITI\Project\CSharp-Project\VCproj\obj\Debug\VCproj.csproj.CopyComple
 F:\1\Course\ITI\Project\CSharp-Project\VCproj\obj\Debug\VCproj.exe
 F:\1\Course\ITI\Project\CSharp-Project\VCproj\obj\Debug\VCproj.pdb
 F:\1\Course\ITI\Project\CSharp-Project\VCproj\obj\Debug\VCproj.Migrations.init.resources
+F:\1\Course\ITI\Project\CSharp-Project\VCproj\obj\Debug\VCproj.Migrations.init2.resources
