@@ -9,16 +9,16 @@ namespace VCproj.DataBase
 {
     public class Context: DbContext
     {
-        public Context() : base(@"Data source = DESKTOP-T2U4HGU; initial catalog = inventory; integrated security = true;")
+        public Context() : base(@"Data source = .; initial catalog = inventory; integrated security = true;")
         {
 
         }
-        DbSet<Item> items { get; set; }
-        DbSet<Category>categories { get; set; }
-        DbSet<Seller> sellers { get; set; }
-        DbSet<Customer> customers { get; set; }
-        DbSet<Supplier> suppliers { get; set; }
-        DbSet<Bill> Bills { get; set; }
+       public DbSet<Item> items { get; set; }
+       public DbSet<Category>categories { get; set; }
+       public DbSet<Seller> sellers { get; set; }
+       public DbSet<Customer> customers { get; set; }
+       public DbSet<Supplier> suppliers { get; set; }
+       public DbSet<Bill> Bills { get; set; }
 
 
     }
