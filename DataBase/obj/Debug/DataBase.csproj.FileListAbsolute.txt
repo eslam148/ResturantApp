@@ -1,14 +1,14 @@
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\bin\Debug\DataBase.dll.config
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\bin\Debug\DataBase.dll
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\bin\Debug\DataBase.pdb
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\bin\Debug\EntityFramework.dll
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.dll
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\bin\Debug\EntityFramework.xml
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.xml
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CopyComplete
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\obj\Debug\DataBase.dll
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\obj\Debug\DataBase.pdb
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.s.resources
-D:\ITI Sohage .NET\Back End\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\bin\Debug\DataBase.dll.config
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\bin\Debug\DataBase.dll
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\bin\Debug\DataBase.pdb
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\bin\Debug\EntityFramework.dll
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\bin\Debug\EntityFramework.SqlServer.dll
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\bin\Debug\EntityFramework.xml
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\bin\Debug\EntityFramework.SqlServer.xml
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\obj\Debug\DataBase.dll
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\obj\Debug\DataBase.pdb
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\obj\Debug\DataBase.Migrations.dd.resources
+D:\ITI Sohage .NET\Back End\New folder (2)\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache

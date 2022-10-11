@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace DataBase
 {
-    public class Context: DbContext
+    public class Context : DbContext
     {
-        public Context() : base(@"Data source = .; initial catalog = inventory1; integrated security = true;")
+        public Context() : base(@"Data source = .; initial catalog = inventory; integrated security = true;")
         {
 
         }
