@@ -1,5 +1,4 @@
 ﻿using DataBase;
-using DataBase.Tables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +9,6 @@ namespace BLL
 {
     public class ItemServices
     {
-
         Context DB = new Context();
 
         public int AddItem(int ID, String Name, int BuyPrice, int SallPric, int Quantaty, int SupplierID, int CategoryId)
@@ -30,6 +28,5 @@ namespace BLL
             DB.items.Add(item);
             return DB.SaveChanges();
         }
-
     }
 }
