@@ -20,3 +20,27 @@ D:\ITI Sohage .NET\CSharp-Project\View\obj\Debug\View.exe
 D:\ITI Sohage .NET\CSharp-Project\View\obj\Debug\View.pdb
 D:\ITI Sohage .NET\CSharp-Project\View\bin\Debug\EntityFramework.SqlServer.dll
 D:\ITI Sohage .NET\CSharp-Project\View\bin\Debug\EntityFramework.SqlServer.xml
+E:\Education Materials\1.ITI\CSharp-Project\View\bin\Debug\View.exe.config
+E:\Education Materials\1.ITI\CSharp-Project\View\bin\Debug\View.exe
+E:\Education Materials\1.ITI\CSharp-Project\View\bin\Debug\View.pdb
+E:\Education Materials\1.ITI\CSharp-Project\View\bin\Debug\BLL.dll
+E:\Education Materials\1.ITI\CSharp-Project\View\bin\Debug\EntityFramework.dll
+E:\Education Materials\1.ITI\CSharp-Project\View\bin\Debug\EntityFramework.SqlServer.dll
+E:\Education Materials\1.ITI\CSharp-Project\View\bin\Debug\DataBase.dll
+E:\Education Materials\1.ITI\CSharp-Project\View\bin\Debug\BLL.pdb
+E:\Education Materials\1.ITI\CSharp-Project\View\bin\Debug\BLL.dll.config
+E:\Education Materials\1.ITI\CSharp-Project\View\bin\Debug\EntityFramework.xml
+E:\Education Materials\1.ITI\CSharp-Project\View\bin\Debug\EntityFramework.SqlServer.xml
+E:\Education Materials\1.ITI\CSharp-Project\View\bin\Debug\DataBase.pdb
+E:\Education Materials\1.ITI\CSharp-Project\View\bin\Debug\DataBase.dll.config
+E:\Education Materials\1.ITI\CSharp-Project\View\obj\Debug\View.csproj.AssemblyReference.cache
+E:\Education Materials\1.ITI\CSharp-Project\View\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
+E:\Education Materials\1.ITI\CSharp-Project\View\obj\Debug\View.AddItem.resources
+E:\Education Materials\1.ITI\CSharp-Project\View\obj\Debug\View.Properties.Resources.resources
+E:\Education Materials\1.ITI\CSharp-Project\View\obj\Debug\View.csproj.GenerateResource.cache
+E:\Education Materials\1.ITI\CSharp-Project\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+E:\Education Materials\1.ITI\CSharp-Project\View\obj\Debug\View.csproj.CopyComplete
+E:\Education Materials\1.ITI\CSharp-Project\View\obj\Debug\View.exe
+E:\Education Materials\1.ITI\CSharp-Project\View\obj\Debug\View.pdb
+E:\Education Materials\1.ITI\CSharp-Project\View\obj\Debug\View.AddCustomer.resources
+E:\Education Materials\1.ITI\CSharp-Project\View\obj\Debug\View.AddSeller.resources

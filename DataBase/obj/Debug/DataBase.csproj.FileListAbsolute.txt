@@ -12,3 +12,17 @@ D:\ITI Sohage .NET\CSharp-Project\DataBase\obj\Debug\DataBase.dll
 D:\ITI Sohage .NET\CSharp-Project\DataBase\obj\Debug\DataBase.pdb
 D:\ITI Sohage .NET\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.dd.resources
 D:\ITI Sohage .NET\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\bin\Debug\DataBase.dll.config
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\bin\Debug\DataBase.dll
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\bin\Debug\DataBase.pdb
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\bin\Debug\EntityFramework.dll
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.dll
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\bin\Debug\EntityFramework.xml
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.xml
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.dd.resources
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\obj\Debug\DataBase.dll
+E:\Education Materials\1.ITI\CSharp-Project\DataBase\obj\Debug\DataBase.pdb

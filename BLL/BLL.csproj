@@ -51,8 +51,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerService.cs" />
     <Compile Include="ItemServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SellerService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataBase\DataBase.csproj">

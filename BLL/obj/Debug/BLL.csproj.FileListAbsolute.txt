@@ -13,3 +13,18 @@ D:\ITI Sohage .NET\CSharp-Project\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cac
 D:\ITI Sohage .NET\CSharp-Project\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\ITI Sohage .NET\CSharp-Project\BLL\obj\Debug\BLL.dll
 D:\ITI Sohage .NET\CSharp-Project\BLL\obj\Debug\BLL.pdb
+E:\Education Materials\1.ITI\CSharp-Project\BLL\bin\Debug\BLL.dll.config
+E:\Education Materials\1.ITI\CSharp-Project\BLL\bin\Debug\BLL.dll
+E:\Education Materials\1.ITI\CSharp-Project\BLL\bin\Debug\BLL.pdb
+E:\Education Materials\1.ITI\CSharp-Project\BLL\bin\Debug\DataBase.dll
+E:\Education Materials\1.ITI\CSharp-Project\BLL\bin\Debug\EntityFramework.dll
+E:\Education Materials\1.ITI\CSharp-Project\BLL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Education Materials\1.ITI\CSharp-Project\BLL\bin\Debug\DataBase.pdb
+E:\Education Materials\1.ITI\CSharp-Project\BLL\bin\Debug\DataBase.dll.config
+E:\Education Materials\1.ITI\CSharp-Project\BLL\bin\Debug\EntityFramework.xml
+E:\Education Materials\1.ITI\CSharp-Project\BLL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Education Materials\1.ITI\CSharp-Project\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\Education Materials\1.ITI\CSharp-Project\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\Education Materials\1.ITI\CSharp-Project\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\Education Materials\1.ITI\CSharp-Project\BLL\obj\Debug\BLL.dll
+E:\Education Materials\1.ITI\CSharp-Project\BLL\obj\Debug\BLL.pdb
