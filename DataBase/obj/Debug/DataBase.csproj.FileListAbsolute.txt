@@ -26,3 +26,17 @@ E:\Education Materials\1.ITI\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.C
 E:\Education Materials\1.ITI\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CopyComplete
 E:\Education Materials\1.ITI\CSharp-Project\DataBase\obj\Debug\DataBase.dll
 E:\Education Materials\1.ITI\CSharp-Project\DataBase\obj\Debug\DataBase.pdb
+D:\New folder\CSharp-Project\DataBase\bin\Debug\DataBase.dll.config
+D:\New folder\CSharp-Project\DataBase\bin\Debug\DataBase.dll
+D:\New folder\CSharp-Project\DataBase\bin\Debug\DataBase.pdb
+D:\New folder\CSharp-Project\DataBase\bin\Debug\EntityFramework.dll
+D:\New folder\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.dll
+D:\New folder\CSharp-Project\DataBase\bin\Debug\EntityFramework.xml
+D:\New folder\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.xml
+D:\New folder\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
+D:\New folder\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.dd.resources
+D:\New folder\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
+D:\New folder\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+D:\New folder\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+D:\New folder\CSharp-Project\DataBase\obj\Debug\DataBase.dll
+D:\New folder\CSharp-Project\DataBase\obj\Debug\DataBase.pdb

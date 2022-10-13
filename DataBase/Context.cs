@@ -10,7 +10,7 @@ namespace DataBase
     public class Context :DbContext
     {
 
-        public Context() : base(@"Data source = .; initial catalog = inventory1; integrated security = true;")
+        public Context() : base(@"Data source = DESKTOP-HH9RCV9\SQLEXPRESS; initial catalog = inventory1; integrated security = true;")
         {
 
         }
