@@ -22,7 +22,7 @@ namespace DataBase
         //public string
         public Category Category { get; set; }
         public Supplier supplier { get; set; }
-        public List<Seller> sellers { get; set; }
+        //public List<Seller> sellers { get; set; }
         public List<Bill> Bills { get; set; }
     }
 }
