@@ -16,7 +16,7 @@ namespace DataBase
         public string Address { get; set; }
         public List<Customer> Customers { get; set; }
 
-        public List<Item> Items { get; set; }
+        //public List<Item> Items { get; set; }
         public List<Bill> Bills { get; set; }
     }
 }
