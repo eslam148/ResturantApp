@@ -14,6 +14,7 @@ namespace DataBase
         public int BuyPrice { get; set; }
         public int SellPrice { get; set; }
         public int Quantity { get; set; }
+        public int SelledQuantity { get; set; }
         [ForeignKey("supplier")]
         public int SupplierId { get; set; }
         [ForeignKey("Category")]
