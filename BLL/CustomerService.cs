@@ -21,5 +21,22 @@ namespace BLL
             db.customers.Add(c);
             db.SaveChanges();
         }
+
+        public List<CustomerData> GetCustomer()
+        {
+
+            List<CustomerData> list = new List<CustomerData>();
+            var res = db.customers.Select(c => c).ToList();
+            for (int i = 0; i < res.Count; i++)
+            {
+                CustomerData cd = new CustomerData();
+                cd.ID = res[i].Id;
+                cd.Address = res[i].Address;
+                cd.Phone = res[i].Phone;
+                cd.Name = res[i].Name;
+                list.Add(cd);
+            }
+            return list;
+        }
     }
 }

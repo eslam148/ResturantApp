@@ -58,6 +58,7 @@ F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\BLL\obj\Debug\BLL.csproj.C
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\BLL\obj\Debug\BLL.csproj.CopyComplete
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\BLL\obj\Debug\BLL.dll
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\BLL\obj\Debug\BLL.pdb
+<<<<<<< HEAD
 C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\BLL\bin\Debug\BLL.dll.config
 C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\BLL\bin\Debug\BLL.dll
 C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\BLL\bin\Debug\BLL.pdb
@@ -73,3 +74,20 @@ C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Pr
 C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\BLL\obj\Debug\BLL.dll
 C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\BLL\obj\Debug\BLL.pdb
+=======
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\bin\Debug\BLL.dll.config
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\bin\Debug\BLL.dll
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\bin\Debug\BLL.pdb
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\bin\Debug\DataBase.dll
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\bin\Debug\EntityFramework.dll
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\bin\Debug\DataBase.pdb
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\bin\Debug\DataBase.dll.config
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\bin\Debug\EntityFramework.xml
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\obj\Debug\BLL.dll
+D:\ITI Sohage .NET\host\CSharp-Project\BLL\obj\Debug\BLL.pdb
+>>>>>>> 9a83a78af467426c5876f4d44fa14af810a93e23

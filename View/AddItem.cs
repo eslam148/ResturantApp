@@ -23,15 +23,14 @@ namespace View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //int ID = int.Parse(textBox1.Text);
-            //String Name = textBox2.Text;
-            //int CategoryId = int.Parse(textBox3.Text);
-            //int BuyPrice = int.Parse(textBox4.Text);
-            //int SellPrice = int.Parse(textBox5.Text);
-            //int Quantity = int.Parse(textBox6.Text);
-            //int SupplierId = int.Parse(textBox7.Text);
+            String Name = textBox1.Text;
+            int CategoryId = comboBox1.SelectedIndex;
+            int BuyPrice = int.Parse(textBox2.Text);
+            int SellPrice = int.Parse(textBox3.Text);
+            int Quantity = int.Parse(textBox4.Text);
+            int SupplierId = comboBox2.SelectedIndex;
 
-            if (ItemServices.AddItem(1,"eslam", 500, 550, 4, 1, 1)>0)
+            if (ItemServices.AddItem(Name, BuyPrice, SellPrice, Quantity, SupplierId, CategoryId)>0)
             {
                 MessageBox.Show("Add Success");
 
@@ -42,5 +41,7 @@ namespace View
 
             }
         }
+
+
     }
 }

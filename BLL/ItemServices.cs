@@ -11,12 +11,11 @@ namespace BLL
     {
         Context DB = new Context();
 
-        public int AddItem(int ID, String Name, int BuyPrice, int SallPric, int Quantaty, int SupplierID, int CategoryId)
+        public int AddItem( String Name, int BuyPrice, int SallPric, int Quantaty, int SupplierID, int CategoryId)
         {
 
             Item item = new Item
             {
-                Id = ID,
                 Name = Name,
                 BuyPrice = BuyPrice,
                 SellPrice = SallPric,
