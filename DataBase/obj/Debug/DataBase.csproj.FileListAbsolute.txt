@@ -54,3 +54,17 @@ F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\DataBase\obj\Debug\DataBas
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\DataBase\obj\Debug\DataBase.pdb
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.init.resources
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\bin\Debug\DataBase.dll.config
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\bin\Debug\DataBase.dll
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\bin\Debug\DataBase.pdb
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\bin\Debug\EntityFramework.dll
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\bin\Debug\EntityFramework.xml
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.DB.resources
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\obj\Debug\DataBase.dll
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\DataBase\obj\Debug\DataBase.pdb

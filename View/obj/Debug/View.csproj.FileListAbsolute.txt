@@ -94,3 +94,29 @@ F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\View\obj\Debug\View.csproj
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\View\obj\Debug\View.csproj.CopyComplete
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\View\obj\Debug\View.exe
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\View\obj\Debug\View.pdb
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\bin\Debug\View.exe.config
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\bin\Debug\View.exe
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\bin\Debug\View.pdb
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\bin\Debug\BLL.dll
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\bin\Debug\EntityFramework.dll
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\bin\Debug\DataBase.dll
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\bin\Debug\BLL.pdb
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\bin\Debug\BLL.dll.config
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\bin\Debug\EntityFramework.xml
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\bin\Debug\DataBase.pdb
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\bin\Debug\DataBase.dll.config
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\obj\Debug\View.csproj.AssemblyReference.cache
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\obj\Debug\View.AddCustomer.resources
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\obj\Debug\View.AddItem.resources
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\obj\Debug\View.AddSeller.resources
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\obj\Debug\View.CategoryForm.resources
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\obj\Debug\View.Properties.Resources.resources
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\obj\Debug\View.spplier.resources
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\obj\Debug\View.csproj.GenerateResource.cache
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\obj\Debug\View.csproj.CopyComplete
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\obj\Debug\View.exe
+C:\Users\nourhan mahmoud\OneDrive\Desktop\Nourhan\Projects\C# Projects\CSharp-Project\View\obj\Debug\View.pdb

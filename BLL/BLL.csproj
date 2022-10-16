@@ -51,8 +51,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoryData.cs" />
     <Compile Include="CategoryServices.cs" />
     <Compile Include="CustomerService.cs" />
+    <Compile Include="ItemData.cs" />
     <Compile Include="ItemServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SellerService.cs" />
