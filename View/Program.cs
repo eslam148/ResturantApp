@@ -17,7 +17,7 @@ namespace View
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            // Application.Run(new AddSeller());
-            Application.Run(new spplier());
+            Application.Run(new Home());
 
         }
     }

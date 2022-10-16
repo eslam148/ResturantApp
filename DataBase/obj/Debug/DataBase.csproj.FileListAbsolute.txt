@@ -54,3 +54,18 @@ F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\DataBase\obj\Debug\DataBas
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\DataBase\obj\Debug\DataBase.pdb
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.init.resources
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\bin\Debug\DataBase.dll.config
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\bin\Debug\DataBase.dll
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\bin\Debug\DataBase.pdb
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\bin\Debug\EntityFramework.dll
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.dll
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\bin\Debug\EntityFramework.xml
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.xml
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.init.resources
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\obj\Debug\DataBase.dll
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\obj\Debug\DataBase.pdb
+F:\1\Course\ITI\Visual C#\Visual project\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.init2.resources

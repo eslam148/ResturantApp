@@ -28,5 +28,26 @@ namespace BLL
             DB.items.Add(item);
             return DB.SaveChanges();
         }
+        public List<Item> GetAllItems()
+        {
+            var items = DB.items.Select(row => row);
+            List<Item> itemslist = new List<Item>();
+            foreach (var item in items)
+            { 
+                itemslist.Add(item);
+            }
+            return itemslist;
+        }
+
+        public List<Item> GetAllSealedItem()
+        {
+            var items = DB.items.Where(row => row.SelledQuantity>0);
+            List<Item> itemslist = new List<Item>();
+            foreach (var item in items)
+            {
+                itemslist.Add(item);
+            }
+            return itemslist;
+        }
     }
 }
