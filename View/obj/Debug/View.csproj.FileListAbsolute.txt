@@ -94,3 +94,30 @@ F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\View\obj\Debug\View.csproj
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\View\obj\Debug\View.csproj.CopyComplete
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\View\obj\Debug\View.exe
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\View\obj\Debug\View.pdb
+D:\ITI Sohage .NET\host\CSharp-Project\View\bin\Debug\View.exe.config
+D:\ITI Sohage .NET\host\CSharp-Project\View\bin\Debug\View.exe
+D:\ITI Sohage .NET\host\CSharp-Project\View\bin\Debug\View.pdb
+D:\ITI Sohage .NET\host\CSharp-Project\View\bin\Debug\BLL.dll
+D:\ITI Sohage .NET\host\CSharp-Project\View\bin\Debug\EntityFramework.dll
+D:\ITI Sohage .NET\host\CSharp-Project\View\bin\Debug\EntityFramework.SqlServer.dll
+D:\ITI Sohage .NET\host\CSharp-Project\View\bin\Debug\DataBase.dll
+D:\ITI Sohage .NET\host\CSharp-Project\View\bin\Debug\BLL.pdb
+D:\ITI Sohage .NET\host\CSharp-Project\View\bin\Debug\BLL.dll.config
+D:\ITI Sohage .NET\host\CSharp-Project\View\bin\Debug\EntityFramework.xml
+D:\ITI Sohage .NET\host\CSharp-Project\View\bin\Debug\EntityFramework.SqlServer.xml
+D:\ITI Sohage .NET\host\CSharp-Project\View\bin\Debug\DataBase.pdb
+D:\ITI Sohage .NET\host\CSharp-Project\View\bin\Debug\DataBase.dll.config
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.csproj.AssemblyReference.cache
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.AddCustomer.resources
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.AddItem.resources
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.AddSeller.resources
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.Bill.resources
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.CategoryForm.resources
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.Properties.Resources.resources
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.spplier.resources
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.csproj.GenerateResource.cache
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.csproj.CopyComplete
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.exe
+D:\ITI Sohage .NET\host\CSharp-Project\View\obj\Debug\View.pdb

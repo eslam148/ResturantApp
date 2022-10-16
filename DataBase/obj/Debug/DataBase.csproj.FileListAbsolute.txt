@@ -54,3 +54,17 @@ F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\DataBase\obj\Debug\DataBas
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\DataBase\obj\Debug\DataBase.pdb
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.init.resources
 F:\1\Course\ITI\Project\CSharp-Project\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\bin\Debug\DataBase.dll.config
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\bin\Debug\DataBase.dll
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\bin\Debug\DataBase.pdb
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\bin\Debug\EntityFramework.dll
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.dll
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\bin\Debug\EntityFramework.xml
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.xml
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.init.resources
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\obj\Debug\DataBase.dll
+D:\ITI Sohage .NET\host\CSharp-Project\DataBase\obj\Debug\DataBase.pdb
