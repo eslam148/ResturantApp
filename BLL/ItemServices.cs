@@ -67,8 +67,27 @@ namespace BLL
         public List<ItemData> GetAllItems()
         {
             List<ItemData> itemDataslist = new List<ItemData>();
-            var ItemsLessThanTen = DB.items.Select(i=>i).ToList();
-            foreach (var item in ItemsLessThanTen)
+            var Items = DB.items.Select(i=>i).ToList();
+            foreach (var item in Items)
+            {
+                ItemData itemData = new ItemData();
+                itemData.ID = item.Id;
+                itemData.Name = item.Name;
+                itemData.BuyPrice = item.BuyPrice;
+                itemData.SellPrice = item.SellPrice;
+                itemData.Quantity = item.Quantity;
+                itemData.SelledQuantity = item.SelledQuantity;
+                itemData.CategoryId = item.CategoryId;
+                itemDataslist.Add(itemData);
+            }
+            return itemDataslist;
+        }
+
+        public List<ItemData> GetSelledItems()
+        {
+            List<ItemData> itemDataslist = new List<ItemData>();
+            var Items = DB.items.Where(i => i.SelledQuantity > 0).ToList();
+            foreach (var item in Items)
             {
                 ItemData itemData = new ItemData();
                 itemData.ID = item.Id;
