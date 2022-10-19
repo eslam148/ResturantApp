@@ -1,6 +1,7 @@
 ﻿using DataBase;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -100,6 +101,14 @@ namespace BLL
                 itemDataslist.Add(itemData);
             }
             return itemDataslist;
+        }
+        public int updateItems(int ItemId,int Quntaty,int SelledPrice,int BuyPrice)
+        {
+            var item = DB.items.Where(i => i.Id==ItemId).FirstOrDefault();
+            item.Quantity+=Quntaty;
+            item.SellPrice = SelledPrice;
+            item.BuyPrice = BuyPrice;
+            return DB.SaveChanges();
         }
     }
 }

@@ -46,6 +46,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.New = new System.Windows.Forms.RadioButton();
+            this.Exist = new System.Windows.Forms.RadioButton();
+            this.comboBoxItem = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +61,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -186,11 +192,67 @@
             this.textBox4.Size = new System.Drawing.Size(121, 20);
             this.textBox4.TabIndex = 12;
             // 
+            // New
+            // 
+            this.New.AutoSize = true;
+            this.New.Location = new System.Drawing.Point(323, 45);
+            this.New.Name = "New";
+            this.New.Size = new System.Drawing.Size(47, 17);
+            this.New.TabIndex = 14;
+            this.New.TabStop = true;
+            this.New.Text = "New";
+            this.New.UseVisualStyleBackColor = true;
+            this.New.CheckedChanged += new System.EventHandler(this.New_CheckedChanged);
+            // 
+            // Exist
+            // 
+            this.Exist.AutoSize = true;
+            this.Exist.Location = new System.Drawing.Point(323, 96);
+            this.Exist.Name = "Exist";
+            this.Exist.Size = new System.Drawing.Size(47, 17);
+            this.Exist.TabIndex = 15;
+            this.Exist.TabStop = true;
+            this.Exist.Text = "Exist";
+            this.Exist.UseVisualStyleBackColor = true;
+            this.Exist.CheckedChanged += new System.EventHandler(this.Exist_CheckedChanged);
+            // 
+            // comboBoxItem
+            // 
+            this.comboBoxItem.FormattingEnabled = true;
+            this.comboBoxItem.Location = new System.Drawing.Point(12, 123);
+            this.comboBoxItem.Name = "comboBoxItem";
+            this.comboBoxItem.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxItem.TabIndex = 16;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(282, 415);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(421, 417);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Save";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // AddItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 481);
+            this.ClientSize = new System.Drawing.Size(921, 486);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.comboBoxItem);
+            this.Controls.Add(this.Exist);
+            this.Controls.Add(this.New);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label5);
@@ -232,6 +294,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.RadioButton New;
+        private System.Windows.Forms.RadioButton Exist;
+        private System.Windows.Forms.ComboBox comboBoxItem;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

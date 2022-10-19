@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    internal class BillData
+    public class BillData
     {
+        public int id { get; set; }
+        public ItemData itemdata { get; set; }
     }
 }

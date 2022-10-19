@@ -60,6 +60,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.AddItem = new System.Windows.Forms.Button();
+            this.New = new System.Windows.Forms.RadioButton();
+            this.Exist = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -332,11 +334,35 @@
             this.AddItem.UseVisualStyleBackColor = true;
             this.AddItem.Click += new System.EventHandler(this.AddItem_Click);
             // 
+            // New
+            // 
+            this.New.AutoSize = true;
+            this.New.Location = new System.Drawing.Point(126, 35);
+            this.New.Name = "New";
+            this.New.Size = new System.Drawing.Size(47, 17);
+            this.New.TabIndex = 25;
+            this.New.TabStop = true;
+            this.New.Text = "New";
+            this.New.UseVisualStyleBackColor = true;
+            // 
+            // Exist
+            // 
+            this.Exist.AutoSize = true;
+            this.Exist.Location = new System.Drawing.Point(126, 84);
+            this.Exist.Name = "Exist";
+            this.Exist.Size = new System.Drawing.Size(47, 17);
+            this.Exist.TabIndex = 26;
+            this.Exist.TabStop = true;
+            this.Exist.Text = "Exist";
+            this.Exist.UseVisualStyleBackColor = true;
+            // 
             // Bill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Exist);
+            this.Controls.Add(this.New);
             this.Controls.Add(this.AddItem);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button2);
@@ -404,5 +430,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.Button AddItem;
+        private System.Windows.Forms.RadioButton New;
+        private System.Windows.Forms.RadioButton Exist;
     }
 }
