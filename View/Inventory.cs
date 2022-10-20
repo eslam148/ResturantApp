@@ -254,5 +254,40 @@ namespace View
             SellerIdText.Text = seller.ToString();
             IDBillText.Text = billServices.GetBillID().ToString();
         }
+
+
+        private void ShowAllItemsbutton_Click(object sender, EventArgs e)
+        {
+
+            List<ItemData> items = new List<ItemData>();
+            items = ItemServices.GetAllItems();
+            dataGridView1.DataSource = items;
+            dataGridView1.Visible = true;
+        }
+
+        private void ShowSelledItemsbutton_Click(object sender, EventArgs e)
+        {
+            List<ItemData> items = new List<ItemData>();
+            items = ItemServices.GetSelledItems();
+            dataGridView1.DataSource = items;
+            dataGridView1.Visible = true;
+        }
+
+        private void ShowStayedItemsbutton_Click(object sender, EventArgs e)
+        {
+            List<ItemData> items = new List<ItemData>();
+            items = ItemServices.GetStayedItems();
+            dataGridView1.DataSource = items;
+            dataGridView1.Visible = true;
+        }
+
+        private void ShowItemsLessThan10button_Click(object sender, EventArgs e)
+        {
+
+            List<ItemData> items = new List<ItemData>();
+            items = ItemServices.GetItemsLessThanTen();
+            dataGridView1.DataSource = items;
+            dataGridView1.Visible = true;
+        }
     }
 }

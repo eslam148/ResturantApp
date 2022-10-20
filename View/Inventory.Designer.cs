@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventory));
+            this.Reports = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.QuntatyItem = new System.Windows.Forms.NumericUpDown();
             this.AddItem = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.CatagoryName = new System.Windows.Forms.TextBox();
             this.AddCatagory = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.AddSeller = new System.Windows.Forms.Button();
@@ -80,7 +80,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.AddSupplier = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.AddToBill = new System.Windows.Forms.Button();
@@ -98,16 +97,16 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QuantityBill = new System.Windows.Forms.NumericUpDown();
             this.dataGridViewBill = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SaveBill = new System.Windows.Forms.Button();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
@@ -115,37 +114,56 @@
             this.comboBoxSeller = new System.Windows.Forms.ComboBox();
             this.comboBoxItem = new System.Windows.Forms.ComboBox();
             this.comboBoxCategory = new System.Windows.Forms.ComboBox();
-            this.tabControl1.SuspendLayout();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ShowItemsLessThan10button = new System.Windows.Forms.Button();
+            this.ShowStayedItemsbutton = new System.Windows.Forms.Button();
+            this.ShowSelledItemsbutton = new System.Windows.Forms.Button();
+            this.ShowAllItemsbutton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.Reports.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QuntatyItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QuantityBill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).BeginInit();
+            this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // Reports
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Location = new System.Drawing.Point(0, -3);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(920, 507);
-            this.tabControl1.TabIndex = 0;
+            this.Reports.Controls.Add(this.tabPage1);
+            this.Reports.Controls.Add(this.tabPage2);
+            this.Reports.Controls.Add(this.tabPage3);
+            this.Reports.Controls.Add(this.tabPage4);
+            this.Reports.Controls.Add(this.tabPage5);
+            this.Reports.Controls.Add(this.tabPage6);
+            this.Reports.Controls.Add(this.tabPage7);
+            this.Reports.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reports.Location = new System.Drawing.Point(0, -3);
+            this.Reports.Name = "Reports";
+            this.Reports.SelectedIndex = 0;
+            this.Reports.Size = new System.Drawing.Size(920, 507);
+            this.Reports.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage1.Controls.Add(this.QuntatyItem);
             this.tabPage1.Controls.Add(this.AddItem);
             this.tabPage1.Controls.Add(this.SaveItems);
@@ -161,13 +179,14 @@
             this.tabPage1.Controls.Add(this.textBoxItem);
             this.tabPage1.Controls.Add(this.comboBoxSupplir);
             this.tabPage1.Controls.Add(this.comboCatagory);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(912, 481);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Size = new System.Drawing.Size(912, 476);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add Item";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // QuntatyItem
             // 
@@ -178,7 +197,7 @@
             0,
             0});
             this.QuntatyItem.Name = "QuntatyItem";
-            this.QuntatyItem.Size = new System.Drawing.Size(120, 20);
+            this.QuntatyItem.Size = new System.Drawing.Size(120, 26);
             this.QuntatyItem.TabIndex = 29;
             this.QuntatyItem.Value = new decimal(new int[] {
             1,
@@ -188,22 +207,26 @@
             // 
             // AddItem
             // 
-            this.AddItem.Location = new System.Drawing.Point(386, 45);
+            this.AddItem.BackColor = System.Drawing.Color.SteelBlue;
+            this.AddItem.ForeColor = System.Drawing.Color.PowderBlue;
+            this.AddItem.Location = new System.Drawing.Point(386, 30);
             this.AddItem.Name = "AddItem";
-            this.AddItem.Size = new System.Drawing.Size(75, 23);
+            this.AddItem.Size = new System.Drawing.Size(75, 37);
             this.AddItem.TabIndex = 28;
             this.AddItem.Text = "Add Item";
-            this.AddItem.UseVisualStyleBackColor = true;
+            this.AddItem.UseVisualStyleBackColor = false;
             this.AddItem.Click += new System.EventHandler(this.AddItem_Click);
             // 
             // SaveItems
             // 
-            this.SaveItems.Location = new System.Drawing.Point(729, 45);
+            this.SaveItems.BackColor = System.Drawing.Color.SteelBlue;
+            this.SaveItems.ForeColor = System.Drawing.Color.PowderBlue;
+            this.SaveItems.Location = new System.Drawing.Point(729, 30);
             this.SaveItems.Name = "SaveItems";
-            this.SaveItems.Size = new System.Drawing.Size(75, 23);
+            this.SaveItems.Size = new System.Drawing.Size(75, 37);
             this.SaveItems.TabIndex = 27;
             this.SaveItems.Text = "Save";
-            this.SaveItems.UseVisualStyleBackColor = true;
+            this.SaveItems.UseVisualStyleBackColor = false;
             this.SaveItems.Click += new System.EventHandler(this.SaveItems_Click);
             // 
             // label5
@@ -211,7 +234,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(17, 305);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
+            this.label5.Size = new System.Drawing.Size(79, 19);
             this.label5.TabIndex = 24;
             this.label5.Text = "Sell Price :";
             // 
@@ -220,7 +243,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(17, 233);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.Size = new System.Drawing.Size(80, 19);
             this.label4.TabIndex = 23;
             this.label4.Text = "Buy Price :";
             // 
@@ -229,7 +252,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(17, 158);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 13);
+            this.label3.Size = new System.Drawing.Size(73, 19);
             this.label3.TabIndex = 22;
             this.label3.Text = "Supplier :";
             // 
@@ -238,7 +261,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(17, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.Size = new System.Drawing.Size(87, 19);
             this.label2.TabIndex = 21;
             this.label2.Text = "Item Name:";
             // 
@@ -247,7 +270,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(17, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(80, 19);
             this.label1.TabIndex = 20;
             this.label1.Text = "Category :";
             // 
@@ -256,12 +279,13 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(17, 372);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 13);
+            this.label6.Size = new System.Drawing.Size(74, 19);
             this.label6.TabIndex = 26;
             this.label6.Text = "Quantity :";
             // 
             // dataGridViewItem
             // 
+            this.dataGridViewItem.BackgroundColor = System.Drawing.Color.SteelBlue;
             this.dataGridViewItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ItemName,
@@ -272,58 +296,71 @@
             this.Supplier});
             this.dataGridViewItem.Location = new System.Drawing.Point(179, 190);
             this.dataGridViewItem.Name = "dataGridViewItem";
+            this.dataGridViewItem.RowHeadersWidth = 51;
             this.dataGridViewItem.Size = new System.Drawing.Size(645, 225);
             this.dataGridViewItem.TabIndex = 19;
             // 
             // ItemName
             // 
             this.ItemName.HeaderText = "Name";
+            this.ItemName.MinimumWidth = 6;
             this.ItemName.Name = "ItemName";
+            this.ItemName.Width = 125;
             // 
             // SellPrice
             // 
             this.SellPrice.HeaderText = "Sell Price";
+            this.SellPrice.MinimumWidth = 6;
             this.SellPrice.Name = "SellPrice";
+            this.SellPrice.Width = 125;
             // 
             // BuyPrice
             // 
             this.BuyPrice.HeaderText = "Buy Price";
+            this.BuyPrice.MinimumWidth = 6;
             this.BuyPrice.Name = "BuyPrice";
+            this.BuyPrice.Width = 125;
             // 
             // Quantity
             // 
             this.Quantity.HeaderText = "Quantity";
+            this.Quantity.MinimumWidth = 6;
             this.Quantity.Name = "Quantity";
+            this.Quantity.Width = 125;
             // 
             // Category
             // 
             this.Category.HeaderText = "Category";
+            this.Category.MinimumWidth = 6;
             this.Category.Name = "Category";
+            this.Category.Width = 125;
             // 
             // Supplier
             // 
             this.Supplier.HeaderText = "Supplier";
+            this.Supplier.MinimumWidth = 6;
             this.Supplier.Name = "Supplier";
+            this.Supplier.Width = 125;
             // 
             // textBoxSell
             // 
             this.textBoxSell.Location = new System.Drawing.Point(17, 337);
             this.textBoxSell.Name = "textBoxSell";
-            this.textBoxSell.Size = new System.Drawing.Size(121, 20);
+            this.textBoxSell.Size = new System.Drawing.Size(124, 26);
             this.textBoxSell.TabIndex = 18;
             // 
             // textBoxBuy
             // 
             this.textBoxBuy.Location = new System.Drawing.Point(17, 261);
             this.textBoxBuy.Name = "textBoxBuy";
-            this.textBoxBuy.Size = new System.Drawing.Size(121, 20);
+            this.textBoxBuy.Size = new System.Drawing.Size(124, 26);
             this.textBoxBuy.TabIndex = 17;
             // 
             // textBoxItem
             // 
             this.textBoxItem.Location = new System.Drawing.Point(17, 109);
             this.textBoxItem.Name = "textBoxItem";
-            this.textBoxItem.Size = new System.Drawing.Size(121, 20);
+            this.textBoxItem.Size = new System.Drawing.Size(124, 26);
             this.textBoxItem.TabIndex = 16;
             // 
             // comboBoxSupplir
@@ -331,7 +368,7 @@
             this.comboBoxSupplir.FormattingEnabled = true;
             this.comboBoxSupplir.Location = new System.Drawing.Point(20, 190);
             this.comboBoxSupplir.Name = "comboBoxSupplir";
-            this.comboBoxSupplir.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxSupplir.Size = new System.Drawing.Size(121, 27);
             this.comboBoxSupplir.TabIndex = 15;
             // 
             // comboCatagory
@@ -339,40 +376,42 @@
             this.comboCatagory.FormattingEnabled = true;
             this.comboCatagory.Location = new System.Drawing.Point(20, 30);
             this.comboCatagory.Name = "comboCatagory";
-            this.comboCatagory.Size = new System.Drawing.Size(121, 21);
+            this.comboCatagory.Size = new System.Drawing.Size(121, 27);
             this.comboCatagory.TabIndex = 14;
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.CatagoryName);
             this.tabPage2.Controls.Add(this.AddCatagory);
-            this.tabPage2.Controls.Add(this.pictureBox1);
             this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Controls.Add(this.pictureBox1);
+            this.tabPage2.Font = new System.Drawing.Font("Nirmala UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage2.ForeColor = System.Drawing.Color.SteelBlue;
+            this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(912, 481);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Size = new System.Drawing.Size(912, 476);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Add Catogary";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("MV Boli", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Nirmala UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label7.Location = new System.Drawing.Point(159, 355);
+            this.label7.Location = new System.Drawing.Point(96, 380);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(201, 31);
+            this.label7.Size = new System.Drawing.Size(151, 25);
             this.label7.TabIndex = 9;
             this.label7.Text = "Category Name";
             // 
             // CatagoryName
             // 
-            this.CatagoryName.Location = new System.Drawing.Point(561, 355);
-            this.CatagoryName.Margin = new System.Windows.Forms.Padding(2);
+            this.CatagoryName.Location = new System.Drawing.Point(510, 364);
+            this.CatagoryName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CatagoryName.Multiline = true;
             this.CatagoryName.Name = "CatagoryName";
             this.CatagoryName.Size = new System.Drawing.Size(216, 41);
@@ -380,41 +419,34 @@
             // 
             // AddCatagory
             // 
-            this.AddCatagory.BackColor = System.Drawing.SystemColors.Highlight;
+            this.AddCatagory.BackColor = System.Drawing.Color.SteelBlue;
             this.AddCatagory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddCatagory.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.AddCatagory.Location = new System.Drawing.Point(388, 410);
-            this.AddCatagory.Margin = new System.Windows.Forms.Padding(2);
+            this.AddCatagory.ForeColor = System.Drawing.Color.PowderBlue;
+            this.AddCatagory.Location = new System.Drawing.Point(309, 410);
+            this.AddCatagory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddCatagory.Name = "AddCatagory";
-            this.AddCatagory.Size = new System.Drawing.Size(136, 39);
+            this.AddCatagory.Size = new System.Drawing.Size(163, 46);
             this.AddCatagory.TabIndex = 7;
-            this.AddCatagory.Text = "Add";
+            this.AddCatagory.Text = "Add Category";
             this.AddCatagory.UseVisualStyleBackColor = false;
             this.AddCatagory.Click += new System.EventHandler(this.AddCatagory_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(100, 83);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(713, 236);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("MV Boli", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Nirmala UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label8.Location = new System.Drawing.Point(329, 32);
+            this.label8.Location = new System.Drawing.Point(304, 3);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(220, 40);
+            this.label8.Size = new System.Drawing.Size(172, 32);
             this.label8.TabIndex = 5;
             this.label8.Text = "Add Category";
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Controls.Add(this.AddSeller);
             this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Controls.Add(this.label10);
@@ -422,74 +454,79 @@
             this.tabPage3.Controls.Add(this.SellerAddress);
             this.tabPage3.Controls.Add(this.SellerPhone);
             this.tabPage3.Controls.Add(this.SellerName);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Font = new System.Drawing.Font("Nirmala UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage3.ForeColor = System.Drawing.Color.SteelBlue;
+            this.tabPage3.Location = new System.Drawing.Point(4, 27);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(912, 481);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Size = new System.Drawing.Size(912, 476);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Add Seller";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // AddSeller
             // 
-            this.AddSeller.Location = new System.Drawing.Point(98, 202);
+            this.AddSeller.BackColor = System.Drawing.Color.SteelBlue;
+            this.AddSeller.ForeColor = System.Drawing.Color.PowderBlue;
+            this.AddSeller.Location = new System.Drawing.Point(446, 392);
             this.AddSeller.Name = "AddSeller";
-            this.AddSeller.Size = new System.Drawing.Size(99, 23);
+            this.AddSeller.Size = new System.Drawing.Size(229, 55);
             this.AddSeller.TabIndex = 15;
-            this.AddSeller.Text = "Add";
-            this.AddSeller.UseVisualStyleBackColor = true;
+            this.AddSeller.Text = "Add Seller";
+            this.AddSeller.UseVisualStyleBackColor = false;
             this.AddSeller.Click += new System.EventHandler(this.AddSeller_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(21, 151);
+            this.label9.Location = new System.Drawing.Point(441, 292);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 13);
+            this.label9.Size = new System.Drawing.Size(83, 25);
             this.label9.TabIndex = 14;
             this.label9.Text = "Address";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(21, 101);
+            this.label10.Location = new System.Drawing.Point(441, 193);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 13);
+            this.label10.Size = new System.Drawing.Size(69, 25);
             this.label10.TabIndex = 13;
             this.label10.Text = "Phone";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(21, 45);
+            this.label11.Location = new System.Drawing.Point(441, 89);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 13);
+            this.label11.Size = new System.Drawing.Size(64, 25);
             this.label11.TabIndex = 12;
             this.label11.Text = "Name";
             // 
             // SellerAddress
             // 
-            this.SellerAddress.Location = new System.Drawing.Point(146, 144);
+            this.SellerAddress.Location = new System.Drawing.Point(590, 290);
             this.SellerAddress.Name = "SellerAddress";
-            this.SellerAddress.Size = new System.Drawing.Size(148, 20);
+            this.SellerAddress.Size = new System.Drawing.Size(176, 32);
             this.SellerAddress.TabIndex = 11;
             // 
             // SellerPhone
             // 
-            this.SellerPhone.Location = new System.Drawing.Point(146, 94);
+            this.SellerPhone.Location = new System.Drawing.Point(590, 193);
             this.SellerPhone.Name = "SellerPhone";
-            this.SellerPhone.Size = new System.Drawing.Size(148, 20);
+            this.SellerPhone.Size = new System.Drawing.Size(176, 32);
             this.SellerPhone.TabIndex = 10;
             // 
             // SellerName
             // 
-            this.SellerName.Location = new System.Drawing.Point(146, 38);
+            this.SellerName.Location = new System.Drawing.Point(590, 89);
             this.SellerName.Name = "SellerName";
-            this.SellerName.Size = new System.Drawing.Size(148, 20);
+            this.SellerName.Size = new System.Drawing.Size(176, 32);
             this.SellerName.TabIndex = 9;
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage4.Controls.Add(this.pictureBox4);
             this.tabPage4.Controls.Add(this.AddCustomer);
             this.tabPage4.Controls.Add(this.label12);
             this.tabPage4.Controls.Add(this.label13);
@@ -497,93 +534,98 @@
             this.tabPage4.Controls.Add(this.CustomerAddress);
             this.tabPage4.Controls.Add(this.CustomerPhone);
             this.tabPage4.Controls.Add(this.CustomerName);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Font = new System.Drawing.Font("Nirmala UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage4.ForeColor = System.Drawing.Color.SteelBlue;
+            this.tabPage4.Location = new System.Drawing.Point(4, 27);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(912, 481);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage4.Size = new System.Drawing.Size(912, 476);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Add Customer";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // AddCustomer
             // 
-            this.AddCustomer.Location = new System.Drawing.Point(48, 199);
+            this.AddCustomer.BackColor = System.Drawing.Color.SteelBlue;
+            this.AddCustomer.ForeColor = System.Drawing.Color.PowderBlue;
+            this.AddCustomer.Location = new System.Drawing.Point(462, 378);
             this.AddCustomer.Name = "AddCustomer";
-            this.AddCustomer.Size = new System.Drawing.Size(108, 23);
+            this.AddCustomer.Size = new System.Drawing.Size(226, 53);
             this.AddCustomer.TabIndex = 15;
-            this.AddCustomer.Text = "Add";
-            this.AddCustomer.UseVisualStyleBackColor = true;
+            this.AddCustomer.Text = "Add Customer";
+            this.AddCustomer.UseVisualStyleBackColor = false;
             this.AddCustomer.Click += new System.EventHandler(this.AddCustomer_Click);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(33, 147);
+            this.label12.Location = new System.Drawing.Point(410, 288);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(45, 13);
+            this.label12.Size = new System.Drawing.Size(83, 25);
             this.label12.TabIndex = 14;
             this.label12.Text = "Address";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(33, 93);
+            this.label13.Location = new System.Drawing.Point(410, 193);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(38, 13);
+            this.label13.Size = new System.Drawing.Size(69, 25);
             this.label13.TabIndex = 13;
             this.label13.Text = "Phone";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(33, 41);
+            this.label14.Location = new System.Drawing.Point(410, 94);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(35, 13);
+            this.label14.Size = new System.Drawing.Size(64, 25);
             this.label14.TabIndex = 12;
             this.label14.Text = "Name";
             // 
             // CustomerAddress
             // 
-            this.CustomerAddress.Location = new System.Drawing.Point(103, 140);
+            this.CustomerAddress.Location = new System.Drawing.Point(573, 288);
             this.CustomerAddress.Name = "CustomerAddress";
-            this.CustomerAddress.Size = new System.Drawing.Size(157, 20);
+            this.CustomerAddress.Size = new System.Drawing.Size(179, 32);
             this.CustomerAddress.TabIndex = 11;
             // 
             // CustomerPhone
             // 
-            this.CustomerPhone.Location = new System.Drawing.Point(103, 86);
+            this.CustomerPhone.Location = new System.Drawing.Point(573, 193);
             this.CustomerPhone.Name = "CustomerPhone";
-            this.CustomerPhone.Size = new System.Drawing.Size(157, 20);
+            this.CustomerPhone.Size = new System.Drawing.Size(179, 32);
             this.CustomerPhone.TabIndex = 10;
             // 
             // CustomerName
             // 
-            this.CustomerName.Location = new System.Drawing.Point(103, 34);
+            this.CustomerName.Location = new System.Drawing.Point(573, 92);
             this.CustomerName.Name = "CustomerName";
-            this.CustomerName.Size = new System.Drawing.Size(157, 20);
+            this.CustomerName.Size = new System.Drawing.Size(179, 32);
             this.CustomerName.TabIndex = 9;
             // 
             // tabPage5
             // 
+            this.tabPage5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage5.Controls.Add(this.SupplierAddress);
             this.tabPage5.Controls.Add(this.SupplierPhone);
             this.tabPage5.Controls.Add(this.SupplierName);
             this.tabPage5.Controls.Add(this.label15);
             this.tabPage5.Controls.Add(this.label16);
             this.tabPage5.Controls.Add(this.label17);
-            this.tabPage5.Controls.Add(this.pictureBox2);
             this.tabPage5.Controls.Add(this.AddSupplier);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Controls.Add(this.pictureBox2);
+            this.tabPage5.Font = new System.Drawing.Font("Nirmala UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage5.ForeColor = System.Drawing.Color.SteelBlue;
+            this.tabPage5.Location = new System.Drawing.Point(4, 27);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(912, 481);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage5.Size = new System.Drawing.Size(912, 476);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "AddSupplier";
-            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // SupplierAddress
             // 
-            this.SupplierAddress.Location = new System.Drawing.Point(555, 272);
+            this.SupplierAddress.Location = new System.Drawing.Point(514, 272);
             this.SupplierAddress.Multiline = true;
             this.SupplierAddress.Name = "SupplierAddress";
             this.SupplierAddress.Size = new System.Drawing.Size(280, 42);
@@ -591,7 +633,7 @@
             // 
             // SupplierPhone
             // 
-            this.SupplierPhone.Location = new System.Drawing.Point(555, 190);
+            this.SupplierPhone.Location = new System.Drawing.Point(514, 190);
             this.SupplierPhone.Multiline = true;
             this.SupplierPhone.Name = "SupplierPhone";
             this.SupplierPhone.Size = new System.Drawing.Size(280, 37);
@@ -599,7 +641,7 @@
             // 
             // SupplierName
             // 
-            this.SupplierName.Location = new System.Drawing.Point(555, 102);
+            this.SupplierName.Location = new System.Drawing.Point(503, 87);
             this.SupplierName.Multiline = true;
             this.SupplierName.Name = "SupplierName";
             this.SupplierName.Size = new System.Drawing.Size(280, 41);
@@ -608,18 +650,18 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(473, 289);
+            this.label15.Location = new System.Drawing.Point(415, 288);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(45, 13);
+            this.label15.Size = new System.Drawing.Size(83, 25);
             this.label15.TabIndex = 12;
             this.label15.Text = "Address";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(473, 207);
+            this.label16.Location = new System.Drawing.Point(415, 202);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(37, 13);
+            this.label16.Size = new System.Drawing.Size(69, 25);
             this.label16.TabIndex = 11;
             this.label16.Text = "phone";
             // 
@@ -627,29 +669,20 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label17.Location = new System.Drawing.Point(473, 109);
+            this.label17.Location = new System.Drawing.Point(415, 102);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(35, 13);
+            this.label17.Size = new System.Drawing.Size(64, 25);
             this.label17.TabIndex = 10;
             this.label17.Text = "Name";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::View.Properties.Resources.supplier;
-            this.pictureBox2.Location = new System.Drawing.Point(77, 38);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(355, 326);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
             // AddSupplier
             // 
-            this.AddSupplier.BackColor = System.Drawing.Color.Gray;
-            this.AddSupplier.Font = new System.Drawing.Font("Lucida Calligraphy", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddSupplier.ForeColor = System.Drawing.Color.White;
+            this.AddSupplier.BackColor = System.Drawing.Color.SteelBlue;
+            this.AddSupplier.Font = new System.Drawing.Font("Nirmala UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddSupplier.ForeColor = System.Drawing.Color.PowderBlue;
             this.AddSupplier.Location = new System.Drawing.Point(381, 383);
             this.AddSupplier.Name = "AddSupplier";
-            this.AddSupplier.Size = new System.Drawing.Size(265, 60);
+            this.AddSupplier.Size = new System.Drawing.Size(265, 53);
             this.AddSupplier.TabIndex = 8;
             this.AddSupplier.Text = "Add supplier";
             this.AddSupplier.UseVisualStyleBackColor = false;
@@ -657,6 +690,7 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage6.Controls.Add(this.AddToBill);
             this.tabPage6.Controls.Add(this.CalcTotalPrice);
             this.tabPage6.Controls.Add(this.label18);
@@ -681,40 +715,45 @@
             this.tabPage6.Controls.Add(this.comboBoxSeller);
             this.tabPage6.Controls.Add(this.comboBoxItem);
             this.tabPage6.Controls.Add(this.comboBoxCategory);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Font = new System.Drawing.Font("Nirmala UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage6.ForeColor = System.Drawing.Color.SteelBlue;
+            this.tabPage6.Location = new System.Drawing.Point(4, 27);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(912, 481);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage6.Size = new System.Drawing.Size(912, 476);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Bill";
-            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // AddToBill
             // 
-            this.AddToBill.Location = new System.Drawing.Point(699, 176);
+            this.AddToBill.BackColor = System.Drawing.Color.SteelBlue;
+            this.AddToBill.ForeColor = System.Drawing.Color.PowderBlue;
+            this.AddToBill.Location = new System.Drawing.Point(700, 177);
             this.AddToBill.Name = "AddToBill";
-            this.AddToBill.Size = new System.Drawing.Size(75, 23);
+            this.AddToBill.Size = new System.Drawing.Size(75, 31);
             this.AddToBill.TabIndex = 48;
             this.AddToBill.Text = "Add";
-            this.AddToBill.UseVisualStyleBackColor = true;
+            this.AddToBill.UseVisualStyleBackColor = false;
             this.AddToBill.Click += new System.EventHandler(this.AddToBill_Click);
             // 
             // CalcTotalPrice
             // 
-            this.CalcTotalPrice.Location = new System.Drawing.Point(729, 412);
+            this.CalcTotalPrice.BackColor = System.Drawing.Color.SteelBlue;
+            this.CalcTotalPrice.ForeColor = System.Drawing.Color.PowderBlue;
+            this.CalcTotalPrice.Location = new System.Drawing.Point(690, 414);
             this.CalcTotalPrice.Name = "CalcTotalPrice";
-            this.CalcTotalPrice.Size = new System.Drawing.Size(75, 23);
+            this.CalcTotalPrice.Size = new System.Drawing.Size(85, 29);
             this.CalcTotalPrice.TabIndex = 46;
             this.CalcTotalPrice.Text = "Calc Total";
-            this.CalcTotalPrice.UseVisualStyleBackColor = true;
+            this.CalcTotalPrice.UseVisualStyleBackColor = false;
             this.CalcTotalPrice.Click += new System.EventHandler(this.CalcTotalPrice_Click);
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(492, 415);
+            this.label18.Location = new System.Drawing.Point(494, 414);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(27, 13);
+            this.label18.Size = new System.Drawing.Size(46, 21);
             this.label18.TabIndex = 45;
             this.label18.Text = "total";
             // 
@@ -722,15 +761,15 @@
             // 
             this.totalPrice.Location = new System.Drawing.Point(564, 415);
             this.totalPrice.Name = "totalPrice";
-            this.totalPrice.Size = new System.Drawing.Size(100, 20);
+            this.totalPrice.Size = new System.Drawing.Size(100, 29);
             this.totalPrice.TabIndex = 44;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(293, 412);
+            this.label19.Location = new System.Drawing.Point(272, 414);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(59, 13);
+            this.label19.Size = new System.Drawing.Size(92, 21);
             this.label19.TabIndex = 43;
             this.label19.Text = "Selles Man";
             // 
@@ -738,15 +777,15 @@
             // 
             this.SellerIdText.Location = new System.Drawing.Point(375, 412);
             this.SellerIdText.Name = "SellerIdText";
-            this.SellerIdText.Size = new System.Drawing.Size(100, 20);
+            this.SellerIdText.Size = new System.Drawing.Size(100, 29);
             this.SellerIdText.TabIndex = 42;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(71, 409);
+            this.label20.Location = new System.Drawing.Point(22, 409);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(73, 13);
+            this.label20.Size = new System.Drawing.Size(121, 21);
             this.label20.TabIndex = 41;
             this.label20.Text = "No of Invicitor";
             // 
@@ -754,51 +793,51 @@
             // 
             this.IDBillText.Location = new System.Drawing.Point(153, 409);
             this.IDBillText.Name = "IDBillText";
-            this.IDBillText.Size = new System.Drawing.Size(100, 20);
+            this.IDBillText.Size = new System.Drawing.Size(100, 29);
             this.IDBillText.TabIndex = 40;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(306, 182);
+            this.label21.Location = new System.Drawing.Point(270, 180);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(46, 13);
+            this.label21.Size = new System.Drawing.Size(77, 21);
             this.label21.TabIndex = 39;
             this.label21.Text = "Quantity";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(583, 141);
+            this.label22.Location = new System.Drawing.Point(536, 136);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(83, 13);
+            this.label22.Size = new System.Drawing.Size(129, 21);
             this.label22.TabIndex = 38;
             this.label22.Text = "Kind OF Invoice";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(601, 97);
+            this.label23.Location = new System.Drawing.Point(548, 96);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(63, 13);
+            this.label23.Size = new System.Drawing.Size(98, 21);
             this.label23.TabIndex = 37;
             this.label23.Text = "Kind Of Pay";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(615, 45);
+            this.label24.Location = new System.Drawing.Point(548, 47);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(51, 13);
+            this.label24.Size = new System.Drawing.Size(83, 21);
             this.label24.TabIndex = 36;
             this.label24.Text = "Customer";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(306, 141);
+            this.label25.Location = new System.Drawing.Point(272, 140);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(59, 13);
+            this.label25.Size = new System.Drawing.Size(92, 21);
             this.label25.TabIndex = 35;
             this.label25.Text = "Selles Man";
             this.label25.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -806,60 +845,20 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(319, 97);
+            this.label26.Location = new System.Drawing.Point(272, 96);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(27, 13);
+            this.label26.Size = new System.Drawing.Size(45, 21);
             this.label26.TabIndex = 34;
             this.label26.Text = "Item";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(319, 45);
+            this.label27.Location = new System.Drawing.Point(270, 47);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(49, 13);
+            this.label27.Size = new System.Drawing.Size(80, 21);
             this.label27.TabIndex = 33;
             this.label27.Text = "Category";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Kind of Invicitor";
-            this.Column8.Name = "Column8";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Kind of Pay";
-            this.Column7.Name = "Column7";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Customer";
-            this.Column6.Name = "Column6";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "total Price";
-            this.Column5.Name = "Column5";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Price of pice";
-            this.Column4.Name = "Column4";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Quantity";
-            this.Column3.Name = "Column3";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Item";
-            this.Column2.Name = "Column2";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Category";
-            this.Column1.Name = "Column1";
             // 
             // QuantityBill
             // 
@@ -870,7 +869,7 @@
             0,
             0});
             this.QuantityBill.Name = "QuantityBill";
-            this.QuantityBill.Size = new System.Drawing.Size(120, 20);
+            this.QuantityBill.Size = new System.Drawing.Size(120, 29);
             this.QuantityBill.TabIndex = 47;
             this.QuantityBill.Value = new decimal(new int[] {
             1,
@@ -880,6 +879,7 @@
             // 
             // dataGridViewBill
             // 
+            this.dataGridViewBill.BackgroundColor = System.Drawing.Color.SteelBlue;
             this.dataGridViewBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -892,17 +892,76 @@
             this.Column8});
             this.dataGridViewBill.Location = new System.Drawing.Point(68, 218);
             this.dataGridViewBill.Name = "dataGridViewBill";
+            this.dataGridViewBill.RowHeadersWidth = 51;
             this.dataGridViewBill.Size = new System.Drawing.Size(776, 150);
             this.dataGridViewBill.TabIndex = 32;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Category";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Item";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Quantity";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Price of pice";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "total Price";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Customer";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Kind of Pay";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 125;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Kind of Invicitor";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 125;
+            // 
             // SaveBill
             // 
+            this.SaveBill.BackColor = System.Drawing.Color.SteelBlue;
+            this.SaveBill.ForeColor = System.Drawing.Color.PowderBlue;
             this.SaveBill.Location = new System.Drawing.Point(552, 177);
             this.SaveBill.Name = "SaveBill";
-            this.SaveBill.Size = new System.Drawing.Size(75, 23);
+            this.SaveBill.Size = new System.Drawing.Size(75, 31);
             this.SaveBill.TabIndex = 31;
             this.SaveBill.Text = "Save";
-            this.SaveBill.UseVisualStyleBackColor = true;
+            this.SaveBill.UseVisualStyleBackColor = false;
             this.SaveBill.Click += new System.EventHandler(this.SaveBill_Click);
             // 
             // comboBox6
@@ -910,7 +969,7 @@
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(670, 133);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 21);
+            this.comboBox6.Size = new System.Drawing.Size(121, 29);
             this.comboBox6.TabIndex = 30;
             // 
             // comboBox5
@@ -918,7 +977,7 @@
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(670, 89);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 21);
+            this.comboBox5.Size = new System.Drawing.Size(121, 29);
             this.comboBox5.TabIndex = 29;
             // 
             // comboBoxCustomer
@@ -926,7 +985,7 @@
             this.comboBoxCustomer.FormattingEnabled = true;
             this.comboBoxCustomer.Location = new System.Drawing.Point(670, 45);
             this.comboBoxCustomer.Name = "comboBoxCustomer";
-            this.comboBoxCustomer.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCustomer.Size = new System.Drawing.Size(121, 29);
             this.comboBoxCustomer.TabIndex = 28;
             this.comboBoxCustomer.SelectedIndexChanged += new System.EventHandler(this.comboBoxCustomer_SelectedIndexChanged);
             // 
@@ -935,7 +994,7 @@
             this.comboBoxSeller.FormattingEnabled = true;
             this.comboBoxSeller.Location = new System.Drawing.Point(371, 133);
             this.comboBoxSeller.Name = "comboBoxSeller";
-            this.comboBoxSeller.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxSeller.Size = new System.Drawing.Size(121, 29);
             this.comboBoxSeller.TabIndex = 27;
             this.comboBoxSeller.SelectedIndexChanged += new System.EventHandler(this.comboBoxSeller_SelectedIndexChanged);
             // 
@@ -944,7 +1003,7 @@
             this.comboBoxItem.FormattingEnabled = true;
             this.comboBoxItem.Location = new System.Drawing.Point(371, 89);
             this.comboBoxItem.Name = "comboBoxItem";
-            this.comboBoxItem.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxItem.Size = new System.Drawing.Size(121, 29);
             this.comboBoxItem.TabIndex = 26;
             this.comboBoxItem.SelectedIndexChanged += new System.EventHandler(this.comboBoxItem_SelectedIndexChanged);
             // 
@@ -953,44 +1012,180 @@
             this.comboBoxCategory.FormattingEnabled = true;
             this.comboBoxCategory.Location = new System.Drawing.Point(371, 45);
             this.comboBoxCategory.Name = "comboBoxCategory";
-            this.comboBoxCategory.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCategory.Size = new System.Drawing.Size(121, 29);
             this.comboBoxCategory.TabIndex = 25;
             this.comboBoxCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategory_SelectedIndexChanged);
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage7.Controls.Add(this.pictureBox5);
+            this.tabPage7.Controls.Add(this.dataGridView1);
+            this.tabPage7.Controls.Add(this.ShowItemsLessThan10button);
+            this.tabPage7.Controls.Add(this.ShowStayedItemsbutton);
+            this.tabPage7.Controls.Add(this.ShowSelledItemsbutton);
+            this.tabPage7.Controls.Add(this.ShowAllItemsbutton);
+            this.tabPage7.Location = new System.Drawing.Point(4, 27);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage7.Size = new System.Drawing.Size(912, 476);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Reports";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.SteelBlue;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(330, 205);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(458, 189);
+            this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.Visible = false;
+            // 
+            // ShowItemsLessThan10button
+            // 
+            this.ShowItemsLessThan10button.BackColor = System.Drawing.Color.SteelBlue;
+            this.ShowItemsLessThan10button.ForeColor = System.Drawing.Color.PowderBlue;
+            this.ShowItemsLessThan10button.Location = new System.Drawing.Point(22, 353);
+            this.ShowItemsLessThan10button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ShowItemsLessThan10button.Name = "ShowItemsLessThan10button";
+            this.ShowItemsLessThan10button.Size = new System.Drawing.Size(243, 41);
+            this.ShowItemsLessThan10button.TabIndex = 3;
+            this.ShowItemsLessThan10button.Text = "Show Items Less Than 10";
+            this.ShowItemsLessThan10button.UseVisualStyleBackColor = false;
+            this.ShowItemsLessThan10button.Click += new System.EventHandler(this.ShowItemsLessThan10button_Click);
+            // 
+            // ShowStayedItemsbutton
+            // 
+            this.ShowStayedItemsbutton.BackColor = System.Drawing.Color.SteelBlue;
+            this.ShowStayedItemsbutton.ForeColor = System.Drawing.Color.PowderBlue;
+            this.ShowStayedItemsbutton.Location = new System.Drawing.Point(22, 253);
+            this.ShowStayedItemsbutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ShowStayedItemsbutton.Name = "ShowStayedItemsbutton";
+            this.ShowStayedItemsbutton.Size = new System.Drawing.Size(243, 41);
+            this.ShowStayedItemsbutton.TabIndex = 2;
+            this.ShowStayedItemsbutton.Text = "Show Stayed Items";
+            this.ShowStayedItemsbutton.UseVisualStyleBackColor = false;
+            this.ShowStayedItemsbutton.Click += new System.EventHandler(this.ShowStayedItemsbutton_Click);
+            // 
+            // ShowSelledItemsbutton
+            // 
+            this.ShowSelledItemsbutton.BackColor = System.Drawing.Color.SteelBlue;
+            this.ShowSelledItemsbutton.ForeColor = System.Drawing.Color.PowderBlue;
+            this.ShowSelledItemsbutton.Location = new System.Drawing.Point(22, 150);
+            this.ShowSelledItemsbutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ShowSelledItemsbutton.Name = "ShowSelledItemsbutton";
+            this.ShowSelledItemsbutton.Size = new System.Drawing.Size(243, 41);
+            this.ShowSelledItemsbutton.TabIndex = 1;
+            this.ShowSelledItemsbutton.Text = "Show Selled Items";
+            this.ShowSelledItemsbutton.UseVisualStyleBackColor = false;
+            this.ShowSelledItemsbutton.Click += new System.EventHandler(this.ShowSelledItemsbutton_Click);
+            // 
+            // ShowAllItemsbutton
+            // 
+            this.ShowAllItemsbutton.BackColor = System.Drawing.Color.SteelBlue;
+            this.ShowAllItemsbutton.ForeColor = System.Drawing.Color.PowderBlue;
+            this.ShowAllItemsbutton.Location = new System.Drawing.Point(22, 42);
+            this.ShowAllItemsbutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ShowAllItemsbutton.Name = "ShowAllItemsbutton";
+            this.ShowAllItemsbutton.Size = new System.Drawing.Size(243, 41);
+            this.ShowAllItemsbutton.TabIndex = 0;
+            this.ShowAllItemsbutton.Text = "Show All Items";
+            this.ShowAllItemsbutton.UseVisualStyleBackColor = false;
+            this.ShowAllItemsbutton.Click += new System.EventHandler(this.ShowAllItemsbutton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::View.Properties.Resources.shopping_trolley_full_of_food_vector_20581144;
+            this.pictureBox1.Location = new System.Drawing.Point(110, 56);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(627, 297);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(24, 18);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(327, 368);
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::View.Properties.Resources.cust;
+            this.pictureBox4.Location = new System.Drawing.Point(14, 19);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(362, 388);
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::View.Properties.Resources.supplier;
+            this.pictureBox2.Location = new System.Drawing.Point(19, 34);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(355, 326);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::View.Properties.Resources.status_report;
+            this.pictureBox5.Location = new System.Drawing.Point(477, 21);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(334, 128);
+            this.pictureBox5.TabIndex = 5;
+            this.pictureBox5.TabStop = false;
             // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 499);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.Reports);
             this.Name = "Inventory";
             this.Text = "Inventory";
-            this.tabControl1.ResumeLayout(false);
+            this.Reports.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QuntatyItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QuantityBill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl Reports;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button AddItem;
@@ -1077,5 +1272,14 @@
         private System.Windows.Forms.ComboBox comboBoxSeller;
         private System.Windows.Forms.ComboBox comboBoxItem;
         private System.Windows.Forms.ComboBox comboBoxCategory;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button ShowItemsLessThan10button;
+        private System.Windows.Forms.Button ShowStayedItemsbutton;
+        private System.Windows.Forms.Button ShowSelledItemsbutton;
+        private System.Windows.Forms.Button ShowAllItemsbutton;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
