@@ -10,12 +10,18 @@ namespace DataBase
     public class Billtems
     {
         public int  Id { get; set; }
+
+
         [ForeignKey("items")]
         public int itemdId { get; set; }
-        public List<Item> items { get; set; }
+        public virtual Item items { get; set; }
+
+
         [ForeignKey("Bills")]
         public int BillId { get; set; }
-        public List<Bill> Bills { get; set; }
+        public virtual Bill Bills { get; set; }
+
+
         public int Quantity { get; set; }
     }
 }

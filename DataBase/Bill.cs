@@ -15,16 +15,15 @@ namespace DataBase
        
         public string KindOfPay { get; set; }
         public string KindOfInvoice { get; set; }
+
+
+
         [ForeignKey("seller")]
         public int sellerId { get; set; }
-        public Seller seller { get; set; }
+        public virtual Seller seller { get; set; }
 
-        
+        public virtual List<Billtems> Billtems { get; set; }
 
-        //[ForeignKey("customer")]
-        //public int CustomerID { get; set; }
-        //[ForeignKey("items")]
-        //public int itemdId { get; set; }
-        //public List<Item> items { get; set; }
+        public virtual List<CustomerBill> CustomerBills { get; set; }
     }
 }

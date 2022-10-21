@@ -19,10 +19,10 @@ namespace DataBase
         public int SupplierId { get; set; }
         [ForeignKey("Category")]
         public int CategoryId { get; set; }
-        //public string
-        public Category Category { get; set; }
-        public Supplier supplier { get; set; }
-        //public List<Seller> sellers { get; set; }
-        //public List<Bill> Bills { get; set; }
+        public virtual Category Category { get; set; }
+        public virtual Supplier supplier { get; set; }
+        public List<Billtems> Billtems { get; set; }
+
+
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,9 +15,8 @@ namespace DataBase
         public string Name { get; set; }
         public int Phone { get; set; }
         public string Address { get; set; }
-        //public List<Customer> Customers { get; set; }
-
-        //public List<Item> Items { get; set; }
-        public List<Bill> Bills { get; set; }
+        //[ForeignKey("Bills")]
+        //public int BillID { get; set; }
+        //public virtual List<Bill> Bills { get; set; }
     }
 }

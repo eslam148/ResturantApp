@@ -76,5 +76,22 @@ namespace BLL
 
             return data ;
         }
+
+        public List<int> GetBillOfCustomer(int CustomerID)
+        {
+            var Bill = DBcontext.CustomerBill.Where(b => b.CustomerID == CustomerID)
+                .Select(i=>i.BillID).ToList();
+            return Bill;
+        }
+
+        public int ReturnItem(int BillID , int ItemID,int RetrunedQuantaty)
+        {
+            var BillItem = DBcontext.BillItems.FirstOrDefault(b => b.BillId == BillID && b.itemdId == ItemID);
+            BillItem.Quantity -=RetrunedQuantaty;
+            var Item = DBcontext.items.FirstOrDefault(i => i.Id == ItemID);
+            Item.Quantity+=RetrunedQuantaty;
+            Item.SelledQuantity-=RetrunedQuantaty;
+            return DBcontext.SaveChanges();
+        }
     }
 }

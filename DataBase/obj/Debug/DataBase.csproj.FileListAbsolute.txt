@@ -82,3 +82,17 @@ D:\ITI Sohage .NET\Back End\.net\CSharp-Project\DataBase\obj\Debug\DataBase.dll
 D:\ITI Sohage .NET\Back End\.net\CSharp-Project\DataBase\obj\Debug\DataBase.pdb
 D:\ITI Sohage .NET\Back End\.net\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.inti.resources
 D:\ITI Sohage .NET\Back End\.net\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\bin\Debug\DataBase.dll.config
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\bin\Debug\DataBase.dll
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\bin\Debug\DataBase.pdb
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\bin\Debug\EntityFramework.dll
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.dll
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\bin\Debug\EntityFramework.xml
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.xml
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.dll
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.pdb
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.aa.resources
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
