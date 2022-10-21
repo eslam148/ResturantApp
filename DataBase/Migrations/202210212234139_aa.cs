@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class qq : DbMigration
+    public partial class aa : DbMigration
     {
         public override void Up()
         {
@@ -58,7 +58,7 @@
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
-                        Phone = c.Int(nullable: false),
+                        Phone = c.String(),
                         Address = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
@@ -69,7 +69,7 @@
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
-                        Phone = c.Int(nullable: false),
+                        Phone = c.String(),
                         Address = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
@@ -108,7 +108,7 @@
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
-                        Phone = c.Int(nullable: false),
+                        Phone = c.String(),
                         Address = c.String(),
                     })
                 .PrimaryKey(t => t.Id);

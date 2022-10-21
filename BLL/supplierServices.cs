@@ -10,7 +10,7 @@ namespace BLL
     public class supplierServices
     {
         Context context = new Context();
-        public int  AddSupplier(string Name,int phone,string Address)
+        public int  AddSupplier(string Name,string phone,string Address)
         { 
             Supplier supplier = new Supplier();
             supplier.Address = Address;

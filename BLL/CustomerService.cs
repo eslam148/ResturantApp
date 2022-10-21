@@ -11,7 +11,7 @@ namespace BLL
     {
         Context db = new Context();
 
-        public int AddCustomer( string _name, int _phone, string _add)
+        public int AddCustomer( string _name, string _phone, string _add)
         {
             Customer c = new Customer();
             

@@ -23,7 +23,7 @@ namespace View
         {
             string name = textBox1.Text;
             string address = textBox3.Text;
-            int phone = int.Parse(textBox2.Text);
+            String phone = textBox2.Text;
             int res = services.AddSupplier(name, phone, address);
             if (res > 0)
             {

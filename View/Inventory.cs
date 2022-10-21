@@ -159,7 +159,7 @@ namespace View
         private void AddSeller_Click(object sender, EventArgs e)
         {
             String Name = SellerName.Text;
-            int Phone = int.Parse(SellerPhone.Text);
+            String Phone = SellerPhone.Text;
             String Address = SellerAddress.Text;
 
             if (sellerService.AddSeller(Name, Phone, Address)>0)
@@ -182,7 +182,7 @@ namespace View
         private void AddCustomer_Click(object sender, EventArgs e)
         {
             String Name = CustomerName.Text;
-            int Phone = int.Parse(CustomerPhone.Text);
+            String Phone = CustomerPhone.Text;
             String Address = CustomerAddress.Text;
 
             if (customerService.AddCustomer(Name, Phone, Address)>0)
@@ -202,7 +202,7 @@ namespace View
         private void AddSupplier_Click(object sender, EventArgs e)
         {
             String Name = SupplierName.Text;
-            int Phone = int.Parse(SupplierPhone.Text);
+            String Phone = SupplierPhone.Text;
             String Address = SupplierAddress.Text;
 
             if (supplierServices.AddSupplier(Name, Phone, Address)>0)
@@ -383,9 +383,7 @@ namespace View
         private void Exist_CheckedChanged(object sender, EventArgs e)
         {
             comboBoxAddItem.Visible = true;
-            //int CategoryId = categoryServices.GetAllCategories().Select(i => i.ID).ToArray()[comboCatagory.SelectedIndex];
-            //var Item = ItemServices.GetAllItems().Where(i=>i.CategoryId ==CategoryId).Select(i=>i.Name).ToList();
-            //comboBoxAddItem.DataSource = Item;
+        
 
         }
 

@@ -23,7 +23,7 @@ namespace View
         {
             
             string name = textBox2.Text;
-            int ph = int.Parse(textBox3.Text);
+            String ph = textBox3.Text;
             string add = textBox4.Text;
             sl.AddSeller( name, ph, add);
             MessageBox.Show("sucssess", "Add", MessageBoxButtons.OK, MessageBoxIcon.Information);

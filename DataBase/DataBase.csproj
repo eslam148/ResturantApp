@@ -58,9 +58,9 @@
     <Compile Include="Customer.cs" />
     <Compile Include="CustomerBill.cs" />
     <Compile Include="Item.cs" />
-    <Compile Include="Migrations\202210211625418_qq.cs" />
-    <Compile Include="Migrations\202210211625418_qq.designer.cs">
-      <DependentUpon>202210211625418_qq.cs</DependentUpon>
+    <Compile Include="Migrations\202210212234139_aa.cs" />
+    <Compile Include="Migrations\202210212234139_aa.designer.cs">
+      <DependentUpon>202210212234139_aa.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +72,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202210211625418_qq.resx">
-      <DependentUpon>202210211625418_qq.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202210212234139_aa.resx">
+      <DependentUpon>202210212234139_aa.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

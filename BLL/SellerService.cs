@@ -12,7 +12,7 @@ namespace BLL
         Context db = new Context();
 
 
-        public int AddSeller( string _name, int _phone, string _add)
+        public int AddSeller( string _name, string _phone, string _add)
         {
             Seller s = new Seller();
            
