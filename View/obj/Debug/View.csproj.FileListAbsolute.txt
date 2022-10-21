@@ -176,3 +176,32 @@ D:\ITI Sohage .NET\Back End\.net\CSharp-Project\View\obj\Debug\View.csproj.CopyC
 D:\ITI Sohage .NET\Back End\.net\CSharp-Project\View\obj\Debug\View.exe
 D:\ITI Sohage .NET\Back End\.net\CSharp-Project\View\obj\Debug\View.pdb
 D:\ITI Sohage .NET\Back End\.net\CSharp-Project\View\obj\Debug\View.Inventory.resources
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\bin\Debug\View.exe.config
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\bin\Debug\View.exe
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\bin\Debug\View.pdb
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\bin\Debug\BLL.dll
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\bin\Debug\EntityFramework.dll
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\bin\Debug\EntityFramework.SqlServer.dll
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\bin\Debug\DataBase.dll
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\bin\Debug\BLL.pdb
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\bin\Debug\BLL.dll.config
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\bin\Debug\EntityFramework.xml
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\bin\Debug\EntityFramework.SqlServer.xml
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\bin\Debug\DataBase.pdb
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\bin\Debug\DataBase.dll.config
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.csproj.AssemblyReference.cache
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.AddCustomer.resources
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.AddItem.resources
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.AddSeller.resources
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.Bill.resources
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.CategoryForm.resources
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.Inventory.resources
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.Properties.Resources.resources
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.spplier.resources
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.csproj.GenerateResource.cache
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.csproj.CopyComplete
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.exe
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.pdb
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.ReturnedItem.resources

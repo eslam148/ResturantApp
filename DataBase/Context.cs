@@ -1,7 +1,9 @@
-﻿using System;
+﻿using DataBase.Migrations;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,13 +22,9 @@ namespace DataBase
 
         public Context() : base(@"Data source = .; initial catalog = Inventory; integrated security = true;")
         {
-
         }
      
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-        }
+      
 
     }
 }
