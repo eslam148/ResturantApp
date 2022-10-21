@@ -94,7 +94,5 @@ D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debu
 D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CopyComplete
 D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.dll
 D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.pdb
-D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.ww.resources
+D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.qq.resources
 D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
-D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.hh.resources
-D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.aa.resources

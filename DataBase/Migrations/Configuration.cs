@@ -58,53 +58,53 @@
             {
                 Name="Elctronic"
             });
-            List<Item> items = new List<Item>();
-            items.Add(new Item
-            {
-                Name = "Samasunge",
-                BuyPrice = 5500,
-                SellPrice = 4000,
-                Quantity = 5,
-                SelledQuantity=0,
-                CategoryId = 1,
-                SupplierId = 1
+            //List<Item> items = new List<Item>();
+            //items.Add(new Item
+            //{
+            //    Name = "Samasunge",
+            //    BuyPrice = 5500,
+            //    SellPrice = 4000,
+            //    Quantity = 5,
+            //    SelledQuantity=0,
+            //    CategoryId = 1,
+            //    SupplierId = 1
 
 
-            });
-            items.Add(new Item
-            {
-                Name = "Hand Blinder",
-                BuyPrice = 200,
-                SellPrice = 2200,
-                Quantity = 10,
-                SelledQuantity=0,
-                CategoryId = 3,
-                SupplierId = 2
+            //});
+            //items.Add(new Item
+            //{
+            //    Name = "Hand Blinder",
+            //    BuyPrice = 200,
+            //    SellPrice = 2200,
+            //    Quantity = 10,
+            //    SelledQuantity=0,
+            //    CategoryId = 3,
+            //    SupplierId = 2
 
 
-            });
-            items.Add(new Item
-            {
-                Name = "Samasunge A52",
-                BuyPrice = 8500,
-                SellPrice = 8000,
-                Quantity = 5,
-                SelledQuantity=0,
-                CategoryId = 1,
-                SupplierId = 1
+            //});
+            //items.Add(new Item
+            //{
+            //    Name = "Samasunge A52",
+            //    BuyPrice = 8500,
+            //    SellPrice = 8000,
+            //    Quantity = 5,
+            //    SelledQuantity=0,
+            //    CategoryId = 1,
+            //    SupplierId = 1
 
-            });
-            items.Add(new Item
-            {
-                Name = "Oppo Reno 5",
-                BuyPrice = 5500,
-                SellPrice = 4000,
-                Quantity = 5,
-                SelledQuantity=0,
-                CategoryId = 1,
-                SupplierId = 4
+            //});
+            //items.Add(new Item
+            //{
+            //    Name = "Oppo Reno 5",
+            //    BuyPrice = 5500,
+            //    SellPrice = 4000,
+            //    Quantity = 5,
+            //    SelledQuantity=0,
+            //    CategoryId = 1,
+            //    SupplierId = 4
 
-            });
+            //});
 
             List<Seller> sellers = new List<Seller>();
             sellers.Add(new Seller
@@ -120,10 +120,10 @@
                 Phone = 0123849358
 
             });
-            context.sellers.AddRange(sellers);
-            context.suppliers.AddRange(suppliers);
-            context.categories.AddRange(categories);
-            context.items.AddRange(items);
+            //context.sellers.AddRange(sellers);
+            //context.suppliers.AddRange(suppliers);
+            //context.categories.AddRange(categories);
+            //context.items.AddRange(items);
             base.Seed(context);
 
         }
