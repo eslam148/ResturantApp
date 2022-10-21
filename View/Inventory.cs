@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace View
 {
@@ -35,6 +36,9 @@ namespace View
             AddItemInfoTab();
             AddSupplierInfoTab();
             BillCombo();
+            KindOfBayComboBox.Items.Add("Cach");
+            KindOfBayComboBox.Items.Add("Installement");
+            KindOfBayComboBox.SelectedIndex = 0;
         }
         public void BillCombo()
         {
@@ -69,38 +73,68 @@ namespace View
 
         private void SaveItems_Click(object sender, EventArgs e)
         {
-           
-            foreach (var item in itemView)
+            if(New.Checked == true) { 
+                foreach (var item in itemView)
+                {
+                    if (ItemServices.AddItem(item.Name, item.BuyPrice, item.SellPrice, item.Quantity, item.SupplierID, item.CategoryId)>0)
+                    {
+                        MessageBox.Show("Add Success");
+                        dataGridViewItem.Rows.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Add Fail");
+
+                    }
+                }
+                AddItemInfoTab();
+                AddSupplierInfoTab();
+                BillCombo();
+            }
+            else if (Exist.Checked == true)
             {
-                if (ItemServices.AddItem(item.Name, item.BuyPrice, item.SellPrice, item.Quantity, item.SupplierID, item.CategoryId)>0)
+
+
+                int itemID = ItemServices.GetAllItems().Select(i => i.ID).ToArray()[comboBoxAddItem.SelectedIndex];
+                int BuyPrice = int.Parse(textBoxBuy.Text);
+                int SellPrice = int.Parse(textBoxSell.Text);
+                int Quantity = int.Parse(QuntatyItem.Text);
+
+                if (ItemServices.updateItems(itemID, Quantity, SellPrice, BuyPrice)>0)
                 {
                     MessageBox.Show("Add Success");
-                    dataGridViewItem.Rows.Clear();
+
                 }
                 else
                 {
                     MessageBox.Show("Add Fail");
 
                 }
+
             }
         }
 
         private void AddItem_Click(object sender, EventArgs e)
         {
-            int catagoryid = categoryServices.GetAllCategories().Select(s => s.ID).ToArray()[comboCatagory.SelectedIndex];
-            int Supplierid = supplierServices.GetAllSuppliers().Select(s => s.ID).ToArray()[comboBoxSupplir.SelectedIndex];
+            if(Exist.Checked == true) { 
+                int catagoryid = categoryServices.GetAllCategories().Select(s => s.ID).ToArray()[comboCatagory.SelectedIndex];
+                int Supplierid = supplierServices.GetAllSuppliers().Select(s => s.ID).ToArray()[comboBoxSupplir.SelectedIndex];
 
-            itemView.Add(new ItemView
-            {
-                Name = textBoxItem.Text,
-                CategoryId = catagoryid,
-                SellPrice = int.Parse(textBoxSell.Text),
-                BuyPrice = int.Parse(textBoxBuy.Text),
-                Quantity= (int)QuntatyItem.Value,
-                SelledQuantity = 0,
-                SupplierID = Supplierid
-            }) ;
-            dataGridViewItem.Rows.Add(textBoxItem.Text,int.Parse(textBoxSell.Text),int.Parse(textBoxBuy.Text), QuntatyItem.Value, comboCatagory.Text, comboBoxSupplir.Text);
+                itemView.Add(new ItemView
+                {
+                    Name = textBoxItem.Text,
+                    CategoryId = catagoryid,
+                    SellPrice = int.Parse(textBoxSell.Text),
+                    BuyPrice = int.Parse(textBoxBuy.Text),
+                    Quantity= (int)QuntatyItem.Value,
+                    SelledQuantity = 0,
+                    SupplierID = Supplierid
+                }) ;
+                dataGridViewItem.Rows.Add(textBoxItem.Text,int.Parse(textBoxSell.Text),int.Parse(textBoxBuy.Text), QuntatyItem.Value, comboCatagory.Text, comboBoxSupplir.Text);
+                AddItemInfoTab();
+                AddSupplierInfoTab();
+                BillCombo();
+            }
         }
 
         private void AddCatagory_Click(object sender, EventArgs e)
@@ -115,6 +149,9 @@ namespace View
                 MessageBox.Show("Add Fail");
 
             }
+            AddItemInfoTab();
+            AddSupplierInfoTab();
+            BillCombo();
         }
 
       
@@ -135,6 +172,9 @@ namespace View
                 MessageBox.Show("Add Fail");
 
             }
+            AddItemInfoTab();
+            AddSupplierInfoTab();
+            BillCombo();
         }
 
      
@@ -155,6 +195,9 @@ namespace View
                 MessageBox.Show("Add Fail");
 
             }
+            AddItemInfoTab();
+            AddSupplierInfoTab();
+            BillCombo();
         }
         private void AddSupplier_Click(object sender, EventArgs e)
         {
@@ -172,6 +215,9 @@ namespace View
                 MessageBox.Show("Add Fail");
 
             }
+            AddItemInfoTab();
+            AddSupplierInfoTab();
+            BillCombo();
         }
 
         private void AddToBill_Click(object sender, EventArgs e)
@@ -190,22 +236,43 @@ namespace View
                 KindOfInvoice = "ss",
                 KindOfPay = "ss"
             });
-            int price = ItemServices.GetAllItems().FirstOrDefault(i => i.ID == item).ID;
+            int price = ItemServices.GetAllItems().FirstOrDefault(i => i.ID == item).SellPrice;
             dataGridViewBill.Rows.Add(comboBoxCategory.Text, comboBoxItem.Text, Quantaty, price, price*Quantaty, comboBoxCustomer.Text, "ss", "ss");
-
+            AddItemInfoTab();
+            AddSupplierInfoTab();
+            BillCombo();
         }
 
         private void SaveBill_Click(object sender, EventArgs e)
         {
             var seller = sellerService.GetSeller().Select(i => i.ID).ToArray()[SellerID];
-            billServices.AddBill("ss", "ss", seller);
+            int total = 0;
+            bool typeOfPay = true;
+            int DownPayment = 0;
+            if (KindOfBayComboBox.SelectedIndex==0)
+            {
+                typeOfPay = true;
+            }
+            else
+            {
+                typeOfPay = false;
+                DownPayment = int.Parse(DownPaymentText.Text);
+
+            }
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[3].Value != null)
+                    total += (int)row.Cells[4].Value;
+            }
+
+            billServices.AddBill(typeOfPay, seller, total, DownPayment);
 
             foreach (var item in BillViews)
             {
                 if (billServices.AddToBill(item.Quntaty, item.CustomerID, item.itemdId)>0)
                 {
                     MessageBox.Show("عمليه ناجحه");
-                    dataGridViewBill.Rows.Clear();
                 }
                 else
                 {
@@ -213,6 +280,9 @@ namespace View
 
                 }
             }
+            AddItemInfoTab();
+            AddSupplierInfoTab();
+            BillCombo();
         }
 
         private void comboBoxCategory_SelectedIndexChanged(object sender, EventArgs e)
@@ -288,6 +358,45 @@ namespace View
             items = ItemServices.GetItemsLessThanTen();
             dataGridView1.DataSource = items;
             dataGridView1.Visible = true;
+        }
+
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (KindOfBayComboBox.SelectedIndex == 1)
+            {
+                DownPaymentText.Visible = true;
+                PaymentLabl.Visible = true;
+            }
+            else
+            {
+                DownPaymentText.Visible = false;
+                PaymentLabl.Visible = false;
+
+            }
+        }
+
+        private void New_CheckedChanged(object sender, EventArgs e)
+        {
+            comboBoxAddItem.Visible = false;
+        }
+
+        private void Exist_CheckedChanged(object sender, EventArgs e)
+        {
+            comboBoxAddItem.Visible = true;
+            //int CategoryId = categoryServices.GetAllCategories().Select(i => i.ID).ToArray()[comboCatagory.SelectedIndex];
+            //var Item = ItemServices.GetAllItems().Where(i=>i.CategoryId ==CategoryId).Select(i=>i.Name).ToList();
+            //comboBoxAddItem.DataSource = Item;
+
+        }
+
+        private void comboCatagory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Exist.Checked == true)
+            {
+                int CategoryId = categoryServices.GetAllCategories().Select(i => i.ID).ToArray()[comboCatagory.SelectedIndex];
+                var Item = ItemServices.GetAllItems().Where(i => i.CategoryId ==CategoryId).Select(i => i.Name).ToList();
+                comboBoxAddItem.DataSource = Item;
+            }
         }
     }
 }

@@ -13,17 +13,21 @@ namespace DataBase
         [Key]
         public int Id { get; set; }
        
-        public string KindOfPay { get; set; }
-        public string KindOfInvoice { get; set; }
-
-
+        public bool KindOfPay { get; set; }
 
         [ForeignKey("seller")]
         public int sellerId { get; set; }
         public virtual Seller seller { get; set; }
-
         public virtual List<Billtems> Billtems { get; set; }
-
         public virtual List<CustomerBill> CustomerBills { get; set; }
+
+        public int TotalPrice { get; set; }
+        public DateTime dateOfBill { get; set; }
+
+        public DateTime dateOfPay { get; set; }
+
+        public int RestOfTheInvoicePrice{ get; set; }
+
+
     }
 }

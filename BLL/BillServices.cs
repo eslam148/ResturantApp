@@ -11,14 +11,35 @@ namespace BLL
     public class BillServices
     {
         Context DBcontext = new Context();
-        public int AddBill(String KindOfPay,String KindOfInvoice, int sellerId)
+        public int AddBill(bool KindOfPay, int sellerId,int totalPrice,int DownPayment)
         {
-            Bill bill = new Bill
+            Bill bill;
+            if (KindOfPay == true) {
+                bill = new Bill
+                {
+                    KindOfPay = KindOfPay,
+                    //  KindOfInvoice = KindOfInvoice,
+                    sellerId = sellerId,
+                    TotalPrice = totalPrice,
+                    RestOfTheInvoicePrice = 0,
+                    dateOfBill = DateTime.Now,
+                    dateOfPay=  DateTime.Now
+                };
+            }
+            else
             {
-                KindOfPay = KindOfPay,
-                KindOfInvoice = KindOfInvoice,
-                sellerId = sellerId,
-            };
+                bill = new Bill
+                {
+                    KindOfPay = KindOfPay,
+                    //  KindOfInvoice = KindOfInvoice,
+                    sellerId = sellerId,
+                    TotalPrice = totalPrice,
+                    RestOfTheInvoicePrice = totalPrice - DownPayment,
+                    dateOfBill = DateTime.Now,
+                    dateOfPay=  DateTime.Now
+                };
+            }
+           
             DBcontext.Bills.Add(bill);
             return DBcontext.SaveChanges();
 
@@ -87,11 +108,18 @@ namespace BLL
         public int ReturnItem(int BillID , int ItemID,int RetrunedQuantaty)
         {
             var BillItem = DBcontext.BillItems.FirstOrDefault(b => b.BillId == BillID && b.itemdId == ItemID);
-            BillItem.Quantity -=RetrunedQuantaty;
-            var Item = DBcontext.items.FirstOrDefault(i => i.Id == ItemID);
-            Item.Quantity+=RetrunedQuantaty;
-            Item.SelledQuantity-=RetrunedQuantaty;
-            return DBcontext.SaveChanges();
+            if (BillItem.Quantity >=RetrunedQuantaty)
+            {
+                BillItem.Quantity -=RetrunedQuantaty;
+                var Item = DBcontext.items.FirstOrDefault(i => i.Id == ItemID);
+                Item.Quantity+=RetrunedQuantaty;
+                Item.SelledQuantity-=RetrunedQuantaty;
+                return DBcontext.SaveChanges();
+            }
+            else
+            {
+                return 0;
+            }
         }
     }
 }

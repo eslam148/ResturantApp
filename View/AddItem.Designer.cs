@@ -195,7 +195,7 @@
             // New
             // 
             this.New.AutoSize = true;
-            this.New.Location = new System.Drawing.Point(323, 45);
+            this.New.Location = new System.Drawing.Point(194, 32);
             this.New.Name = "New";
             this.New.Size = new System.Drawing.Size(47, 17);
             this.New.TabIndex = 14;
@@ -207,7 +207,7 @@
             // Exist
             // 
             this.Exist.AutoSize = true;
-            this.Exist.Location = new System.Drawing.Point(323, 96);
+            this.Exist.Location = new System.Drawing.Point(194, 81);
             this.Exist.Name = "Exist";
             this.Exist.Size = new System.Drawing.Size(47, 17);
             this.Exist.TabIndex = 15;
@@ -232,6 +232,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 

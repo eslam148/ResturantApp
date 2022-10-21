@@ -51,6 +51,11 @@ namespace View
                 comboBox2_SelectedIndexChanged(sender, e);
                 MessageBox.Show("عمليه ناجحه");
             }
+            else
+            {
+                comboBox2_SelectedIndexChanged(sender, e);
+                MessageBox.Show("عمليه فاشله");
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -41,6 +41,9 @@ namespace View
             comboBoxSeller.DisplayMember = "Name";
             comboBoxSeller.ValueMember = "ID";
             comboBoxSeller.DataSource = sellerService.GetSeller();
+            ///////////////////////////////////
+            comboBox5.Items.Add("Cach");
+            comboBox5.Items.Add("Installement");
 
         }
 
@@ -60,13 +63,33 @@ namespace View
                 KindOfInvoice = "ss",
                 KindOfPay = "ss"
             });
-            int price = itemServices.GetAllItems().FirstOrDefault(i => i.ID == item).ID;
+            int price = itemServices.GetAllItems().FirstOrDefault(i => i.ID == item).BuyPrice;
             dataGridView1.Rows.Add(comboBoxCategory.Text, comboBoxItem.Text, Quantaty, price, price*Quantaty, comboBoxCustomer.Text, "ss", "ss");
         }
         private void button1_Click(object sender, EventArgs e)
         {
             var seller = sellerService.GetSeller().Select(i => i.ID).ToArray()[SellerID];
-            billServices.AddBill("ss", "ss", seller);
+            int total = 0;
+            bool typeOfPay = true;
+            int DownPayment = 0;
+            if (comboBox5.SelectedIndex==0)
+            {
+                typeOfPay = true;
+            }
+            else
+            {
+                typeOfPay = false;
+                DownPayment = int.Parse(textBox1.Text) ;
+
+            }
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[3].Value != null)
+                    total += (int)row.Cells[4].Value;
+            }
+
+            billServices.AddBill(typeOfPay, seller, total, DownPayment);
      
             foreach (var item in BillViews)
             {
@@ -123,6 +146,20 @@ namespace View
             var seller = sellerService.GetSeller().Select(i => i.ID).ToArray()[SellerID];
             textBox3.Text = seller.ToString();
             textBox2.Text = billServices.GetBillID().ToString();
+        }
+
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBox5.SelectedIndex == 1) {
+                textBox1.Visible = true;
+                label6.Visible = true;
+            }
+            else
+            {
+                textBox1.Visible = false;
+                label6.Visible = false;
+
+            }
         }
     }
 }
