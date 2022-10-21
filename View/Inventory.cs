@@ -116,7 +116,7 @@ namespace View
 
         private void AddItem_Click(object sender, EventArgs e)
         {
-            if(Exist.Checked == true) { 
+            if(New.Checked == true) { 
                 int catagoryid = categoryServices.GetAllCategories().Select(s => s.ID).ToArray()[comboCatagory.SelectedIndex];
                 int Supplierid = supplierServices.GetAllSuppliers().Select(s => s.ID).ToArray()[comboBoxSupplir.SelectedIndex];
 
