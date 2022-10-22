@@ -167,6 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\cust.jpg" />
+    <Content Include="Resources\installment.jpg" />
     <Content Include="Resources\seller.jpg" />
     <Content Include="Resources\shopping-trolley-full-of-food-vector-20581144.jpg" />
     <Content Include="Resources\status-report.jpg" />

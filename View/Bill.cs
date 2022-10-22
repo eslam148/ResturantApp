@@ -60,8 +60,7 @@ namespace View
                 itemdId=item,
                 Quntaty =  Quantaty,
                 sellerId = seller,
-                KindOfInvoice = "ss",
-                KindOfPay = "ss"
+              
             });
             int price = itemServices.GetAllItems().FirstOrDefault(i => i.ID == item).BuyPrice;
             dataGridView1.Rows.Add(comboBoxCategory.Text, comboBoxItem.Text, Quantaty, price, price*Quantaty, comboBoxCustomer.Text, "ss", "ss");
@@ -74,11 +73,11 @@ namespace View
             int DownPayment = 0;
             if (comboBox5.SelectedIndex==0)
             {
-                typeOfPay = true;
+                typeOfPay = false;
             }
             else
             {
-                typeOfPay = false;
+                typeOfPay = true;
                 DownPayment = int.Parse(textBox1.Text) ;
 
             }

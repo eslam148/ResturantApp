@@ -42,7 +42,13 @@ namespace BLL
                 itemData.SellPrice = item.SellPrice;
                 itemData.Quantity = item.Quantity;
                 itemData.SelledQuantity = item.SelledQuantity;
-                item.CategoryId = item.CategoryId;
+                itemData.CategoryId = item.CategoryId;
+                var cat = DB.categories.Select(c => c).Where(c => c.Id == item.CategoryId).FirstOrDefault();
+                itemData.CategoryName = cat.Name;
+                itemData.SupplierID = item.SupplierId;
+                var sup = DB.suppliers.Select(s => s).Where(s => s.Id == item.SupplierId).FirstOrDefault();
+                itemData.SupplierName = sup.Name;
+
                 itemDataslist.Add(itemData);
             }
             return itemDataslist;
@@ -60,6 +66,12 @@ namespace BLL
                 itemData.SellPrice = item.SellPrice;
                 itemData.Quantity = item.Quantity;
                 itemData.SelledQuantity = item.SelledQuantity;
+                itemData.CategoryId = item.CategoryId;
+                var cat = DB.categories.Select(c => c).Where(c => c.Id == item.CategoryId).FirstOrDefault();
+                itemData.CategoryName = cat.Name;
+                itemData.SupplierID = item.SupplierId;
+                var sup = DB.suppliers.Select(s => s).Where(s => s.Id == item.SupplierId).FirstOrDefault();
+                itemData.SupplierName = sup.Name;
                 itemDataslist.Add(itemData);
             }
             return itemDataslist;
@@ -79,6 +91,11 @@ namespace BLL
                 itemData.Quantity = item.Quantity;
                 itemData.SelledQuantity = item.SelledQuantity;
                 itemData.CategoryId = item.CategoryId;
+                var cat = DB.categories.Select(c => c).Where(c => c.Id == item.CategoryId).FirstOrDefault();
+                itemData.CategoryName = cat.Name;
+                itemData.SupplierID = item.SupplierId;
+                var sup = DB.suppliers.Select(s => s).Where(s => s.Id == item.SupplierId).FirstOrDefault();
+                itemData.SupplierName = sup.Name;
                 itemDataslist.Add(itemData);
             }
             return itemDataslist;
@@ -98,6 +115,11 @@ namespace BLL
                 itemData.Quantity = item.Quantity;
                 itemData.SelledQuantity = item.SelledQuantity;
                 itemData.CategoryId = item.CategoryId;
+                var cat = DB.categories.Select(c => c).Where(c => c.Id == item.CategoryId).FirstOrDefault();
+                itemData.CategoryName = cat.Name;
+                itemData.SupplierID = item.SupplierId;
+                var sup = DB.suppliers.Select(s => s).Where(s => s.Id == item.SupplierId).FirstOrDefault();
+                itemData.SupplierName = sup.Name;
                 itemDataslist.Add(itemData);
             }
             return itemDataslist;

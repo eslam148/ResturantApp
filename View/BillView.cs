@@ -9,8 +9,7 @@ namespace View
     public class BillView
     {
         public int Quntaty { get; set; }
-        public String KindOfPay { get; set; }
-        public String KindOfInvoice { get; set; }
+        public bool KindOfPay { get; set; }
         public int sellerId { get; set; }
         public int CustomerID { get; set; }
         public int itemdId { get; set; }

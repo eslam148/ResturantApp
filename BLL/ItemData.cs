@@ -16,8 +16,11 @@ namespace BLL
         public int SellPrice { get; set; }
         public int Quantity { get; set; }
         public int SelledQuantity { get; set; }
+        public string SupplierName { get; set; }
+        public string CategoryName { get; set; }
         public int SupplierID { get; set; }
         public int CategoryId { get; set; }
+      
 
     }
 }

@@ -121,5 +121,23 @@ namespace BLL
                 return 0;
             }
         }
+        public int UpdateBill(int BillId, int AamountOfMoney)
+        {
+            int res;
+            var Bill = DBcontext.Bills.Where(b => b.Id == BillId).FirstOrDefault();
+            if (Bill.RestOfTheInvoicePrice > AamountOfMoney&& !Bill.KindOfPay)
+            {
+                Bill.RestOfTheInvoicePrice -= AamountOfMoney;
+                Bill.dateOfPay = DateTime.Now;
+                res = DBcontext.SaveChanges();
+                return res;
+
+            }
+            else
+            {
+                return 0;
+            }
+
+        }
     }
 }

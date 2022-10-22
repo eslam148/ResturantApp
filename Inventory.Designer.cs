@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventory));
             this.Reports = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.numericUpDownSell = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownBuy = new System.Windows.Forms.NumericUpDown();
             this.comboBoxAddItem = new System.Windows.Forms.ComboBox();
             this.Exist = new System.Windows.Forms.RadioButton();
             this.New = new System.Windows.Forms.RadioButton();
@@ -41,7 +39,7 @@
             this.SaveItems = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.SupplierLable = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,6 +50,8 @@
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Supplier = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBoxSell = new System.Windows.Forms.TextBox();
+            this.textBoxBuy = new System.Windows.Forms.TextBox();
             this.textBoxItem = new System.Windows.Forms.TextBox();
             this.comboBoxSupplir = new System.Windows.Forms.ComboBox();
             this.comboCatagory = new System.Windows.Forms.ComboBox();
@@ -60,11 +60,7 @@
             this.CatagoryName = new System.Windows.Forms.TextBox();
             this.AddCatagory = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.EmptySeller = new System.Windows.Forms.Label();
-            this.SellerPhoneError = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.AddSeller = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -73,9 +69,6 @@
             this.SellerPhone = new System.Windows.Forms.TextBox();
             this.SellerName = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.EmptyCustomer = new System.Windows.Forms.Label();
-            this.CustomerPhoneError = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.AddCustomer = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -84,8 +77,6 @@
             this.CustomerPhone = new System.Windows.Forms.TextBox();
             this.CustomerName = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.EmptySupplier = new System.Windows.Forms.Label();
-            this.SupplierPhoneError = new System.Windows.Forms.Label();
             this.SupplierAddress = new System.Windows.Forms.TextBox();
             this.SupplierPhone = new System.Windows.Forms.TextBox();
             this.SupplierName = new System.Windows.Forms.TextBox();
@@ -93,13 +84,17 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.AddSupplier = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.DownPaymentNumeric = new System.Windows.Forms.NumericUpDown();
             this.PaymentLabl = new System.Windows.Forms.Label();
+            this.DownPaymentText = new System.Windows.Forms.TextBox();
             this.AddToBill = new System.Windows.Forms.Button();
             this.CalcTotalPrice = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
             this.totalPrice = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.SellerIdText = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.IDBillText = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -123,69 +118,49 @@
             this.comboBoxItem = new System.Windows.Forms.ComboBox();
             this.comboBoxCategory = new System.Windows.Forms.ComboBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ShowItemsLessThan10button = new System.Windows.Forms.Button();
             this.ShowStayedItemsbutton = new System.Windows.Forms.Button();
             this.ShowSelledItemsbutton = new System.Windows.Forms.Button();
             this.ShowAllItemsbutton = new System.Windows.Forms.Button();
             this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.Savebutton = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.BillscomboBox = new System.Windows.Forms.ComboBox();
-            this.CustomercomboBox = new System.Windows.Forms.ComboBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnUpdateBill = new System.Windows.Forms.Button();
             this.UpDownBillMoney = new System.Windows.Forms.NumericUpDown();
             this.UpDownUpdateBilliD = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.EmptyCategory = new System.Windows.Forms.Label();
-            this.EmptyItem = new System.Windows.Forms.Label();
-            this.numericUpDownItemID = new System.Windows.Forms.NumericUpDown();
+            this.label22 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.Reports.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSell)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBuy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuntatyItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DownPaymentNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuantityBill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).BeginInit();
             this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.tabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownBillMoney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownUpdateBilliD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownItemID)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // Reports
@@ -198,7 +173,6 @@
             this.Reports.Controls.Add(this.tabPage6);
             this.Reports.Controls.Add(this.tabPage7);
             this.Reports.Controls.Add(this.tabPage8);
-            this.Reports.Controls.Add(this.tabPage9);
             this.Reports.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Reports.Location = new System.Drawing.Point(0, -3);
             this.Reports.Name = "Reports";
@@ -209,9 +183,6 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage1.Controls.Add(this.EmptyItem);
-            this.tabPage1.Controls.Add(this.numericUpDownSell);
-            this.tabPage1.Controls.Add(this.numericUpDownBuy);
             this.tabPage1.Controls.Add(this.comboBoxAddItem);
             this.tabPage1.Controls.Add(this.Exist);
             this.tabPage1.Controls.Add(this.New);
@@ -220,11 +191,13 @@
             this.tabPage1.Controls.Add(this.SaveItems);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.SupplierLable);
+            this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.dataGridViewItem);
+            this.tabPage1.Controls.Add(this.textBoxSell);
+            this.tabPage1.Controls.Add(this.textBoxBuy);
             this.tabPage1.Controls.Add(this.textBoxItem);
             this.tabPage1.Controls.Add(this.comboBoxSupplir);
             this.tabPage1.Controls.Add(this.comboCatagory);
@@ -237,65 +210,18 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add Item";
             // 
-            // numericUpDownSell
-            // 
-            this.numericUpDownSell.Location = new System.Drawing.Point(20, 344);
-            this.numericUpDownSell.Margin = new System.Windows.Forms.Padding(2);
-            this.numericUpDownSell.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numericUpDownSell.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownSell.Name = "numericUpDownSell";
-            this.numericUpDownSell.Size = new System.Drawing.Size(117, 26);
-            this.numericUpDownSell.TabIndex = 34;
-            this.numericUpDownSell.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDownBuy
-            // 
-            this.numericUpDownBuy.Location = new System.Drawing.Point(20, 262);
-            this.numericUpDownBuy.Margin = new System.Windows.Forms.Padding(2);
-            this.numericUpDownBuy.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numericUpDownBuy.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownBuy.Name = "numericUpDownBuy";
-            this.numericUpDownBuy.Size = new System.Drawing.Size(117, 26);
-            this.numericUpDownBuy.TabIndex = 33;
-            this.numericUpDownBuy.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // comboBoxAddItem
             // 
             this.comboBoxAddItem.FormattingEnabled = true;
-            this.comboBoxAddItem.Location = new System.Drawing.Point(17, 109);
+            this.comboBoxAddItem.Location = new System.Drawing.Point(17, 108);
             this.comboBoxAddItem.Name = "comboBoxAddItem";
             this.comboBoxAddItem.Size = new System.Drawing.Size(125, 27);
             this.comboBoxAddItem.TabIndex = 32;
-            this.comboBoxAddItem.SelectedIndexChanged += new System.EventHandler(this.comboBoxAddItem_SelectedIndexChanged);
             // 
             // Exist
             // 
             this.Exist.AutoSize = true;
-            this.Exist.Location = new System.Drawing.Point(214, 141);
+            this.Exist.Location = new System.Drawing.Point(214, 86);
             this.Exist.Name = "Exist";
             this.Exist.Size = new System.Drawing.Size(57, 23);
             this.Exist.TabIndex = 31;
@@ -307,7 +233,7 @@
             // New
             // 
             this.New.AutoSize = true;
-            this.New.Location = new System.Drawing.Point(214, 83);
+            this.New.Location = new System.Drawing.Point(214, 37);
             this.New.Name = "New";
             this.New.Size = new System.Drawing.Size(57, 23);
             this.New.TabIndex = 30;
@@ -319,11 +245,6 @@
             // QuntatyItem
             // 
             this.QuntatyItem.Location = new System.Drawing.Point(17, 395);
-            this.QuntatyItem.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
             this.QuntatyItem.Minimum = new decimal(new int[] {
             1,
             0,
@@ -342,9 +263,9 @@
             // 
             this.AddItem.BackColor = System.Drawing.Color.SteelBlue;
             this.AddItem.ForeColor = System.Drawing.Color.PowderBlue;
-            this.AddItem.Location = new System.Drawing.Point(448, 37);
+            this.AddItem.Location = new System.Drawing.Point(386, 30);
             this.AddItem.Name = "AddItem";
-            this.AddItem.Size = new System.Drawing.Size(132, 37);
+            this.AddItem.Size = new System.Drawing.Size(75, 37);
             this.AddItem.TabIndex = 28;
             this.AddItem.Text = "Add Item";
             this.AddItem.UseVisualStyleBackColor = false;
@@ -354,9 +275,9 @@
             // 
             this.SaveItems.BackColor = System.Drawing.Color.SteelBlue;
             this.SaveItems.ForeColor = System.Drawing.Color.PowderBlue;
-            this.SaveItems.Location = new System.Drawing.Point(671, 37);
+            this.SaveItems.Location = new System.Drawing.Point(729, 30);
             this.SaveItems.Name = "SaveItems";
-            this.SaveItems.Size = new System.Drawing.Size(132, 37);
+            this.SaveItems.Size = new System.Drawing.Size(75, 37);
             this.SaveItems.TabIndex = 27;
             this.SaveItems.Text = "Save";
             this.SaveItems.UseVisualStyleBackColor = false;
@@ -380,14 +301,14 @@
             this.label4.TabIndex = 23;
             this.label4.Text = "Buy Price :";
             // 
-            // SupplierLable
+            // label3
             // 
-            this.SupplierLable.AutoSize = true;
-            this.SupplierLable.Location = new System.Drawing.Point(17, 158);
-            this.SupplierLable.Name = "SupplierLable";
-            this.SupplierLable.Size = new System.Drawing.Size(73, 19);
-            this.SupplierLable.TabIndex = 22;
-            this.SupplierLable.Text = "Supplier :";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 158);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 19);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Supplier :";
             // 
             // label2
             // 
@@ -475,6 +396,20 @@
             this.Supplier.Name = "Supplier";
             this.Supplier.Width = 125;
             // 
+            // textBoxSell
+            // 
+            this.textBoxSell.Location = new System.Drawing.Point(17, 337);
+            this.textBoxSell.Name = "textBoxSell";
+            this.textBoxSell.Size = new System.Drawing.Size(124, 26);
+            this.textBoxSell.TabIndex = 18;
+            // 
+            // textBoxBuy
+            // 
+            this.textBoxBuy.Location = new System.Drawing.Point(17, 261);
+            this.textBoxBuy.Name = "textBoxBuy";
+            this.textBoxBuy.Size = new System.Drawing.Size(124, 26);
+            this.textBoxBuy.TabIndex = 17;
+            // 
             // textBoxItem
             // 
             this.textBoxItem.Location = new System.Drawing.Point(17, 109);
@@ -502,7 +437,6 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage2.Controls.Add(this.EmptyCategory);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.CatagoryName);
             this.tabPage2.Controls.Add(this.AddCatagory);
@@ -564,21 +498,9 @@
             this.label8.TabIndex = 5;
             this.label8.Text = "Add Category";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::View.Properties.Resources.shopping_trolley_full_of_food_vector_20581144;
-            this.pictureBox1.Location = new System.Drawing.Point(110, 56);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(627, 297);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage3.Controls.Add(this.EmptySeller);
-            this.tabPage3.Controls.Add(this.SellerPhoneError);
             this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Controls.Add(this.AddSeller);
             this.tabPage3.Controls.Add(this.label9);
@@ -595,40 +517,6 @@
             this.tabPage3.Size = new System.Drawing.Size(912, 476);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Add Seller";
-            // 
-            // EmptySeller
-            // 
-            this.EmptySeller.AutoSize = true;
-            this.EmptySeller.Font = new System.Drawing.Font("Nirmala UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmptySeller.ForeColor = System.Drawing.Color.Red;
-            this.EmptySeller.Location = new System.Drawing.Point(734, 415);
-            this.EmptySeller.Name = "EmptySeller";
-            this.EmptySeller.Size = new System.Drawing.Size(76, 15);
-            this.EmptySeller.TabIndex = 20;
-            this.EmptySeller.Text = "Fields Empty";
-            this.EmptySeller.Visible = false;
-            // 
-            // SellerPhoneError
-            // 
-            this.SellerPhoneError.AutoSize = true;
-            this.SellerPhoneError.Font = new System.Drawing.Font("Nirmala UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SellerPhoneError.ForeColor = System.Drawing.Color.Red;
-            this.SellerPhoneError.Location = new System.Drawing.Point(587, 246);
-            this.SellerPhoneError.Name = "SellerPhoneError";
-            this.SellerPhoneError.Size = new System.Drawing.Size(267, 15);
-            this.SellerPhoneError.TabIndex = 17;
-            this.SellerPhoneError.Text = "Error: Enter Phone Number Like: 01012345678";
-            this.SellerPhoneError.Visible = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(24, 18);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(327, 368);
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
             // 
             // AddSeller
             // 
@@ -693,8 +581,6 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage4.Controls.Add(this.EmptyCustomer);
-            this.tabPage4.Controls.Add(this.CustomerPhoneError);
             this.tabPage4.Controls.Add(this.pictureBox4);
             this.tabPage4.Controls.Add(this.AddCustomer);
             this.tabPage4.Controls.Add(this.label12);
@@ -711,40 +597,6 @@
             this.tabPage4.Size = new System.Drawing.Size(912, 476);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Add Customer";
-            // 
-            // EmptyCustomer
-            // 
-            this.EmptyCustomer.AutoSize = true;
-            this.EmptyCustomer.Font = new System.Drawing.Font("Nirmala UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmptyCustomer.ForeColor = System.Drawing.Color.Red;
-            this.EmptyCustomer.Location = new System.Drawing.Point(752, 400);
-            this.EmptyCustomer.Name = "EmptyCustomer";
-            this.EmptyCustomer.Size = new System.Drawing.Size(76, 15);
-            this.EmptyCustomer.TabIndex = 19;
-            this.EmptyCustomer.Text = "Fields Empty";
-            this.EmptyCustomer.Visible = false;
-            // 
-            // CustomerPhoneError
-            // 
-            this.CustomerPhoneError.AutoSize = true;
-            this.CustomerPhoneError.Font = new System.Drawing.Font("Nirmala UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerPhoneError.ForeColor = System.Drawing.Color.Red;
-            this.CustomerPhoneError.Location = new System.Drawing.Point(570, 246);
-            this.CustomerPhoneError.Name = "CustomerPhoneError";
-            this.CustomerPhoneError.Size = new System.Drawing.Size(267, 15);
-            this.CustomerPhoneError.TabIndex = 18;
-            this.CustomerPhoneError.Text = "Error: Enter Phone Number Like: 01012345678";
-            this.CustomerPhoneError.Visible = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::View.Properties.Resources.cust;
-            this.pictureBox4.Location = new System.Drawing.Point(14, 19);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(362, 388);
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
             // 
             // AddCustomer
             // 
@@ -809,8 +661,6 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage5.Controls.Add(this.EmptySupplier);
-            this.tabPage5.Controls.Add(this.SupplierPhoneError);
             this.tabPage5.Controls.Add(this.SupplierAddress);
             this.tabPage5.Controls.Add(this.SupplierPhone);
             this.tabPage5.Controls.Add(this.SupplierName);
@@ -827,30 +677,6 @@
             this.tabPage5.Size = new System.Drawing.Size(912, 476);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "AddSupplier";
-            // 
-            // EmptySupplier
-            // 
-            this.EmptySupplier.AutoSize = true;
-            this.EmptySupplier.Font = new System.Drawing.Font("Nirmala UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmptySupplier.ForeColor = System.Drawing.Color.Red;
-            this.EmptySupplier.Location = new System.Drawing.Point(718, 405);
-            this.EmptySupplier.Name = "EmptySupplier";
-            this.EmptySupplier.Size = new System.Drawing.Size(76, 15);
-            this.EmptySupplier.TabIndex = 21;
-            this.EmptySupplier.Text = "Fields Empty";
-            this.EmptySupplier.Visible = false;
-            // 
-            // SupplierPhoneError
-            // 
-            this.SupplierPhoneError.AutoSize = true;
-            this.SupplierPhoneError.Font = new System.Drawing.Font("Nirmala UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SupplierPhoneError.ForeColor = System.Drawing.Color.Red;
-            this.SupplierPhoneError.Location = new System.Drawing.Point(511, 245);
-            this.SupplierPhoneError.Name = "SupplierPhoneError";
-            this.SupplierPhoneError.Size = new System.Drawing.Size(267, 15);
-            this.SupplierPhoneError.TabIndex = 19;
-            this.SupplierPhoneError.Text = "Error: Enter Phone Number Like: 01012345678";
-            this.SupplierPhoneError.Visible = false;
             // 
             // SupplierAddress
             // 
@@ -917,23 +743,19 @@
             this.AddSupplier.UseVisualStyleBackColor = false;
             this.AddSupplier.Click += new System.EventHandler(this.AddSupplier_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::View.Properties.Resources.supplier;
-            this.pictureBox2.Location = new System.Drawing.Point(19, 34);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(355, 326);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage6.Controls.Add(this.DownPaymentNumeric);
             this.tabPage6.Controls.Add(this.PaymentLabl);
+            this.tabPage6.Controls.Add(this.DownPaymentText);
             this.tabPage6.Controls.Add(this.AddToBill);
             this.tabPage6.Controls.Add(this.CalcTotalPrice);
+            this.tabPage6.Controls.Add(this.label18);
             this.tabPage6.Controls.Add(this.totalPrice);
+            this.tabPage6.Controls.Add(this.label19);
+            this.tabPage6.Controls.Add(this.SellerIdText);
+            this.tabPage6.Controls.Add(this.label20);
+            this.tabPage6.Controls.Add(this.IDBillText);
             this.tabPage6.Controls.Add(this.label21);
             this.tabPage6.Controls.Add(this.label23);
             this.tabPage6.Controls.Add(this.label24);
@@ -957,29 +779,6 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Bill";
             // 
-            // DownPaymentNumeric
-            // 
-            this.DownPaymentNumeric.Location = new System.Drawing.Point(670, 140);
-            this.DownPaymentNumeric.Margin = new System.Windows.Forms.Padding(2);
-            this.DownPaymentNumeric.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.DownPaymentNumeric.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.DownPaymentNumeric.Name = "DownPaymentNumeric";
-            this.DownPaymentNumeric.Size = new System.Drawing.Size(120, 29);
-            this.DownPaymentNumeric.TabIndex = 51;
-            this.DownPaymentNumeric.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // PaymentLabl
             // 
             this.PaymentLabl.AutoSize = true;
@@ -988,6 +787,13 @@
             this.PaymentLabl.Size = new System.Drawing.Size(125, 21);
             this.PaymentLabl.TabIndex = 50;
             this.PaymentLabl.Text = "down payment";
+            // 
+            // DownPaymentText
+            // 
+            this.DownPaymentText.Location = new System.Drawing.Point(670, 132);
+            this.DownPaymentText.Name = "DownPaymentText";
+            this.DownPaymentText.Size = new System.Drawing.Size(121, 29);
+            this.DownPaymentText.TabIndex = 49;
             // 
             // AddToBill
             // 
@@ -1005,21 +811,61 @@
             // 
             this.CalcTotalPrice.BackColor = System.Drawing.Color.SteelBlue;
             this.CalcTotalPrice.ForeColor = System.Drawing.Color.PowderBlue;
-            this.CalcTotalPrice.Location = new System.Drawing.Point(246, 394);
+            this.CalcTotalPrice.Location = new System.Drawing.Point(690, 414);
             this.CalcTotalPrice.Name = "CalcTotalPrice";
-            this.CalcTotalPrice.Size = new System.Drawing.Size(245, 38);
+            this.CalcTotalPrice.Size = new System.Drawing.Size(85, 29);
             this.CalcTotalPrice.TabIndex = 46;
-            this.CalcTotalPrice.Text = "Calc Total Price  Of Bill";
+            this.CalcTotalPrice.Text = "Calc Total";
             this.CalcTotalPrice.UseVisualStyleBackColor = false;
             this.CalcTotalPrice.Click += new System.EventHandler(this.CalcTotalPrice_Click);
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(494, 414);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(46, 21);
+            this.label18.TabIndex = 45;
+            this.label18.Text = "total";
+            // 
             // totalPrice
             // 
-            this.totalPrice.Location = new System.Drawing.Point(552, 394);
+            this.totalPrice.Location = new System.Drawing.Point(564, 415);
             this.totalPrice.Name = "totalPrice";
-            this.totalPrice.ReadOnly = true;
-            this.totalPrice.Size = new System.Drawing.Size(143, 29);
+            this.totalPrice.Size = new System.Drawing.Size(100, 29);
             this.totalPrice.TabIndex = 44;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(272, 414);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(92, 21);
+            this.label19.TabIndex = 43;
+            this.label19.Text = "Selles Man";
+            // 
+            // SellerIdText
+            // 
+            this.SellerIdText.Location = new System.Drawing.Point(375, 412);
+            this.SellerIdText.Name = "SellerIdText";
+            this.SellerIdText.Size = new System.Drawing.Size(100, 29);
+            this.SellerIdText.TabIndex = 42;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(22, 409);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(121, 21);
+            this.label20.TabIndex = 41;
+            this.label20.Text = "No of Invicitor";
+            // 
+            // IDBillText
+            // 
+            this.IDBillText.Location = new System.Drawing.Point(153, 409);
+            this.IDBillText.Name = "IDBillText";
+            this.IDBillText.Size = new System.Drawing.Size(100, 29);
+            this.IDBillText.TabIndex = 40;
             // 
             // label21
             // 
@@ -1079,11 +925,6 @@
             // QuantityBill
             // 
             this.QuantityBill.Location = new System.Drawing.Point(371, 180);
-            this.QuantityBill.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
             this.QuantityBill.Minimum = new decimal(new int[] {
             1,
             0,
@@ -1247,26 +1088,16 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Reports";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::View.Properties.Resources.status_report;
-            this.pictureBox5.Location = new System.Drawing.Point(706, 3);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(172, 106);
-            this.pictureBox5.TabIndex = 5;
-            this.pictureBox5.TabStop = false;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.SteelBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 152);
+            this.dataGridView1.Location = new System.Drawing.Point(330, 205);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(855, 248);
+            this.dataGridView1.Size = new System.Drawing.Size(547, 189);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.Visible = false;
             // 
@@ -1274,10 +1105,10 @@
             // 
             this.ShowItemsLessThan10button.BackColor = System.Drawing.Color.SteelBlue;
             this.ShowItemsLessThan10button.ForeColor = System.Drawing.Color.PowderBlue;
-            this.ShowItemsLessThan10button.Location = new System.Drawing.Point(431, 15);
+            this.ShowItemsLessThan10button.Location = new System.Drawing.Point(22, 353);
             this.ShowItemsLessThan10button.Margin = new System.Windows.Forms.Padding(2);
             this.ShowItemsLessThan10button.Name = "ShowItemsLessThan10button";
-            this.ShowItemsLessThan10button.Size = new System.Drawing.Size(196, 49);
+            this.ShowItemsLessThan10button.Size = new System.Drawing.Size(243, 41);
             this.ShowItemsLessThan10button.TabIndex = 3;
             this.ShowItemsLessThan10button.Text = "Show Items Less Than 10";
             this.ShowItemsLessThan10button.UseVisualStyleBackColor = false;
@@ -1287,10 +1118,10 @@
             // 
             this.ShowStayedItemsbutton.BackColor = System.Drawing.Color.SteelBlue;
             this.ShowStayedItemsbutton.ForeColor = System.Drawing.Color.PowderBlue;
-            this.ShowStayedItemsbutton.Location = new System.Drawing.Point(284, 15);
+            this.ShowStayedItemsbutton.Location = new System.Drawing.Point(22, 253);
             this.ShowStayedItemsbutton.Margin = new System.Windows.Forms.Padding(2);
             this.ShowStayedItemsbutton.Name = "ShowStayedItemsbutton";
-            this.ShowStayedItemsbutton.Size = new System.Drawing.Size(142, 49);
+            this.ShowStayedItemsbutton.Size = new System.Drawing.Size(243, 41);
             this.ShowStayedItemsbutton.TabIndex = 2;
             this.ShowStayedItemsbutton.Text = "Show Stayed Items";
             this.ShowStayedItemsbutton.UseVisualStyleBackColor = false;
@@ -1300,10 +1131,10 @@
             // 
             this.ShowSelledItemsbutton.BackColor = System.Drawing.Color.SteelBlue;
             this.ShowSelledItemsbutton.ForeColor = System.Drawing.Color.PowderBlue;
-            this.ShowSelledItemsbutton.Location = new System.Drawing.Point(135, 15);
+            this.ShowSelledItemsbutton.Location = new System.Drawing.Point(22, 150);
             this.ShowSelledItemsbutton.Margin = new System.Windows.Forms.Padding(2);
             this.ShowSelledItemsbutton.Name = "ShowSelledItemsbutton";
-            this.ShowSelledItemsbutton.Size = new System.Drawing.Size(134, 49);
+            this.ShowSelledItemsbutton.Size = new System.Drawing.Size(243, 41);
             this.ShowSelledItemsbutton.TabIndex = 1;
             this.ShowSelledItemsbutton.Text = "Show Selled Items";
             this.ShowSelledItemsbutton.UseVisualStyleBackColor = false;
@@ -1313,10 +1144,10 @@
             // 
             this.ShowAllItemsbutton.BackColor = System.Drawing.Color.SteelBlue;
             this.ShowAllItemsbutton.ForeColor = System.Drawing.Color.PowderBlue;
-            this.ShowAllItemsbutton.Location = new System.Drawing.Point(13, 15);
+            this.ShowAllItemsbutton.Location = new System.Drawing.Point(22, 42);
             this.ShowAllItemsbutton.Margin = new System.Windows.Forms.Padding(2);
             this.ShowAllItemsbutton.Name = "ShowAllItemsbutton";
-            this.ShowAllItemsbutton.Size = new System.Drawing.Size(118, 49);
+            this.ShowAllItemsbutton.Size = new System.Drawing.Size(243, 41);
             this.ShowAllItemsbutton.TabIndex = 0;
             this.ShowAllItemsbutton.Text = "Show All Items";
             this.ShowAllItemsbutton.UseVisualStyleBackColor = false;
@@ -1324,210 +1155,76 @@
             // 
             // tabPage8
             // 
-            this.tabPage8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage8.Controls.Add(this.numericUpDownItemID);
-            this.tabPage8.Controls.Add(this.Savebutton);
-            this.tabPage8.Controls.Add(this.numericUpDown1);
-            this.tabPage8.Controls.Add(this.BillscomboBox);
-            this.tabPage8.Controls.Add(this.CustomercomboBox);
-            this.tabPage8.Controls.Add(this.dataGridView2);
+            this.tabPage8.Controls.Add(this.pictureBox6);
+            this.tabPage8.Controls.Add(this.panel4);
+            this.tabPage8.Controls.Add(this.panel3);
+            this.tabPage8.Controls.Add(this.panel2);
+            this.tabPage8.Controls.Add(this.panel1);
+            this.tabPage8.Controls.Add(this.btnUpdateBill);
+            this.tabPage8.Controls.Add(this.UpDownBillMoney);
+            this.tabPage8.Controls.Add(this.UpDownUpdateBilliD);
+            this.tabPage8.Controls.Add(this.label28);
             this.tabPage8.Controls.Add(this.label22);
-            this.tabPage8.Controls.Add(this.label20);
-            this.tabPage8.Controls.Add(this.label19);
-            this.tabPage8.Controls.Add(this.label18);
-            this.tabPage8.Font = new System.Drawing.Font("Nirmala UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage8.ForeColor = System.Drawing.Color.SteelBlue;
             this.tabPage8.Location = new System.Drawing.Point(4, 27);
-            this.tabPage8.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage8.Size = new System.Drawing.Size(912, 476);
             this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "Returned Items";
+            this.tabPage8.Text = "Cash/pay";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            this.tabPage8.Click += new System.EventHandler(this.tabPage8_Click);
             // 
-            // Savebutton
+            // btnUpdateBill
             // 
-            this.Savebutton.BackColor = System.Drawing.Color.SteelBlue;
-            this.Savebutton.ForeColor = System.Drawing.Color.PowderBlue;
-            this.Savebutton.Location = new System.Drawing.Point(404, 170);
-            this.Savebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.Savebutton.Name = "Savebutton";
-            this.Savebutton.Size = new System.Drawing.Size(124, 40);
-            this.Savebutton.TabIndex = 9;
-            this.Savebutton.Text = "Save";
-            this.Savebutton.UseVisualStyleBackColor = false;
-            this.Savebutton.Click += new System.EventHandler(this.Savebutton_Click);
+            this.btnUpdateBill.Location = new System.Drawing.Point(374, 368);
+            this.btnUpdateBill.Name = "btnUpdateBill";
+            this.btnUpdateBill.Size = new System.Drawing.Size(139, 36);
+            this.btnUpdateBill.TabIndex = 4;
+            this.btnUpdateBill.Text = "Update Bill";
+            this.btnUpdateBill.UseVisualStyleBackColor = true;
+            this.btnUpdateBill.Click += new System.EventHandler(this.button1_Click);
             // 
-            // numericUpDown1
+            // UpDownBillMoney
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(628, 40);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(138, 29);
-            this.numericUpDown1.TabIndex = 7;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.UpDownBillMoney.Location = new System.Drawing.Point(340, 301);
+            this.UpDownBillMoney.Name = "UpDownBillMoney";
+            this.UpDownBillMoney.Size = new System.Drawing.Size(216, 26);
+            this.UpDownBillMoney.TabIndex = 3;
+            this.UpDownBillMoney.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
-            // BillscomboBox
+            // UpDownUpdateBilliD
             // 
-            this.BillscomboBox.FormattingEnabled = true;
-            this.BillscomboBox.Location = new System.Drawing.Point(163, 98);
-            this.BillscomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.BillscomboBox.Name = "BillscomboBox";
-            this.BillscomboBox.Size = new System.Drawing.Size(162, 29);
-            this.BillscomboBox.TabIndex = 6;
-            this.BillscomboBox.SelectedIndexChanged += new System.EventHandler(this.BillscomboBox_SelectedIndexChanged);
+            this.UpDownUpdateBilliD.Location = new System.Drawing.Point(340, 230);
+            this.UpDownUpdateBilliD.Name = "UpDownUpdateBilliD";
+            this.UpDownUpdateBilliD.Size = new System.Drawing.Size(216, 26);
+            this.UpDownUpdateBilliD.TabIndex = 2;
             // 
-            // CustomercomboBox
+            // label28
             // 
-            this.CustomercomboBox.FormattingEnabled = true;
-            this.CustomercomboBox.Location = new System.Drawing.Point(163, 42);
-            this.CustomercomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.CustomercomboBox.Name = "CustomercomboBox";
-            this.CustomercomboBox.Size = new System.Drawing.Size(162, 29);
-            this.CustomercomboBox.TabIndex = 5;
-            this.CustomercomboBox.SelectedIndexChanged += new System.EventHandler(this.CustomercomboBox_SelectedIndexChanged);
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.SteelBlue;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column9,
-            this.Column10,
-            this.Column11,
-            this.Column12});
-            this.dataGridView2.Location = new System.Drawing.Point(49, 222);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(552, 213);
-            this.dataGridView2.TabIndex = 4;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Bill ID";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 125;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Item ID";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 125;
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "Item Name";
-            this.Column11.MinimumWidth = 6;
-            this.Column11.Name = "Column11";
-            this.Column11.Width = 125;
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "Quantity";
-            this.Column12.MinimumWidth = 6;
-            this.Column12.Name = "Column12";
-            this.Column12.Width = 125;
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(167, 309);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(60, 18);
+            this.label28.TabIndex = 1;
+            this.label28.Text = "Money";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(410, 104);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Location = new System.Drawing.Point(167, 238);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(66, 21);
-            this.label22.TabIndex = 3;
-            this.label22.Text = "Item ID";
+            this.label22.Size = new System.Drawing.Size(53, 18);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Bill ID";
             // 
-            // label20
+            // panel1
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(410, 40);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(151, 21);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "Returned Quantity";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(49, 95);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(42, 21);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "Bills";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(45, 40);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(83, 21);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Customer";
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Controls.Add(this.pictureBox6);
-            this.tabPage9.Controls.Add(this.panel4);
-            this.tabPage9.Controls.Add(this.panel3);
-            this.tabPage9.Controls.Add(this.panel2);
-            this.tabPage9.Controls.Add(this.panel1);
-            this.tabPage9.Controls.Add(this.btnUpdateBill);
-            this.tabPage9.Controls.Add(this.UpDownBillMoney);
-            this.tabPage9.Controls.Add(this.UpDownUpdateBilliD);
-            this.tabPage9.Controls.Add(this.label28);
-            this.tabPage9.Controls.Add(this.label29);
-            this.tabPage9.Location = new System.Drawing.Point(4, 27);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(912, 476);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Cash/pay";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::View.Properties.Resources.installment;
-            this.pictureBox6.Location = new System.Drawing.Point(179, 51);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(534, 173);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 19;
-            this.pictureBox6.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.DarkRed;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(62, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(782, 42);
-            this.panel4.TabIndex = 18;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DarkRed;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(62, 419);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(782, 54);
-            this.panel3.TabIndex = 17;
+            this.panel1.BackColor = System.Drawing.Color.Khaki;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(59, 470);
+            this.panel1.TabIndex = 5;
             // 
             // panel2
             // 
@@ -1537,104 +1234,85 @@
             this.panel2.Location = new System.Drawing.Point(844, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(65, 470);
-            this.panel2.TabIndex = 16;
+            this.panel2.TabIndex = 6;
             // 
-            // panel1
+            // panel3
             // 
-            this.panel1.BackColor = System.Drawing.Color.Khaki;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(59, 470);
-            this.panel1.TabIndex = 15;
+            this.panel3.BackColor = System.Drawing.Color.DarkRed;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(62, 419);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(782, 54);
+            this.panel3.TabIndex = 7;
             // 
-            // btnUpdateBill
+            // panel4
             // 
-            this.btnUpdateBill.Location = new System.Drawing.Point(374, 368);
-            this.btnUpdateBill.Name = "btnUpdateBill";
-            this.btnUpdateBill.Size = new System.Drawing.Size(139, 36);
-            this.btnUpdateBill.TabIndex = 14;
-            this.btnUpdateBill.Text = "Update Bill";
-            this.btnUpdateBill.UseVisualStyleBackColor = true;
-            this.btnUpdateBill.Click += new System.EventHandler(this.btnUpdateBill_Click);
+            this.panel4.BackColor = System.Drawing.Color.DarkRed;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(62, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(782, 42);
+            this.panel4.TabIndex = 8;
             // 
-            // UpDownBillMoney
+            // pictureBox1
             // 
-            this.UpDownBillMoney.Location = new System.Drawing.Point(340, 301);
-            this.UpDownBillMoney.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.UpDownBillMoney.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.UpDownBillMoney.Name = "UpDownBillMoney";
-            this.UpDownBillMoney.Size = new System.Drawing.Size(216, 26);
-            this.UpDownBillMoney.TabIndex = 13;
-            this.UpDownBillMoney.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.pictureBox1.Image = global::View.Properties.Resources.shopping_trolley_full_of_food_vector_20581144;
+            this.pictureBox1.Location = new System.Drawing.Point(110, 56);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(627, 297);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
-            // UpDownUpdateBilliD
+            // pictureBox3
             // 
-            this.UpDownUpdateBilliD.Location = new System.Drawing.Point(340, 230);
-            this.UpDownUpdateBilliD.Name = "UpDownUpdateBilliD";
-            this.UpDownUpdateBilliD.Size = new System.Drawing.Size(216, 26);
-            this.UpDownUpdateBilliD.TabIndex = 12;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(24, 18);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(327, 368);
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
             // 
-            // label28
+            // pictureBox4
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(167, 309);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(60, 18);
-            this.label28.TabIndex = 11;
-            this.label28.Text = "Money";
+            this.pictureBox4.Image = global::View.Properties.Resources.cust;
+            this.pictureBox4.Location = new System.Drawing.Point(14, 19);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(362, 388);
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
             // 
-            // label29
+            // pictureBox2
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(167, 238);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(53, 18);
-            this.label29.TabIndex = 10;
-            this.label29.Text = "Bill ID";
+            this.pictureBox2.Image = global::View.Properties.Resources.supplier;
+            this.pictureBox2.Location = new System.Drawing.Point(19, 34);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(355, 326);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
-            // EmptyCategory
+            // pictureBox5
             // 
-            this.EmptyCategory.AutoSize = true;
-            this.EmptyCategory.Font = new System.Drawing.Font("Nirmala UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmptyCategory.ForeColor = System.Drawing.Color.Red;
-            this.EmptyCategory.Location = new System.Drawing.Point(586, 427);
-            this.EmptyCategory.Name = "EmptyCategory";
-            this.EmptyCategory.Size = new System.Drawing.Size(76, 15);
-            this.EmptyCategory.TabIndex = 21;
-            this.EmptyCategory.Text = "Fields Empty";
-            this.EmptyCategory.Visible = false;
+            this.pictureBox5.Image = global::View.Properties.Resources.status_report;
+            this.pictureBox5.Location = new System.Drawing.Point(402, 28);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(362, 147);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 5;
+            this.pictureBox5.TabStop = false;
             // 
-            // EmptyItem
+            // pictureBox6
             // 
-            this.EmptyItem.AutoSize = true;
-            this.EmptyItem.Font = new System.Drawing.Font("Nirmala UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmptyItem.ForeColor = System.Drawing.Color.Red;
-            this.EmptyItem.Location = new System.Drawing.Point(148, 115);
-            this.EmptyItem.Name = "EmptyItem";
-            this.EmptyItem.Size = new System.Drawing.Size(76, 15);
-            this.EmptyItem.TabIndex = 35;
-            this.EmptyItem.Text = "Fields Empty";
-            this.EmptyItem.Visible = false;
-            // 
-            // numericUpDownItemID
-            // 
-            this.numericUpDownItemID.Location = new System.Drawing.Point(627, 104);
-            this.numericUpDownItemID.Name = "numericUpDownItemID";
-            this.numericUpDownItemID.Size = new System.Drawing.Size(139, 29);
-            this.numericUpDownItemID.TabIndex = 11;
+           // this.pictureBox6.Image = global::View.Properties.Resources.installment;
+            this.pictureBox6.Location = new System.Drawing.Point(179, 51);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(534, 173);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 9;
+            this.pictureBox6.TabStop = false;
             // 
             // Inventory
             // 
@@ -1647,40 +1325,32 @@
             this.Reports.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSell)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBuy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuntatyItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DownPaymentNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuantityBill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).EndInit();
             this.tabPage7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.tabPage9.ResumeLayout(false);
-            this.tabPage9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownBillMoney)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownUpdateBilliD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownItemID)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1694,7 +1364,7 @@
         private System.Windows.Forms.Button SaveItems;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label SupplierLable;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
@@ -1705,6 +1375,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn Category;
         private System.Windows.Forms.DataGridViewTextBoxColumn Supplier;
+        private System.Windows.Forms.TextBox textBoxSell;
+        private System.Windows.Forms.TextBox textBoxBuy;
         private System.Windows.Forms.TextBox textBoxItem;
         private System.Windows.Forms.ComboBox comboBoxSupplir;
         private System.Windows.Forms.ComboBox comboCatagory;
@@ -1742,7 +1414,12 @@
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Button AddToBill;
         private System.Windows.Forms.Button CalcTotalPrice;
+        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox totalPrice;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox SellerIdText;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox IDBillText;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
@@ -1775,45 +1452,20 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label PaymentLabl;
+        private System.Windows.Forms.TextBox DownPaymentText;
         private System.Windows.Forms.RadioButton Exist;
         private System.Windows.Forms.RadioButton New;
         private System.Windows.Forms.ComboBox comboBoxAddItem;
-        private System.Windows.Forms.NumericUpDown numericUpDownBuy;
-        private System.Windows.Forms.NumericUpDown numericUpDownSell;
-        private System.Windows.Forms.NumericUpDown DownPaymentNumeric;
         private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.Button Savebutton;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ComboBox BillscomboBox;
-        private System.Windows.Forms.ComboBox CustomercomboBox;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.Button btnUpdateBill;
+        private System.Windows.Forms.NumericUpDown UpDownBillMoney;
+        private System.Windows.Forms.NumericUpDown UpDownUpdateBilliD;
+        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnUpdateBill;
-        private System.Windows.Forms.NumericUpDown UpDownBillMoney;
-        private System.Windows.Forms.NumericUpDown UpDownUpdateBilliD;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label SellerPhoneError;
-        private System.Windows.Forms.Label CustomerPhoneError;
-        private System.Windows.Forms.Label SupplierPhoneError;
-        private System.Windows.Forms.Label EmptyCustomer;
-        private System.Windows.Forms.Label EmptySeller;
-        private System.Windows.Forms.Label EmptySupplier;
-        private System.Windows.Forms.Label EmptyCategory;
-        private System.Windows.Forms.Label EmptyItem;
-        private System.Windows.Forms.NumericUpDown numericUpDownItemID;
     }
 }
