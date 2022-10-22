@@ -35,20 +35,29 @@ namespace View
         public Inventory()
         {
             InitializeComponent();
+            RefreshTab();
+            Exist.Checked = true;
+            KindOfBayComboBox.Items.Add("Cach");
+            KindOfBayComboBox.Items.Add("Installement");
+            KindOfBayComboBox.SelectedIndex = 0;
+        }
+        private void RefreshTab()
+        {
             AddCatagoryInfoTab();
             AddSupplierInfoTab();
             BillCombo();
             AddItemInfoTap();
-            KindOfBayComboBox.Items.Add("Cach");
-            KindOfBayComboBox.Items.Add("Installement");
-            KindOfBayComboBox.SelectedIndex = 0;
-            Exist.Checked = true;
+            ReturnedItemInfoTab();
+           
+
         }
         private void AddItemInfoTap()
         {
+            comboBoxAddItem.DataSource = null;
             comboBoxAddItem.DisplayMember = "Name";
             comboBoxAddItem.ValueMember = "ID";
             comboBoxAddItem.DataSource = ItemServices.GetAllItems();
+            comboBoxItem.DataSource = null;
             comboBoxItem.DisplayMember = "Name";
             comboBoxItem.ValueMember = "ID";
             comboBoxItem.DataSource = ItemServices.GetAllItems();
@@ -56,16 +65,18 @@ namespace View
         }
         public void BillCombo()
         {
+            comboBoxCategory.DataSource = null;
             comboBoxCategory.DisplayMember = "Name";
             comboBoxCategory.ValueMember = "ID";
             comboBoxCategory.DataSource = categoryServices.GetAllCategories();
             /////////////////////
-            comboBoxCustomer.DisplayMember = "Name";
+            comboBoxCustomer.DataSource = null;
+           comboBoxCustomer.DisplayMember = "Name";
             comboBoxCustomer.ValueMember = "ID";
             comboBoxCustomer.DataSource = customerService.GetCustomer();
 
             /////////////////////
-
+            comboBoxSeller.DataSource = null;
             comboBoxSeller.DisplayMember = "Name";
             comboBoxSeller.ValueMember = "ID";
             comboBoxSeller.DataSource = sellerService.GetSeller();
@@ -73,6 +84,7 @@ namespace View
 
         private void AddCatagoryInfoTab()
         {
+            comboCatagory.DataSource = null;
             comboCatagory.DisplayMember = "Name";
             comboCatagory.ValueMember = "ID";
             comboCatagory.DataSource = categoryServices.GetAllCategories();
@@ -114,11 +126,7 @@ namespace View
                     MessageBox.Show("Add Fail");
 
                 }
-                AddCatagoryInfoTab();
-                AddSupplierInfoTab();
-                BillCombo();
-                ReturnedItemInfoTab();
-                AddItemInfoTap();
+                RefreshTab();
             }
             else if (Exist.Checked == true)
             {
@@ -167,11 +175,7 @@ namespace View
                         SupplierID = Supplierid
                     });
                     dataGridViewItem.Rows.Add(textBoxItem.Text, numericUpDownSell.Value, numericUpDownBuy.Value, QuntatyItem.Value, comboCatagory.Text, comboBoxSupplir.Text);
-                    AddCatagoryInfoTab();
-                    AddSupplierInfoTab();
-                    BillCombo();
-                    ReturnedItemInfoTab();
-                    AddItemInfoTap();
+                    RefreshTab();
                 }
                 else
                 {
@@ -196,11 +200,7 @@ namespace View
                     MessageBox.Show("Add Fail");
 
                 }
-                AddCatagoryInfoTab();
-                AddSupplierInfoTab();
-                BillCombo();
-                ReturnedItemInfoTab();
-                AddItemInfoTap();
+                RefreshTab();
             }
             else
             {
@@ -236,11 +236,7 @@ namespace View
                         MessageBox.Show("Add Fail");
 
                     }
-                    AddCatagoryInfoTab();
-                    AddSupplierInfoTab();
-                    BillCombo();
-                    ReturnedItemInfoTab();
-                    AddItemInfoTap();
+                    RefreshTab();
                 }
                 else
                 {
@@ -281,11 +277,7 @@ namespace View
                         MessageBox.Show("Add Fail");
 
                     }
-                    AddCatagoryInfoTab();
-                    AddSupplierInfoTab();
-                    BillCombo();
-                    ReturnedItemInfoTab();
-                    AddItemInfoTap();
+                    RefreshTab();
                 }
                 else
                 {
@@ -321,11 +313,7 @@ namespace View
                         MessageBox.Show("Add Fail");
 
                     }
-                    AddCatagoryInfoTab();
-                    AddSupplierInfoTab();
-                    BillCombo();
-                    ReturnedItemInfoTab();
-                    AddItemInfoTap();
+                    RefreshTab();
                 }
                 else
                 {
@@ -367,11 +355,8 @@ namespace View
             });
             int price = ItemServices.GetAllItems().FirstOrDefault(i => i.ID == item).SellPrice;
             dataGridViewBill.Rows.Add(comboBoxCategory.Text, comboBoxItem.Text, Quantaty, price, price*Quantaty, comboBoxCustomer.Text);
-            AddCatagoryInfoTab();
-            AddSupplierInfoTab();
-            BillCombo();
-            ReturnedItemInfoTab();
-            AddItemInfoTap();
+            QuantityBill.Value = 1;
+            RefreshTab();
 
         }
 
@@ -410,6 +395,7 @@ namespace View
                 else
                 {
                     flag = false;
+                    break;
 
                 }
             }
@@ -423,11 +409,8 @@ namespace View
 
             }
             dataGridViewBill.Rows.Clear();
-           AddCatagoryInfoTab();
-            AddSupplierInfoTab();
-            BillCombo();
-            ReturnedItemInfoTab();
-            AddItemInfoTap();
+            DownPaymentNumeric.Value=1;
+            RefreshTab();
 
         }
 
@@ -527,10 +510,7 @@ namespace View
         private void Exist_CheckedChanged(object sender, EventArgs e)
         {
             comboBoxAddItem.Visible = true;
-            //int CategoryId = categoryServices.GetAllCategories().Select(i => i.ID).ToArray()[comboCatagory.SelectedIndex];
-            //var Item = ItemServices.GetAllItems().Where(i=>i.CategoryId ==CategoryId).Select(i=>i.Name).ToList();
-            //comboBoxAddItem.DataSource = Item;
-
+           
         }
 
         private void comboCatagory_SelectedIndexChanged(object sender, EventArgs e)
@@ -555,7 +535,7 @@ namespace View
         {
             BillscomboBox.DataSource = null;
             int ID = customerService.GetCustomer().Select(c => c.ID).ToArray()[CustomercomboBox.SelectedIndex];
-            var billID = billServices.GetBillOfCustomer(ID);
+            var billID = billServices.GetBillOfCustomer(ID).Distinct().ToList();
             BillscomboBox.DataSource = billID;
         }
 
@@ -569,11 +549,11 @@ namespace View
             }
         }
 
-          int billID = 0;
+         // int billID = 0;
 
         private void Savebutton_Click(object sender, EventArgs e)
         {
-            if (billServices.ReturnItem(billID, (int)numericUpDownItemID.Value, (int)numericUpDown1.Value) > 0)
+            if (billServices.ReturnItem(int.Parse(BillscomboBox.Text), (int)numericUpDownItemID.Value, (int)numericUpDown1.Value) > 0)
             {
                 BillscomboBox_SelectedIndexChanged(sender, e);
                 MessageBox.Show("successful pay");
@@ -586,7 +566,7 @@ namespace View
         {
             int selectedIndex = e.RowIndex;
             DataGridViewRow selected = dataGridView2.Rows[selectedIndex];
-            numericUpDownItemID.Value =int.Parse(selected.Cells[0].Value.ToString());
+            numericUpDownItemID.Value =int.Parse(selected.Cells[1].Value.ToString());
         }
 
         private void comboBoxAddItem_SelectedIndexChanged(object sender, EventArgs e)
@@ -613,6 +593,7 @@ namespace View
             if (res > 0)
             {
                 MessageBox.Show("Your Bill Is Update");
+                UpDownBillMoney.Value=1;
 
             }
             else

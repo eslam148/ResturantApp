@@ -48,10 +48,14 @@ namespace BLL
         public int AddToBill(int Quntaty, int CustomerID, int itemId)
         {
             var item = DBcontext.items.Where(i=>i.Id==itemId).FirstOrDefault();
+            if(item.Quantity<Quntaty)
+            {
+                return 0;
+            }
             item.Quantity -= Quntaty;
             item.SelledQuantity+= Quntaty;
 
-            int BillID = DBcontext.Bills.OrderBy(i=> i.Id).Select(i=>i.Id).FirstOrDefault();
+            int BillID = DBcontext.Bills.OrderByDescending(i=> i.Id).Select(i=>i.Id).FirstOrDefault();
             Billtems ib = new Billtems
             {
                 itemdId=itemId,
@@ -79,13 +83,13 @@ namespace BLL
         {
             var Bill = DBcontext.BillItems.Where(b => b.BillId == BillID).ToList();
             List<BillData> data = new List<BillData>();
-            int ID = BillID;
+           
             foreach (var item in Bill)
             {
                 var Goods = DBcontext.items.FirstOrDefault(i => i.Id==item.itemdId);
                 data.Add(new BillData
                 {
-                    id = item.BillId,
+                    id = BillID,
                     itemdata =new ItemData{ 
                         ID = Goods.Id,
                         Name = Goods.Name,
@@ -108,30 +112,38 @@ namespace BLL
         public int ReturnItem(int BillID , int ItemID,int RetrunedQuantaty)
         {
             var BillItem = DBcontext.BillItems.FirstOrDefault(b => b.BillId == BillID && b.itemdId == ItemID);
-            if (BillItem.Quantity >=RetrunedQuantaty)
-            {
-                BillItem.Quantity -=RetrunedQuantaty;
-                var Item = DBcontext.items.FirstOrDefault(i => i.Id == ItemID);
-                Item.Quantity+=RetrunedQuantaty;
-                Item.SelledQuantity-=RetrunedQuantaty;
-                return DBcontext.SaveChanges();
-            }
-            else
-            {
-                return 0;
-            }
+            var bill = DBcontext.Bills.FirstOrDefault(b => b.Id==BillID);
+            var item = DBcontext.items.FirstOrDefault(i => i.Id == ItemID);
+
+            int amount = RetrunedQuantaty*item.SellPrice;
+            bill.TotalPrice-=amount;
+            bill.RestOfTheInvoicePrice -= amount;
+
+            BillItem.Quantity +=RetrunedQuantaty;
+            var Item = DBcontext.items.FirstOrDefault(i => i.Id == ItemID);
+            Item.Quantity+=RetrunedQuantaty;
+            Item.SelledQuantity-=RetrunedQuantaty;
+            return DBcontext.SaveChanges();
+            
+            
         }
         public int UpdateBill(int BillId, int AamountOfMoney)
         {
             int res;
             var Bill = DBcontext.Bills.Where(b => b.Id == BillId).FirstOrDefault();
-            if (Bill.RestOfTheInvoicePrice > AamountOfMoney&& !Bill.KindOfPay)
-            {
-                Bill.RestOfTheInvoicePrice -= AamountOfMoney;
-                Bill.dateOfPay = DateTime.Now;
-                res = DBcontext.SaveChanges();
-                return res;
+            if (Bill != null) { 
+                if (Bill.RestOfTheInvoicePrice > AamountOfMoney&& !Bill.KindOfPay )
+                {
+                    Bill.RestOfTheInvoicePrice -= AamountOfMoney;
+                    Bill.dateOfPay = DateTime.Now;
+                    res = DBcontext.SaveChanges();
+                    return res;
 
+                }
+                else
+                {
+                    return 0;
+                }
             }
             else
             {

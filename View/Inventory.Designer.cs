@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventory));
             this.Reports = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.EmptyItem = new System.Windows.Forms.Label();
             this.numericUpDownSell = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownBuy = new System.Windows.Forms.NumericUpDown();
             this.comboBoxAddItem = new System.Windows.Forms.ComboBox();
@@ -56,6 +57,7 @@
             this.comboBoxSupplir = new System.Windows.Forms.ComboBox();
             this.comboCatagory = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.EmptyCategory = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.CatagoryName = new System.Windows.Forms.TextBox();
             this.AddCatagory = new System.Windows.Forms.Button();
@@ -108,14 +110,6 @@
             this.label27 = new System.Windows.Forms.Label();
             this.QuantityBill = new System.Windows.Forms.NumericUpDown();
             this.dataGridViewBill = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SaveBill = new System.Windows.Forms.Button();
             this.KindOfBayComboBox = new System.Windows.Forms.ComboBox();
             this.comboBoxCustomer = new System.Windows.Forms.ComboBox();
@@ -130,6 +124,7 @@
             this.ShowSelledItemsbutton = new System.Windows.Forms.Button();
             this.ShowAllItemsbutton = new System.Windows.Forms.Button();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.numericUpDownItemID = new System.Windows.Forms.NumericUpDown();
             this.Savebutton = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.BillscomboBox = new System.Windows.Forms.ComboBox();
@@ -154,9 +149,12 @@
             this.UpDownUpdateBilliD = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.EmptyCategory = new System.Windows.Forms.Label();
-            this.EmptyItem = new System.Windows.Forms.Label();
-            this.numericUpDownItemID = new System.Windows.Forms.NumericUpDown();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Reports.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSell)).BeginInit();
@@ -179,13 +177,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownItemID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownBillMoney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownUpdateBilliD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownItemID)).BeginInit();
             this.SuspendLayout();
             // 
             // Reports
@@ -236,6 +234,18 @@
             this.tabPage1.Size = new System.Drawing.Size(912, 476);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add Item";
+            // 
+            // EmptyItem
+            // 
+            this.EmptyItem.AutoSize = true;
+            this.EmptyItem.Font = new System.Drawing.Font("Nirmala UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmptyItem.ForeColor = System.Drawing.Color.Red;
+            this.EmptyItem.Location = new System.Drawing.Point(148, 115);
+            this.EmptyItem.Name = "EmptyItem";
+            this.EmptyItem.Size = new System.Drawing.Size(76, 15);
+            this.EmptyItem.TabIndex = 35;
+            this.EmptyItem.Text = "Fields Empty";
+            this.EmptyItem.Visible = false;
             // 
             // numericUpDownSell
             // 
@@ -516,6 +526,18 @@
             this.tabPage2.Size = new System.Drawing.Size(912, 476);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Add Catogary";
+            // 
+            // EmptyCategory
+            // 
+            this.EmptyCategory.AutoSize = true;
+            this.EmptyCategory.Font = new System.Drawing.Font("Nirmala UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmptyCategory.ForeColor = System.Drawing.Color.Red;
+            this.EmptyCategory.Location = new System.Drawing.Point(586, 427);
+            this.EmptyCategory.Name = "EmptyCategory";
+            this.EmptyCategory.Size = new System.Drawing.Size(76, 15);
+            this.EmptyCategory.TabIndex = 21;
+            this.EmptyCategory.Text = "Fields Empty";
+            this.EmptyCategory.Visible = false;
             // 
             // label7
             // 
@@ -1108,70 +1130,12 @@
             this.Column3,
             this.Column4,
             this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8});
-            this.dataGridViewBill.Location = new System.Drawing.Point(68, 218);
+            this.Column6});
+            this.dataGridViewBill.Location = new System.Drawing.Point(59, 238);
             this.dataGridViewBill.Name = "dataGridViewBill";
             this.dataGridViewBill.RowHeadersWidth = 51;
             this.dataGridViewBill.Size = new System.Drawing.Size(776, 150);
             this.dataGridViewBill.TabIndex = 32;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Category";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Item";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Quantity";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Price of pice";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "total Price";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Customer";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Kind of Pay";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 125;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Kind of Invicitor";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 125;
             // 
             // SaveBill
             // 
@@ -1343,6 +1307,13 @@
             this.tabPage8.Size = new System.Drawing.Size(912, 476);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Returned Items";
+            // 
+            // numericUpDownItemID
+            // 
+            this.numericUpDownItemID.Location = new System.Drawing.Point(627, 104);
+            this.numericUpDownItemID.Name = "numericUpDownItemID";
+            this.numericUpDownItemID.Size = new System.Drawing.Size(139, 29);
+            this.numericUpDownItemID.TabIndex = 11;
             // 
             // Savebutton
             // 
@@ -1605,36 +1576,47 @@
             this.label29.TabIndex = 10;
             this.label29.Text = "Bill ID";
             // 
-            // EmptyCategory
+            // Column1
             // 
-            this.EmptyCategory.AutoSize = true;
-            this.EmptyCategory.Font = new System.Drawing.Font("Nirmala UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmptyCategory.ForeColor = System.Drawing.Color.Red;
-            this.EmptyCategory.Location = new System.Drawing.Point(586, 427);
-            this.EmptyCategory.Name = "EmptyCategory";
-            this.EmptyCategory.Size = new System.Drawing.Size(76, 15);
-            this.EmptyCategory.TabIndex = 21;
-            this.EmptyCategory.Text = "Fields Empty";
-            this.EmptyCategory.Visible = false;
+            this.Column1.HeaderText = "Category";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
             // 
-            // EmptyItem
+            // Column2
             // 
-            this.EmptyItem.AutoSize = true;
-            this.EmptyItem.Font = new System.Drawing.Font("Nirmala UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmptyItem.ForeColor = System.Drawing.Color.Red;
-            this.EmptyItem.Location = new System.Drawing.Point(148, 115);
-            this.EmptyItem.Name = "EmptyItem";
-            this.EmptyItem.Size = new System.Drawing.Size(76, 15);
-            this.EmptyItem.TabIndex = 35;
-            this.EmptyItem.Text = "Fields Empty";
-            this.EmptyItem.Visible = false;
+            this.Column2.HeaderText = "Item";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
             // 
-            // numericUpDownItemID
+            // Column3
             // 
-            this.numericUpDownItemID.Location = new System.Drawing.Point(627, 104);
-            this.numericUpDownItemID.Name = "numericUpDownItemID";
-            this.numericUpDownItemID.Size = new System.Drawing.Size(139, 29);
-            this.numericUpDownItemID.TabIndex = 11;
+            this.Column3.HeaderText = "Quantity";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Price of pice";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "total Price";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Customer";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
             // 
             // Inventory
             // 
@@ -1673,6 +1655,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownItemID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage9.ResumeLayout(false);
@@ -1680,7 +1663,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownBillMoney)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownUpdateBilliD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownItemID)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1751,14 +1733,6 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.NumericUpDown QuantityBill;
         private System.Windows.Forms.DataGridView dataGridViewBill;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.Button SaveBill;
         private System.Windows.Forms.ComboBox KindOfBayComboBox;
         private System.Windows.Forms.ComboBox comboBoxCustomer;
@@ -1815,5 +1789,11 @@
         private System.Windows.Forms.Label EmptyCategory;
         private System.Windows.Forms.Label EmptyItem;
         private System.Windows.Forms.NumericUpDown numericUpDownItemID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }
