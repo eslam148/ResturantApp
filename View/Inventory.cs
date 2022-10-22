@@ -417,6 +417,11 @@ namespace View
         private void comboBoxCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
             CatagoryID = comboBoxCategory.SelectedIndex;
+            if (CatagoryID==-1)
+            {
+                CatagoryID=0;
+                comboBoxCategory.SelectedIndex=0;
+            }
             var Catogary = categoryServices.GetAllCategories().Select(i => i.ID).ToArray()[CatagoryID];
             comboBoxItem.DataSource = null;
             comboBoxItem.DisplayMember = "Name";
@@ -455,9 +460,10 @@ namespace View
 
         private void ShowAllItemsbutton_Click(object sender, EventArgs e)
         {
-
             List<ItemData> items = new List<ItemData>();
             items = ItemServices.GetAllItems();
+            dataGridView1.DataSource=null;
+
             dataGridView1.DataSource = items;
             dataGridView1.Visible = true;
         }
@@ -517,9 +523,11 @@ namespace View
         {
             if (Exist.Checked == true)
             {
+                if (comboCatagory.SelectedIndex!=-1) { 
                 int CategoryId = categoryServices.GetAllCategories().Select(i => i.ID).ToArray()[comboCatagory.SelectedIndex];
                 var Item = ItemServices.GetAllItems().Where(i => i.CategoryId ==CategoryId).Select(i => i.Name).ToList();
                 comboBoxAddItem.DataSource = Item;
+                }
             }
         }
 
@@ -542,10 +550,13 @@ namespace View
         private void BillscomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             dataGridView2.Rows.Clear();
-            var BillItem = billServices.GetBillInfo(int.Parse(BillscomboBox.SelectedItem.ToString()));
-            foreach(var item in BillItem)
+            if ((int.Parse(BillscomboBox.SelectedItem.ToString()))!=null)
             {
-                dataGridView2.Rows.Add(item.id, item.itemdata.ID, item.itemdata.Name, item.itemdata.Quantity);
+                var BillItem = billServices.GetBillInfo(int.Parse(BillscomboBox.SelectedItem.ToString()));
+                foreach (var item in BillItem)
+                {
+                    dataGridView2.Rows.Add(item.id, item.itemdata.ID, item.itemdata.Name, item.itemdata.Quantity);
+                }
             }
         }
 
@@ -573,10 +584,13 @@ namespace View
         {
             if (Exist.Checked==true)
             {
-                var item = ItemServices.GetAllItems().ToArray()[comboBoxAddItem.SelectedIndex];
-                numericUpDownBuy.Value = item.BuyPrice;
-                numericUpDownSell.Value = item.SellPrice;
-                QuntatyItem.Value = 1;
+                if (comboBoxAddItem.SelectedIndex!=-1)
+                {
+                    var item = ItemServices.GetAllItems().ToArray()[comboBoxAddItem.SelectedIndex];
+                    numericUpDownBuy.Value = item.BuyPrice;
+                    numericUpDownSell.Value = item.SellPrice;
+                    QuntatyItem.Value = 1;
+                }
             }
         }
 
