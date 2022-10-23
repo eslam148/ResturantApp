@@ -20,7 +20,7 @@ namespace DataBase
         public  DbSet<Billtems> BillItems { get; set; }
         public  DbSet<CustomerBill> CustomerBill { get; set; }
 
-        public Context() : base(@"Data source = DESKTOP-HH9RCV9\SQLEXPRESS; initial catalog = Inventory; integrated security = true;")
+        public Context() : base(@"Data source = .; initial catalog = Inventory; integrated security = true;")
         {
         }
      

@@ -345,17 +345,34 @@ namespace View
                 DownPayment =(int)DownPaymentNumeric.Value;
 
             }
-            BillViews.Add(new BillView
+
+            var ExistItem = BillViews.FirstOrDefault(i => i.itemdId == item);
+            if (ExistItem != null)
             {
-                CustomerID=Customer,
-                itemdId=item,
-                Quntaty =  Quantaty,
-                sellerId = seller,
-                KindOfPay=typeOfPay
-            });
-            int price = ItemServices.GetAllItems().FirstOrDefault(i => i.ID == item).SellPrice;
-            dataGridViewBill.Rows.Add(comboBoxCategory.Text, comboBoxItem.Text, Quantaty, price, price*Quantaty, comboBoxCustomer.Text);
-            QuantityBill.Value = 1;
+                ExistItem.Quntaty +=Quantaty;
+                foreach (DataGridViewRow r in dataGridViewBill.Rows)
+                {
+                    if (int.Parse(r.Cells[0].Value.ToString())==item)
+                    {
+                        r.Cells[3].Value =  ExistItem.Quntaty;
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                BillViews.Add(new BillView
+                {
+                    CustomerID=Customer,
+                    itemdId=item,
+                    Quntaty =  Quantaty,
+                    sellerId = seller,
+                    KindOfPay=typeOfPay
+                });
+                int price = ItemServices.GetAllItems().FirstOrDefault(i => i.ID == item).SellPrice;
+                dataGridViewBill.Rows.Add(item.ToString(), comboBoxCategory.Text, comboBoxItem.Text, Quantaty, price, price*Quantaty, comboBoxCustomer.Text);
+                QuantityBill.Value = 1;
+            }
             RefreshTab();
 
         }
@@ -374,7 +391,7 @@ namespace View
             {
                 typeOfPay = false;
                 DownPayment = (int)DownPaymentNumeric.Value;
-       
+
 
             }
 
@@ -411,7 +428,6 @@ namespace View
             dataGridViewBill.Rows.Clear();
             DownPaymentNumeric.Value=1;
             RefreshTab();
-
         }
 
         private void comboBoxCategory_SelectedIndexChanged(object sender, EventArgs e)
