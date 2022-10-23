@@ -15,8 +15,6 @@ namespace DataBase
         public string Name { get; set; }
         public string Phone { get; set; }
         public string Address { get; set; }
-        //[ForeignKey("Bills")]
-        //public int BillID { get; set; }
-        //public virtual List<Bill> Bills { get; set; }
+ 
     }
 }

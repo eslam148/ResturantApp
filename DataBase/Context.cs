@@ -11,14 +11,14 @@ namespace DataBase
 {
     public class Context :DbContext
     {
-        public virtual DbSet<Item> items { get; set; }
-        public virtual DbSet<Category> categories { get; set; }
-        public virtual DbSet<Seller> sellers { get; set; }
-        public virtual DbSet<Customer> customers { get; set; }
-        public virtual DbSet<Supplier> suppliers { get; set; }
-        public virtual DbSet<Bill> Bills { get; set; }
-        public virtual DbSet<Billtems> BillItems { get; set; }
-        public virtual DbSet<CustomerBill> CustomerBill { get; set; }
+        public  DbSet<Item> items { get; set; }
+        public  DbSet<Category> categories { get; set; }
+        public  DbSet<Seller> sellers { get; set; }
+        public  DbSet<Customer> customers { get; set; }
+        public  DbSet<Supplier> suppliers { get; set; }
+        public  DbSet<Bill> Bills { get; set; }
+        public  DbSet<Billtems> BillItems { get; set; }
+        public  DbSet<CustomerBill> CustomerBill { get; set; }
 
         public Context() : base(@"Data source = .; initial catalog = Inventory; integrated security = true;")
         {

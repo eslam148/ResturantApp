@@ -114,7 +114,10 @@ namespace BLL
             var BillItem = DBcontext.BillItems.FirstOrDefault(b => b.BillId == BillID && b.itemdId == ItemID);
             var bill = DBcontext.Bills.FirstOrDefault(b => b.Id==BillID);
             var item = DBcontext.items.FirstOrDefault(i => i.Id == ItemID);
-
+            if(item == null)
+            {
+                return 0;
+            }
             int amount = RetrunedQuantaty*item.SellPrice;
             bill.TotalPrice-=amount;
             bill.RestOfTheInvoicePrice -= amount;

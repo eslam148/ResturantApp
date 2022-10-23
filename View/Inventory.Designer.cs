@@ -110,6 +110,12 @@
             this.label27 = new System.Windows.Forms.Label();
             this.QuantityBill = new System.Windows.Forms.NumericUpDown();
             this.dataGridViewBill = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SaveBill = new System.Windows.Forms.Button();
             this.KindOfBayComboBox = new System.Windows.Forms.ComboBox();
             this.comboBoxCustomer = new System.Windows.Forms.ComboBox();
@@ -149,12 +155,8 @@
             this.UpDownUpdateBilliD = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StayedQuantaty = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.Reports.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSell)).BeginInit();
@@ -951,6 +953,8 @@
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage6.Controls.Add(this.label30);
+            this.tabPage6.Controls.Add(this.StayedQuantaty);
             this.tabPage6.Controls.Add(this.DownPaymentNumeric);
             this.tabPage6.Controls.Add(this.PaymentLabl);
             this.tabPage6.Controls.Add(this.AddToBill);
@@ -1137,6 +1141,48 @@
             this.dataGridViewBill.Size = new System.Drawing.Size(776, 150);
             this.dataGridViewBill.TabIndex = 32;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Category";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Item";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Quantity";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Price of pice";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "total Price";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Customer";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
+            // 
             // SaveBill
             // 
             this.SaveBill.BackColor = System.Drawing.Color.SteelBlue;
@@ -1310,10 +1356,11 @@
             // 
             // numericUpDownItemID
             // 
-            this.numericUpDownItemID.Location = new System.Drawing.Point(627, 104);
+            this.numericUpDownItemID.Location = new System.Drawing.Point(613, 38);
             this.numericUpDownItemID.Name = "numericUpDownItemID";
             this.numericUpDownItemID.Size = new System.Drawing.Size(139, 29);
             this.numericUpDownItemID.TabIndex = 11;
+            this.numericUpDownItemID.ValueChanged += new System.EventHandler(this.numericUpDownItemID_ValueChanged);
             // 
             // Savebutton
             // 
@@ -1330,7 +1377,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(628, 40);
+            this.numericUpDown1.Location = new System.Drawing.Point(613, 106);
             this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10000,
@@ -1415,7 +1462,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(410, 104);
+            this.label22.Location = new System.Drawing.Point(438, 46);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(66, 21);
@@ -1425,7 +1472,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(410, 40);
+            this.label20.Location = new System.Drawing.Point(400, 106);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(151, 21);
@@ -1576,47 +1623,23 @@
             this.label29.TabIndex = 10;
             this.label29.Text = "Bill ID";
             // 
-            // Column1
+            // StayedQuantaty
             // 
-            this.Column1.HeaderText = "Category";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
+            this.StayedQuantaty.AutoSize = true;
+            this.StayedQuantaty.Location = new System.Drawing.Point(172, 48);
+            this.StayedQuantaty.Name = "StayedQuantaty";
+            this.StayedQuantaty.Size = new System.Drawing.Size(19, 21);
+            this.StayedQuantaty.TabIndex = 52;
+            this.StayedQuantaty.Text = "0";
             // 
-            // Column2
+            // label30
             // 
-            this.Column2.HeaderText = "Item";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Quantity";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Price of pice";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "total Price";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Customer";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(6, 47);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(140, 21);
+            this.label30.TabIndex = 53;
+            this.label30.Text = "Stayed Quantity :";
             // 
             // Inventory
             // 
@@ -1795,5 +1818,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label StayedQuantaty;
     }
 }

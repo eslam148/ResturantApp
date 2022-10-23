@@ -10,11 +10,11 @@ namespace BLL
 {
     public class ItemServices
     {
-        Context DB = new Context();
+        Context DB;
 
         public int AddItem( String Name, int BuyPrice, int SallPric, int Quantaty, int SupplierID, int CategoryId)
         {
-
+            Context DB = new Context();
             Item item = new Item
             {
                 Name = Name,
@@ -31,6 +31,7 @@ namespace BLL
 
         public List<ItemData> GetStayedItems()
         {
+             DB = new Context();
             List<ItemData> itemDataslist = new List<ItemData>();
             var StayedItems = DB.items.Where(i => i.SelledQuantity == 0).ToList();
             foreach (var item in StayedItems)
@@ -55,6 +56,7 @@ namespace BLL
         }
         public List<ItemData> GetItemsLessThanTen()
         {
+             DB = new Context();
             List<ItemData> itemDataslist = new List<ItemData>();
             var ItemsLessThanTen = DB.items.Where(i => i.Quantity < 10).ToList();
             foreach (var item in ItemsLessThanTen)
@@ -79,6 +81,7 @@ namespace BLL
 
         public List<ItemData> GetAllItems()
         {
+             DB = new Context();
             List<ItemData> itemDataslist = new List<ItemData>();
             var Items = DB.items.Select(i=>i).ToList();
             foreach (var item in Items)
@@ -103,6 +106,7 @@ namespace BLL
 
         public List<ItemData> GetSelledItems()
         {
+             DB = new Context();
             List<ItemData> itemDataslist = new List<ItemData>();
             var Items = DB.items.Where(i => i.SelledQuantity > 0).ToList();
             foreach (var item in Items)
@@ -126,6 +130,7 @@ namespace BLL
         }
         public int updateItems(int ItemId,int Quntaty,int SelledPrice,int BuyPrice)
         {
+             DB = new Context();
             var item = DB.items.Where(i => i.Id==ItemId).FirstOrDefault();
             item.Quantity+=Quntaty;
             item.SellPrice = SelledPrice;

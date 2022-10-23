@@ -15,8 +15,8 @@ namespace DataBase
         [ForeignKey("Bills")]
         public int BillID { get; set; }
 
-        public virtual Bill Bills { get; set; }
-        public virtual Customer customer { get; set; }
+        public  Bill Bills { get; set; }
+        public  Customer customer { get; set; }
 
     }
 }

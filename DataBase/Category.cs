@@ -13,8 +13,5 @@ namespace DataBase
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        //[ForeignKey("items")]
-        //public int ItemID { get; set; }
-        //public List<Item> items { get; set; }
     }
 }

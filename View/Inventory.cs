@@ -437,6 +437,13 @@ namespace View
         private void comboBoxItem_SelectedIndexChanged(object sender, EventArgs e)
         {
             ItemID= comboBoxItem.SelectedIndex;
+            if (comboBoxItem.SelectedIndex==-1)
+            {
+                ItemID = 0;
+            }
+           int Quantaty= ItemServices.GetAllItems().ToArray()[ItemID].Quantity;
+            StayedQuantaty.Text = Quantaty.ToString();
+            QuantityBill.Maximum = Quantaty;
         }
 
         private void comboBoxSeller_SelectedIndexChanged(object sender, EventArgs e)
@@ -560,7 +567,6 @@ namespace View
             }
         }
 
-         // int billID = 0;
 
         private void Savebutton_Click(object sender, EventArgs e)
         {
@@ -594,11 +600,6 @@ namespace View
             }
         }
 
-     
-
-
-     
-
         private void btnUpdateBill_Click(object sender, EventArgs e)
         {
             int billId = (int)(UpDownUpdateBilliD.Value);
@@ -613,6 +614,16 @@ namespace View
             else
             {
                 MessageBox.Show("Error Try Again");
+            }
+        }
+
+        private void numericUpDownItemID_ValueChanged(object sender, EventArgs e)
+        {
+            int Itemid = (int)numericUpDownItemID.Value;
+            int BillID = int.Parse(BillscomboBox.SelectedItem.ToString());
+            var itemQumtaty = billServices.GetBillInfo(BillID).FirstOrDefault(i => i.itemdata.ID == Itemid);
+            if (itemQumtaty !=null) { 
+                numericUpDown1.Maximum = itemQumtaty.itemdata.Quantity;
             }
         }
     }

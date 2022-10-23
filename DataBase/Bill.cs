@@ -17,9 +17,9 @@ namespace DataBase
 
         [ForeignKey("seller")]
         public int sellerId { get; set; }
-        public virtual Seller seller { get; set; }
-        public virtual List<Billtems> Billtems { get; set; }
-        public virtual List<CustomerBill> CustomerBills { get; set; }
+        public  Seller seller { get; set; }
+        public  List<Billtems> Billtems { get; set; }
+        public  List<CustomerBill> CustomerBills { get; set; }
 
         public int TotalPrice { get; set; }
         public DateTime dateOfBill { get; set; }
