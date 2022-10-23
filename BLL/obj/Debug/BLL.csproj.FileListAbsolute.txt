@@ -118,3 +118,18 @@ D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\BLL\obj\Debug\BLL
 D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\BLL\obj\Debug\BLL.dll
 D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\BLL\obj\Debug\BLL.pdb
+D:\CSharp-Project\BLL\bin\Debug\BLL.dll.config
+D:\CSharp-Project\BLL\bin\Debug\BLL.dll
+D:\CSharp-Project\BLL\bin\Debug\BLL.pdb
+D:\CSharp-Project\BLL\bin\Debug\DataBase.dll
+D:\CSharp-Project\BLL\bin\Debug\EntityFramework.dll
+D:\CSharp-Project\BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\CSharp-Project\BLL\bin\Debug\DataBase.pdb
+D:\CSharp-Project\BLL\bin\Debug\DataBase.dll.config
+D:\CSharp-Project\BLL\bin\Debug\EntityFramework.xml
+D:\CSharp-Project\BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\CSharp-Project\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\CSharp-Project\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\CSharp-Project\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\CSharp-Project\BLL\obj\Debug\BLL.dll
+D:\CSharp-Project\BLL\obj\Debug\BLL.pdb

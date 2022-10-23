@@ -121,8 +121,9 @@ namespace BLL
             int amount = RetrunedQuantaty*item.SellPrice;
             bill.TotalPrice-=amount;
             bill.RestOfTheInvoicePrice -= amount;
+            
 
-            BillItem.Quantity +=RetrunedQuantaty;
+            BillItem.Quantity -=RetrunedQuantaty;
             var Item = DBcontext.items.FirstOrDefault(i => i.Id == ItemID);
             Item.Quantity+=RetrunedQuantaty;
             Item.SelledQuantity-=RetrunedQuantaty;

@@ -96,3 +96,17 @@ D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debu
 D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.pdb
 D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.rr.resources
 D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
+D:\CSharp-Project\DataBase\bin\Debug\DataBase.dll.config
+D:\CSharp-Project\DataBase\bin\Debug\DataBase.dll
+D:\CSharp-Project\DataBase\bin\Debug\DataBase.pdb
+D:\CSharp-Project\DataBase\bin\Debug\EntityFramework.dll
+D:\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.dll
+D:\CSharp-Project\DataBase\bin\Debug\EntityFramework.xml
+D:\CSharp-Project\DataBase\bin\Debug\EntityFramework.SqlServer.xml
+D:\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
+D:\CSharp-Project\DataBase\obj\Debug\DataBase.Migrations.rr.resources
+D:\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.GenerateResource.cache
+D:\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+D:\CSharp-Project\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+D:\CSharp-Project\DataBase\obj\Debug\DataBase.dll
+D:\CSharp-Project\DataBase\obj\Debug\DataBase.pdb

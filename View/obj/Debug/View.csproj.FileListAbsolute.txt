@@ -198,3 +198,25 @@ D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\Vi
 D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.csproj.CopyComplete
 D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.exe
 D:\ITI Sohage .NET\Back End\.net\New folder (4)\CSharp-Project\View\obj\Debug\View.pdb
+D:\CSharp-Project\View\bin\Debug\View.exe.config
+D:\CSharp-Project\View\bin\Debug\View.exe
+D:\CSharp-Project\View\bin\Debug\View.pdb
+D:\CSharp-Project\View\bin\Debug\BLL.dll
+D:\CSharp-Project\View\bin\Debug\EntityFramework.dll
+D:\CSharp-Project\View\bin\Debug\EntityFramework.SqlServer.dll
+D:\CSharp-Project\View\bin\Debug\DataBase.dll
+D:\CSharp-Project\View\bin\Debug\BLL.pdb
+D:\CSharp-Project\View\bin\Debug\BLL.dll.config
+D:\CSharp-Project\View\bin\Debug\EntityFramework.xml
+D:\CSharp-Project\View\bin\Debug\EntityFramework.SqlServer.xml
+D:\CSharp-Project\View\bin\Debug\DataBase.pdb
+D:\CSharp-Project\View\bin\Debug\DataBase.dll.config
+D:\CSharp-Project\View\obj\Debug\View.csproj.AssemblyReference.cache
+D:\CSharp-Project\View\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
+D:\CSharp-Project\View\obj\Debug\View.Inventory.resources
+D:\CSharp-Project\View\obj\Debug\View.Properties.Resources.resources
+D:\CSharp-Project\View\obj\Debug\View.csproj.GenerateResource.cache
+D:\CSharp-Project\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+D:\CSharp-Project\View\obj\Debug\View.csproj.CopyComplete
+D:\CSharp-Project\View\obj\Debug\View.exe
+D:\CSharp-Project\View\obj\Debug\View.pdb
