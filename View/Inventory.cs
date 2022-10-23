@@ -642,5 +642,16 @@ namespace View
                 numericUpDown1.Maximum = itemQumtaty.itemdata.Quantity;
             }
         }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+
+            int index = dataGridViewBill.CurrentCell.RowIndex;
+            DataGridViewRow row = dataGridViewBill.Rows[index];
+            int ID = int.Parse(row.Cells[0].Value.ToString());
+            var delete = BillViews.FirstOrDefault(i => i.itemdId == ID);
+            BillViews.Remove(delete);
+            dataGridViewBill.Rows.RemoveAt(index);
+        }
     }
 }
