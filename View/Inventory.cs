@@ -438,7 +438,9 @@ namespace View
             }
             dataGridViewBill.Rows.Clear();
             DownPaymentNumeric.Value=1;
+            BillViews.Clear();
             RefreshTab();
+
         }
 
         private void comboBoxCategory_SelectedIndexChanged(object sender, EventArgs e)
@@ -473,7 +475,7 @@ namespace View
             var BillValue =BillViews.FirstOrDefault(i => i.itemdId ==item);
            
             Quantaty= ItemServices.GetAllItems().ToArray()[ItemID].Quantity;
-            StayedQuantaty.Text = Quantaty.ToString();
+            //StayedQuantaty.Text = Quantaty.ToString();
             if (Quantaty==0) { 
                 QuantityBill.Maximum = 1;
                 QuantityBill.Minimum = 1;

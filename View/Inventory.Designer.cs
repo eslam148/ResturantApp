@@ -97,8 +97,7 @@
             this.AddSupplier = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.label30 = new System.Windows.Forms.Label();
-            this.StayedQuantaty = new System.Windows.Forms.Label();
+            this.Delete = new System.Windows.Forms.Button();
             this.DownPaymentNumeric = new System.Windows.Forms.NumericUpDown();
             this.PaymentLabl = new System.Windows.Forms.Label();
             this.AddToBill = new System.Windows.Forms.Button();
@@ -157,7 +156,6 @@
             this.UpDownUpdateBilliD = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.Delete = new System.Windows.Forms.Button();
             this.Reports.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSell)).BeginInit();
@@ -955,8 +953,6 @@
             // 
             this.tabPage6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage6.Controls.Add(this.Delete);
-            this.tabPage6.Controls.Add(this.label30);
-            this.tabPage6.Controls.Add(this.StayedQuantaty);
             this.tabPage6.Controls.Add(this.DownPaymentNumeric);
             this.tabPage6.Controls.Add(this.PaymentLabl);
             this.tabPage6.Controls.Add(this.AddToBill);
@@ -985,23 +981,17 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Bill";
             // 
-            // label30
+            // Delete
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(6, 47);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(140, 21);
-            this.label30.TabIndex = 53;
-            this.label30.Text = "Stayed Quantity :";
-            // 
-            // StayedQuantaty
-            // 
-            this.StayedQuantaty.AutoSize = true;
-            this.StayedQuantaty.Location = new System.Drawing.Point(172, 48);
-            this.StayedQuantaty.Name = "StayedQuantaty";
-            this.StayedQuantaty.Size = new System.Drawing.Size(19, 21);
-            this.StayedQuantaty.TabIndex = 52;
-            this.StayedQuantaty.Text = "0";
+            this.Delete.BackColor = System.Drawing.Color.SteelBlue;
+            this.Delete.ForeColor = System.Drawing.Color.PowderBlue;
+            this.Delete.Location = new System.Drawing.Point(751, 180);
+            this.Delete.Name = "Delete";
+            this.Delete.Size = new System.Drawing.Size(75, 31);
+            this.Delete.TabIndex = 55;
+            this.Delete.Text = "Delete";
+            this.Delete.UseVisualStyleBackColor = false;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // DownPaymentNumeric
             // 
@@ -1643,18 +1633,6 @@
             this.label29.TabIndex = 10;
             this.label29.Text = "Bill ID";
             // 
-            // Delete
-            // 
-            this.Delete.BackColor = System.Drawing.Color.SteelBlue;
-            this.Delete.ForeColor = System.Drawing.Color.PowderBlue;
-            this.Delete.Location = new System.Drawing.Point(751, 180);
-            this.Delete.Name = "Delete";
-            this.Delete.Size = new System.Drawing.Size(75, 31);
-            this.Delete.TabIndex = 55;
-            this.Delete.Text = "Delete";
-            this.Delete.UseVisualStyleBackColor = false;
-            this.Delete.Click += new System.EventHandler(this.Delete_Click);
-            // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1832,8 +1810,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label StayedQuantaty;
         private System.Windows.Forms.Button Delete;
     }
 }
