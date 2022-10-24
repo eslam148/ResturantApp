@@ -347,33 +347,44 @@ namespace View
             }
 
             var ExistItem = BillViews.FirstOrDefault(i => i.itemdId == item);
+            int QuantatyDB = ItemServices.GetAllItems().ToArray()[ItemID].Quantity;
+
             if (ExistItem != null)
             {
-                ExistItem.Quntaty +=Quantaty;
-                foreach (DataGridViewRow r in dataGridViewBill.Rows)
-                {
-                    if (int.Parse(r.Cells[0].Value.ToString())==item)
+                if (ExistItem.Quntaty < QuantatyDB)
+                { 
+                    ExistItem.Quntaty +=Quantaty;
+                    foreach (DataGridViewRow r in dataGridViewBill.Rows)
                     {
-                        r.Cells[3].Value =  ExistItem.Quntaty;
-                        break;
+                        if (int.Parse(r.Cells[0].Value.ToString())==item)
+                        {
+                            r.Cells[3].Value =  ExistItem.Quntaty;
+                            break;
+                        }
                     }
+                }
+                else
+                {
+                    MessageBox.Show("the Quantaty not Exist");
                 }
             }
             else
             {
-                BillViews.Add(new BillView
-                {
-                    CustomerID=Customer,
-                    itemdId=item,
-                    Quntaty =  Quantaty,
-                    sellerId = seller,
-                    KindOfPay=typeOfPay
-                });
-                int price = ItemServices.GetAllItems().FirstOrDefault(i => i.ID == item).SellPrice;
-                dataGridViewBill.Rows.Add(item.ToString(), comboBoxCategory.Text, comboBoxItem.Text, Quantaty, price, price*Quantaty, comboBoxCustomer.Text);
-                QuantityBill.Value = 1;
+                if (Quantaty <= QuantatyDB) { 
+                    BillViews.Add(new BillView
+                    {
+                        CustomerID=Customer,
+                        itemdId=item,
+                        Quntaty =  Quantaty,
+                        sellerId = seller,
+                        KindOfPay=typeOfPay
+                    });
+                    int price = ItemServices.GetAllItems().FirstOrDefault(i => i.ID == item).SellPrice;
+                    dataGridViewBill.Rows.Add(item.ToString(), comboBoxCategory.Text, comboBoxItem.Text, Quantaty, price, price*Quantaty, comboBoxCustomer.Text);
+                    QuantityBill.Value = 1;
+                }
             }
-            RefreshTab();
+            //RefreshTab();
 
         }
 
@@ -457,9 +468,21 @@ namespace View
             {
                 ItemID = 0;
             }
-           int Quantaty= ItemServices.GetAllItems().ToArray()[ItemID].Quantity;
+            int Quantaty = 0;
+            var item = ItemServices.GetAllItems().Select(i => i.ID).ToArray()[ItemID];
+            var BillValue =BillViews.FirstOrDefault(i => i.itemdId ==item);
+           
+            Quantaty= ItemServices.GetAllItems().ToArray()[ItemID].Quantity;
             StayedQuantaty.Text = Quantaty.ToString();
-            QuantityBill.Maximum = Quantaty;
+            if (Quantaty==0) { 
+                QuantityBill.Maximum = 1;
+                QuantityBill.Minimum = 1;
+            }
+            else
+            {
+                QuantityBill.Maximum = Quantaty;
+                QuantityBill.Minimum = 1;
+            }
         }
 
         private void comboBoxSeller_SelectedIndexChanged(object sender, EventArgs e)
