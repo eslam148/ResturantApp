@@ -47,12 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridViewItem = new System.Windows.Forms.DataGridView();
-            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SellPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BuyPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Supplier = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBoxItem = new System.Windows.Forms.TextBox();
             this.comboBoxSupplir = new System.Windows.Forms.ComboBox();
             this.comboCatagory = new System.Windows.Forms.ComboBox();
@@ -111,12 +105,6 @@
             this.label27 = new System.Windows.Forms.Label();
             this.QuantityBill = new System.Windows.Forms.NumericUpDown();
             this.dataGridViewBill = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SaveBill = new System.Windows.Forms.Button();
             this.KindOfBayComboBox = new System.Windows.Forms.ComboBox();
             this.comboBoxCustomer = new System.Windows.Forms.ComboBox();
@@ -156,6 +144,19 @@
             this.UpDownUpdateBilliD = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.Supplier = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BuyPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SellPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Reports.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSell)).BeginInit();
@@ -443,48 +444,6 @@
             this.dataGridViewItem.RowHeadersWidth = 51;
             this.dataGridViewItem.Size = new System.Drawing.Size(645, 225);
             this.dataGridViewItem.TabIndex = 19;
-            // 
-            // ItemName
-            // 
-            this.ItemName.HeaderText = "Name";
-            this.ItemName.MinimumWidth = 6;
-            this.ItemName.Name = "ItemName";
-            this.ItemName.Width = 125;
-            // 
-            // SellPrice
-            // 
-            this.SellPrice.HeaderText = "Sell Price";
-            this.SellPrice.MinimumWidth = 6;
-            this.SellPrice.Name = "SellPrice";
-            this.SellPrice.Width = 125;
-            // 
-            // BuyPrice
-            // 
-            this.BuyPrice.HeaderText = "Buy Price";
-            this.BuyPrice.MinimumWidth = 6;
-            this.BuyPrice.Name = "BuyPrice";
-            this.BuyPrice.Width = 125;
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.MinimumWidth = 6;
-            this.Quantity.Name = "Quantity";
-            this.Quantity.Width = 125;
-            // 
-            // Category
-            // 
-            this.Category.HeaderText = "Category";
-            this.Category.MinimumWidth = 6;
-            this.Category.Name = "Category";
-            this.Category.Width = 125;
-            // 
-            // Supplier
-            // 
-            this.Supplier.HeaderText = "Supplier";
-            this.Supplier.MinimumWidth = 6;
-            this.Supplier.Name = "Supplier";
-            this.Supplier.Width = 125;
             // 
             // textBoxItem
             // 
@@ -1139,6 +1098,7 @@
             this.dataGridViewBill.BackgroundColor = System.Drawing.Color.SteelBlue;
             this.dataGridViewBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column7,
             this.Column1,
             this.Column2,
             this.Column3,
@@ -1150,48 +1110,6 @@
             this.dataGridViewBill.RowHeadersWidth = 51;
             this.dataGridViewBill.Size = new System.Drawing.Size(776, 150);
             this.dataGridViewBill.TabIndex = 32;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Category";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Item";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Quantity";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Price of pice";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "total Price";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Customer";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
             // 
             // SaveBill
             // 
@@ -1633,6 +1551,95 @@
             this.label29.TabIndex = 10;
             this.label29.Text = "Bill ID";
             // 
+            // Supplier
+            // 
+            this.Supplier.HeaderText = "Supplier";
+            this.Supplier.MinimumWidth = 6;
+            this.Supplier.Name = "Supplier";
+            this.Supplier.Width = 125;
+            // 
+            // Category
+            // 
+            this.Category.HeaderText = "Category";
+            this.Category.MinimumWidth = 6;
+            this.Category.Name = "Category";
+            this.Category.Width = 125;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.Width = 125;
+            // 
+            // BuyPrice
+            // 
+            this.BuyPrice.HeaderText = "Buy Price";
+            this.BuyPrice.MinimumWidth = 6;
+            this.BuyPrice.Name = "BuyPrice";
+            this.BuyPrice.Width = 125;
+            // 
+            // SellPrice
+            // 
+            this.SellPrice.HeaderText = "Sell Price";
+            this.SellPrice.MinimumWidth = 6;
+            this.SellPrice.Name = "SellPrice";
+            this.SellPrice.Width = 125;
+            // 
+            // ItemName
+            // 
+            this.ItemName.HeaderText = "Name";
+            this.ItemName.MinimumWidth = 6;
+            this.ItemName.Name = "ItemName";
+            this.ItemName.Width = 125;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Item ID";
+            this.Column7.Name = "Column7";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Category";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Item";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Quantity";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Price of pice";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "total Price";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Customer";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
+            // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1696,12 +1703,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridViewItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SellPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BuyPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Category;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Supplier;
         private System.Windows.Forms.TextBox textBoxItem;
         private System.Windows.Forms.ComboBox comboBoxSupplir;
         private System.Windows.Forms.ComboBox comboCatagory;
@@ -1804,12 +1805,19 @@
         private System.Windows.Forms.Label EmptyCategory;
         private System.Windows.Forms.Label EmptyItem;
         private System.Windows.Forms.NumericUpDown numericUpDownItemID;
+        private System.Windows.Forms.Button Delete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SellPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BuyPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Category;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Supplier;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.Button Delete;
     }
 }
