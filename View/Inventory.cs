@@ -71,7 +71,7 @@ namespace View
             comboBoxCategory.DataSource = categoryServices.GetAllCategories();
             /////////////////////
             comboBoxCustomer.DataSource = null;
-           comboBoxCustomer.DisplayMember = "Name";
+            comboBoxCustomer.DisplayMember = "Name";
             comboBoxCustomer.ValueMember = "ID";
             comboBoxCustomer.DataSource = customerService.GetCustomer();
 
@@ -80,6 +80,11 @@ namespace View
             comboBoxSeller.DisplayMember = "Name";
             comboBoxSeller.ValueMember = "ID";
             comboBoxSeller.DataSource = sellerService.GetSeller();
+            /////////////////////
+            CusomerPayCompo.DataSource = null;
+            CusomerPayCompo.DisplayMember = "Name";
+            CusomerPayCompo.ValueMember = "ID";
+            CusomerPayCompo.DataSource = customerService.GetCustomer();
         }
 
         private void AddCatagoryInfoTab()
@@ -143,7 +148,7 @@ namespace View
                     comboBoxAddItem.Text = "";
                     numericUpDownBuy.Value = 1;
                     numericUpDownSell.Value = 1;
-
+                    itemView.Clear();
                 }
                 else
                 {
@@ -559,12 +564,23 @@ namespace View
         private void New_CheckedChanged(object sender, EventArgs e)
         {
             comboBoxAddItem.Visible = false;
+            dataGridViewItem.Visible = true;
+            AddItem.Visible = true;
+            textBoxAddItemSupplier.Visible=false;
+            textBoxAddItemSupplier.ReadOnly=true;
+            pictureBox7.Visible = false;
         }
 
         private void Exist_CheckedChanged(object sender, EventArgs e)
         {
             comboBoxAddItem.Visible = true;
-           
+            dataGridViewItem.Visible = false;
+            AddItem.Visible = false;
+            textBoxAddItemSupplier.Visible=true;
+            textBoxAddItemSupplier.ReadOnly=true;
+            pictureBox7.Visible = true;
+
+
         }
 
         private void comboCatagory_SelectedIndexChanged(object sender, EventArgs e)
@@ -636,6 +652,7 @@ namespace View
                     var item = ItemServices.GetAllItems().ToArray()[comboBoxAddItem.SelectedIndex];
                     numericUpDownBuy.Value = item.BuyPrice;
                     numericUpDownSell.Value = item.SellPrice;
+                    textBoxAddItemSupplier.Text =  supplierServices.GetSuppliersByID(item.SupplierID).Name;
                     QuntatyItem.Value = 1;
                 }
             }
@@ -643,13 +660,14 @@ namespace View
 
         private void btnUpdateBill_Click(object sender, EventArgs e)
         {
-            int billId = (int)(UpDownUpdateBilliD.Value);
+            int billId = int.Parse(BillIDPayCompo.Text);
             int money = (int)(UpDownBillMoney.Value);
             int res = billServices.UpdateBill(billId, money);
             if (res > 0)
             {
                 MessageBox.Show("Your Bill Is Update");
                 UpDownBillMoney.Value=1;
+                BillIDPayCompo_SelectedIndexChanged(sender, e);
 
             }
             else
@@ -677,6 +695,31 @@ namespace View
             var delete = BillViews.FirstOrDefault(i => i.itemdId == ID);
             BillViews.Remove(delete);
             dataGridViewBill.Rows.RemoveAt(index);
+        }
+
+        private void CusomerPayCompo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BillIDPayCompo.DataSource = null;
+            int ID = customerService.GetCustomer().Select(c => c.ID).ToArray()[CusomerPayCompo.SelectedIndex];
+            var billID = billServices.GetBillOfCustomer(ID).Distinct().ToList();
+            if (billID.Count == 0)
+            {
+                BillIDPayCompo.DataSource = new List<String> {""};
+
+
+            }
+            else {
+                BillIDPayCompo.DataSource = billID;
+            }
+        }
+
+        private void BillIDPayCompo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(BillIDPayCompo.SelectedIndex == -1)
+            {
+                BillIDPayCompo.SelectedIndex =0;
+            }
+            UpDownUpdateBilliD.Value = billServices.GetBillByID(int.Parse(BillIDPayCompo.SelectedItem.ToString())).Res;
         }
     }
 }

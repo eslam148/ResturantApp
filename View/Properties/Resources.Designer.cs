@@ -119,5 +119,25 @@ namespace View.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2022_10_26_at_18_13_05 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2022-10-26 at 18.13.05", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2022_10_26_at_18_27_22 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2022-10-26 at 18.27.22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -108,6 +108,8 @@
     <Content Include="Resources\seller.jpg" />
     <Content Include="Resources\shopping-trolley-full-of-food-vector-20581144.jpg" />
     <Content Include="Resources\status-report.jpg" />
+    <None Include="Resources\WhatsApp Image 2022-10-26 at 18.13.05.jpg" />
+    <None Include="Resources\WhatsApp Image 2022-10-26 at 18.27.22.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

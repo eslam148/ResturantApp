@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventory));
             this.Reports = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.textBoxAddItemSupplier = new System.Windows.Forms.TextBox();
             this.EmptyItem = new System.Windows.Forms.Label();
             this.numericUpDownSell = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownBuy = new System.Windows.Forms.NumericUpDown();
@@ -47,6 +49,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridViewItem = new System.Windows.Forms.DataGridView();
+            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SellPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BuyPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Supplier = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBoxItem = new System.Windows.Forms.TextBox();
             this.comboBoxSupplir = new System.Windows.Forms.ComboBox();
             this.comboCatagory = new System.Windows.Forms.ComboBox();
@@ -60,7 +68,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.EmptySeller = new System.Windows.Forms.Label();
             this.SellerPhoneError = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.AddSeller = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -68,10 +75,10 @@
             this.SellerAddress = new System.Windows.Forms.TextBox();
             this.SellerPhone = new System.Windows.Forms.TextBox();
             this.SellerName = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.EmptyCustomer = new System.Windows.Forms.Label();
             this.CustomerPhoneError = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.AddCustomer = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -79,6 +86,7 @@
             this.CustomerAddress = new System.Windows.Forms.TextBox();
             this.CustomerPhone = new System.Windows.Forms.TextBox();
             this.CustomerName = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.EmptySupplier = new System.Windows.Forms.Label();
             this.SupplierPhoneError = new System.Windows.Forms.Label();
@@ -105,6 +113,13 @@
             this.label27 = new System.Windows.Forms.Label();
             this.QuantityBill = new System.Windows.Forms.NumericUpDown();
             this.dataGridViewBill = new System.Windows.Forms.DataGridView();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SaveBill = new System.Windows.Forms.Button();
             this.KindOfBayComboBox = new System.Windows.Forms.ComboBox();
             this.comboBoxCustomer = new System.Windows.Forms.ComboBox();
@@ -134,6 +149,8 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.BillIDPayCompo = new System.Windows.Forms.ComboBox();
+            this.CusomerPayCompo = new System.Windows.Forms.ComboBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -144,21 +161,11 @@
             this.UpDownUpdateBilliD = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.Supplier = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BuyPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SellPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Customer = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.Reports.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSell)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBuy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuntatyItem)).BeginInit();
@@ -209,6 +216,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage1.Controls.Add(this.pictureBox7);
+            this.tabPage1.Controls.Add(this.textBoxAddItemSupplier);
             this.tabPage1.Controls.Add(this.EmptyItem);
             this.tabPage1.Controls.Add(this.numericUpDownSell);
             this.tabPage1.Controls.Add(this.numericUpDownBuy);
@@ -236,6 +245,23 @@
             this.tabPage1.Size = new System.Drawing.Size(912, 476);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add Item";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::View.Properties.Resources.WhatsApp_Image_2022_10_26_at_18_27_22;
+            this.pictureBox7.Location = new System.Drawing.Point(179, 190);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(696, 231);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 37;
+            this.pictureBox7.TabStop = false;
+            // 
+            // textBoxAddItemSupplier
+            // 
+            this.textBoxAddItemSupplier.Location = new System.Drawing.Point(21, 190);
+            this.textBoxAddItemSupplier.Name = "textBoxAddItemSupplier";
+            this.textBoxAddItemSupplier.Size = new System.Drawing.Size(120, 26);
+            this.textBoxAddItemSupplier.TabIndex = 36;
             // 
             // EmptyItem
             // 
@@ -445,6 +471,48 @@
             this.dataGridViewItem.Size = new System.Drawing.Size(645, 225);
             this.dataGridViewItem.TabIndex = 19;
             // 
+            // ItemName
+            // 
+            this.ItemName.HeaderText = "Name";
+            this.ItemName.MinimumWidth = 6;
+            this.ItemName.Name = "ItemName";
+            this.ItemName.Width = 125;
+            // 
+            // SellPrice
+            // 
+            this.SellPrice.HeaderText = "Sell Price";
+            this.SellPrice.MinimumWidth = 6;
+            this.SellPrice.Name = "SellPrice";
+            this.SellPrice.Width = 125;
+            // 
+            // BuyPrice
+            // 
+            this.BuyPrice.HeaderText = "Buy Price";
+            this.BuyPrice.MinimumWidth = 6;
+            this.BuyPrice.Name = "BuyPrice";
+            this.BuyPrice.Width = 125;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.Width = 125;
+            // 
+            // Category
+            // 
+            this.Category.HeaderText = "Category";
+            this.Category.MinimumWidth = 6;
+            this.Category.Name = "Category";
+            this.Category.Width = 125;
+            // 
+            // Supplier
+            // 
+            this.Supplier.HeaderText = "Supplier";
+            this.Supplier.MinimumWidth = 6;
+            this.Supplier.Name = "Supplier";
+            this.Supplier.Width = 125;
+            // 
             // textBoxItem
             // 
             this.textBoxItem.Location = new System.Drawing.Point(17, 109);
@@ -548,11 +616,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::View.Properties.Resources.shopping_trolley_full_of_food_vector_20581144;
+            this.pictureBox1.Image = global::View.Properties.Resources.WhatsApp_Image_2022_10_26_at_18_27_22;
             this.pictureBox1.Location = new System.Drawing.Point(110, 56);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(627, 297);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -561,7 +630,6 @@
             this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage3.Controls.Add(this.EmptySeller);
             this.tabPage3.Controls.Add(this.SellerPhoneError);
-            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Controls.Add(this.AddSeller);
             this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Controls.Add(this.label10);
@@ -569,6 +637,7 @@
             this.tabPage3.Controls.Add(this.SellerAddress);
             this.tabPage3.Controls.Add(this.SellerPhone);
             this.tabPage3.Controls.Add(this.SellerName);
+            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Font = new System.Drawing.Font("Nirmala UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage3.ForeColor = System.Drawing.Color.SteelBlue;
             this.tabPage3.Location = new System.Drawing.Point(4, 27);
@@ -601,16 +670,6 @@
             this.SellerPhoneError.TabIndex = 17;
             this.SellerPhoneError.Text = "Error: Enter Phone Number Like: 01012345678";
             this.SellerPhoneError.Visible = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(24, 18);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(327, 368);
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
             // 
             // AddSeller
             // 
@@ -672,12 +731,21 @@
             this.SellerName.Size = new System.Drawing.Size(176, 32);
             this.SellerName.TabIndex = 9;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(24, 18);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(327, 368);
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
+            // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage4.Controls.Add(this.EmptyCustomer);
             this.tabPage4.Controls.Add(this.CustomerPhoneError);
-            this.tabPage4.Controls.Add(this.pictureBox4);
             this.tabPage4.Controls.Add(this.AddCustomer);
             this.tabPage4.Controls.Add(this.label12);
             this.tabPage4.Controls.Add(this.label13);
@@ -685,6 +753,7 @@
             this.tabPage4.Controls.Add(this.CustomerAddress);
             this.tabPage4.Controls.Add(this.CustomerPhone);
             this.tabPage4.Controls.Add(this.CustomerName);
+            this.tabPage4.Controls.Add(this.pictureBox4);
             this.tabPage4.Font = new System.Drawing.Font("Nirmala UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage4.ForeColor = System.Drawing.Color.SteelBlue;
             this.tabPage4.Location = new System.Drawing.Point(4, 27);
@@ -717,16 +786,6 @@
             this.CustomerPhoneError.TabIndex = 18;
             this.CustomerPhoneError.Text = "Error: Enter Phone Number Like: 01012345678";
             this.CustomerPhoneError.Visible = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::View.Properties.Resources.cust;
-            this.pictureBox4.Location = new System.Drawing.Point(14, 19);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(362, 388);
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
             // 
             // AddCustomer
             // 
@@ -787,6 +846,16 @@
             this.CustomerName.Name = "CustomerName";
             this.CustomerName.Size = new System.Drawing.Size(179, 32);
             this.CustomerName.TabIndex = 9;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::View.Properties.Resources.cust;
+            this.pictureBox4.Location = new System.Drawing.Point(14, 19);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(362, 388);
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
             // 
             // tabPage5
             // 
@@ -1111,6 +1180,53 @@
             this.dataGridViewBill.Size = new System.Drawing.Size(776, 150);
             this.dataGridViewBill.TabIndex = 32;
             // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Item ID";
+            this.Column7.Name = "Column7";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Category";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Item";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Quantity";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Price of pice";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "total Price";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Customer";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
+            // 
             // SaveBill
             // 
             this.SaveBill.BackColor = System.Drawing.Color.SteelBlue;
@@ -1285,6 +1401,11 @@
             // numericUpDownItemID
             // 
             this.numericUpDownItemID.Location = new System.Drawing.Point(613, 38);
+            this.numericUpDownItemID.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
             this.numericUpDownItemID.Name = "numericUpDownItemID";
             this.numericUpDownItemID.Size = new System.Drawing.Size(139, 29);
             this.numericUpDownItemID.TabIndex = 11;
@@ -1429,6 +1550,10 @@
             // 
             // tabPage9
             // 
+            this.tabPage9.Controls.Add(this.label3);
+            this.tabPage9.Controls.Add(this.Customer);
+            this.tabPage9.Controls.Add(this.BillIDPayCompo);
+            this.tabPage9.Controls.Add(this.CusomerPayCompo);
             this.tabPage9.Controls.Add(this.pictureBox6);
             this.tabPage9.Controls.Add(this.panel4);
             this.tabPage9.Controls.Add(this.panel3);
@@ -1447,6 +1572,24 @@
             this.tabPage9.Text = "Cash/pay";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
+            // BillIDPayCompo
+            // 
+            this.BillIDPayCompo.FormattingEnabled = true;
+            this.BillIDPayCompo.Location = new System.Drawing.Point(233, 238);
+            this.BillIDPayCompo.Name = "BillIDPayCompo";
+            this.BillIDPayCompo.Size = new System.Drawing.Size(144, 26);
+            this.BillIDPayCompo.TabIndex = 21;
+            this.BillIDPayCompo.SelectedIndexChanged += new System.EventHandler(this.BillIDPayCompo_SelectedIndexChanged);
+            // 
+            // CusomerPayCompo
+            // 
+            this.CusomerPayCompo.FormattingEnabled = true;
+            this.CusomerPayCompo.Location = new System.Drawing.Point(608, 241);
+            this.CusomerPayCompo.Name = "CusomerPayCompo";
+            this.CusomerPayCompo.Size = new System.Drawing.Size(144, 26);
+            this.CusomerPayCompo.TabIndex = 20;
+            this.CusomerPayCompo.SelectedIndexChanged += new System.EventHandler(this.CusomerPayCompo_SelectedIndexChanged);
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::View.Properties.Resources.installment;
@@ -1459,7 +1602,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.DarkRed;
+            this.panel4.BackColor = System.Drawing.Color.SteelBlue;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(62, 3);
             this.panel4.Name = "panel4";
@@ -1468,7 +1611,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.DarkRed;
+            this.panel3.BackColor = System.Drawing.Color.SteelBlue;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(62, 419);
             this.panel3.Name = "panel3";
@@ -1477,7 +1620,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Khaki;
+            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.ForeColor = System.Drawing.SystemColors.Control;
             this.panel2.Location = new System.Drawing.Point(844, 3);
@@ -1487,7 +1630,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Khaki;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
@@ -1506,7 +1649,7 @@
             // 
             // UpDownBillMoney
             // 
-            this.UpDownBillMoney.Location = new System.Drawing.Point(340, 301);
+            this.UpDownBillMoney.Location = new System.Drawing.Point(233, 309);
             this.UpDownBillMoney.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -1518,7 +1661,7 @@
             0,
             0});
             this.UpDownBillMoney.Name = "UpDownBillMoney";
-            this.UpDownBillMoney.Size = new System.Drawing.Size(216, 26);
+            this.UpDownBillMoney.Size = new System.Drawing.Size(129, 26);
             this.UpDownBillMoney.TabIndex = 13;
             this.UpDownBillMoney.Value = new decimal(new int[] {
             1,
@@ -1528,9 +1671,15 @@
             // 
             // UpDownUpdateBilliD
             // 
-            this.UpDownUpdateBilliD.Location = new System.Drawing.Point(340, 230);
+            this.UpDownUpdateBilliD.Location = new System.Drawing.Point(608, 318);
+            this.UpDownUpdateBilliD.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
             this.UpDownUpdateBilliD.Name = "UpDownUpdateBilliD";
-            this.UpDownUpdateBilliD.Size = new System.Drawing.Size(216, 26);
+            this.UpDownUpdateBilliD.ReadOnly = true;
+            this.UpDownUpdateBilliD.Size = new System.Drawing.Size(144, 26);
             this.UpDownUpdateBilliD.TabIndex = 12;
             // 
             // label28
@@ -1538,107 +1687,36 @@
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(167, 309);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(60, 18);
+            this.label28.Size = new System.Drawing.Size(69, 18);
             this.label28.TabIndex = 11;
-            this.label28.Text = "Money";
+            this.label28.Text = "Money :";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Location = new System.Drawing.Point(167, 238);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(53, 18);
+            this.label29.Size = new System.Drawing.Size(62, 18);
             this.label29.TabIndex = 10;
-            this.label29.Text = "Bill ID";
+            this.label29.Text = "Bill ID :";
             // 
-            // Supplier
+            // Customer
             // 
-            this.Supplier.HeaderText = "Supplier";
-            this.Supplier.MinimumWidth = 6;
-            this.Supplier.Name = "Supplier";
-            this.Supplier.Width = 125;
+            this.Customer.AutoSize = true;
+            this.Customer.Location = new System.Drawing.Point(487, 241);
+            this.Customer.Name = "Customer";
+            this.Customer.Size = new System.Drawing.Size(95, 18);
+            this.Customer.TabIndex = 22;
+            this.Customer.Text = "Customer :";
             // 
-            // Category
+            // label3
             // 
-            this.Category.HeaderText = "Category";
-            this.Category.MinimumWidth = 6;
-            this.Category.Name = "Category";
-            this.Category.Width = 125;
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.MinimumWidth = 6;
-            this.Quantity.Name = "Quantity";
-            this.Quantity.Width = 125;
-            // 
-            // BuyPrice
-            // 
-            this.BuyPrice.HeaderText = "Buy Price";
-            this.BuyPrice.MinimumWidth = 6;
-            this.BuyPrice.Name = "BuyPrice";
-            this.BuyPrice.Width = 125;
-            // 
-            // SellPrice
-            // 
-            this.SellPrice.HeaderText = "Sell Price";
-            this.SellPrice.MinimumWidth = 6;
-            this.SellPrice.Name = "SellPrice";
-            this.SellPrice.Width = 125;
-            // 
-            // ItemName
-            // 
-            this.ItemName.HeaderText = "Name";
-            this.ItemName.MinimumWidth = 6;
-            this.ItemName.Name = "ItemName";
-            this.ItemName.Width = 125;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Item ID";
-            this.Column7.Name = "Column7";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Category";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Item";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Quantity";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Price of pice";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "total Price";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Customer";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(389, 320);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(213, 18);
+            this.label3.TabIndex = 23;
+            this.label3.Text = " Rest Of The Invoice Price";
             // 
             // Inventory
             // 
@@ -1651,6 +1729,7 @@
             this.Reports.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSell)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBuy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuntatyItem)).EndInit();
@@ -1819,5 +1898,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.TextBox textBoxAddItemSupplier;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.ComboBox CusomerPayCompo;
+        private System.Windows.Forms.ComboBox BillIDPayCompo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Customer;
     }
 }

@@ -9,6 +9,7 @@ namespace BLL
     public class BillData
     {
         public int id { get; set; }
+        public int Res { get; set; }
         public ItemData itemdata { get; set; }
     }
 }

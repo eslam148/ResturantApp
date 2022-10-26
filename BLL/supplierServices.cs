@@ -40,6 +40,16 @@ namespace BLL
 
             return suppliersData;
         }
+        public SupplierData GetSuppliersByID(int ID)
+        {
+            Supplier supplier = context.suppliers.Where(s=>s.Id == ID).FirstOrDefault();
+            SupplierData suppliersData = new SupplierData();
+            suppliersData.ID = supplier.Id;
+            suppliersData.Name = supplier.Name;
+            suppliersData.Phone = supplier.Phone;
+            suppliersData.Address = supplier.Address;
 
+            return suppliersData;
+        }
     }
 }

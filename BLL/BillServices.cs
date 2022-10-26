@@ -79,6 +79,17 @@ namespace BLL
             int BillID = DBcontext.Bills.OrderByDescending(i => i.Id).Select(i => i.Id).FirstOrDefault();
             return BillID;
         }
+
+        public BillData GetBillByID(int ID)
+        {
+            var Bill = DBcontext.Bills.FirstOrDefault(b=>b.Id ==ID);
+            BillData billData = new BillData();
+            billData.id = Bill.Id;
+            billData.Res = Bill.RestOfTheInvoicePrice;
+
+            return billData;
+        }
+
         public List<BillData> GetBillInfo(int BillID)
         {
             var Bill = DBcontext.BillItems.Where(b => b.BillId == BillID).ToList();
