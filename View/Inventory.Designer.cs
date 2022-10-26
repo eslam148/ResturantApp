@@ -149,6 +149,8 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Customer = new System.Windows.Forms.Label();
             this.BillIDPayCompo = new System.Windows.Forms.ComboBox();
             this.CusomerPayCompo = new System.Windows.Forms.ComboBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -161,8 +163,6 @@
             this.UpDownUpdateBilliD = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.Customer = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.Reports.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -249,9 +249,9 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::View.Properties.Resources.WhatsApp_Image_2022_10_26_at_18_27_22;
-            this.pictureBox7.Location = new System.Drawing.Point(179, 190);
+            this.pictureBox7.Location = new System.Drawing.Point(384, 3);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(696, 231);
+            this.pictureBox7.Size = new System.Drawing.Size(412, 90);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 37;
             this.pictureBox7.TabStop = false;
@@ -362,11 +362,6 @@
             0,
             0,
             0});
-            this.QuntatyItem.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             this.QuntatyItem.Name = "QuntatyItem";
             this.QuntatyItem.Size = new System.Drawing.Size(120, 26);
             this.QuntatyItem.TabIndex = 29;
@@ -380,7 +375,7 @@
             // 
             this.AddItem.BackColor = System.Drawing.Color.SteelBlue;
             this.AddItem.ForeColor = System.Drawing.Color.PowderBlue;
-            this.AddItem.Location = new System.Drawing.Point(448, 37);
+            this.AddItem.Location = new System.Drawing.Point(384, 115);
             this.AddItem.Name = "AddItem";
             this.AddItem.Size = new System.Drawing.Size(132, 37);
             this.AddItem.TabIndex = 28;
@@ -392,7 +387,7 @@
             // 
             this.SaveItems.BackColor = System.Drawing.Color.SteelBlue;
             this.SaveItems.ForeColor = System.Drawing.Color.PowderBlue;
-            this.SaveItems.Location = new System.Drawing.Point(671, 37);
+            this.SaveItems.Location = new System.Drawing.Point(620, 115);
             this.SaveItems.Name = "SaveItems";
             this.SaveItems.Size = new System.Drawing.Size(132, 37);
             this.SaveItems.TabIndex = 27;
@@ -465,10 +460,10 @@
             this.Quantity,
             this.Category,
             this.Supplier});
-            this.dataGridViewItem.Location = new System.Drawing.Point(179, 190);
+            this.dataGridViewItem.Location = new System.Drawing.Point(143, 190);
             this.dataGridViewItem.Name = "dataGridViewItem";
             this.dataGridViewItem.RowHeadersWidth = 51;
-            this.dataGridViewItem.Size = new System.Drawing.Size(645, 225);
+            this.dataGridViewItem.Size = new System.Drawing.Size(758, 225);
             this.dataGridViewItem.TabIndex = 19;
             // 
             // ItemName
@@ -1572,6 +1567,24 @@
             this.tabPage9.Text = "Cash/pay";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(389, 320);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(213, 18);
+            this.label3.TabIndex = 23;
+            this.label3.Text = " Rest Of The Invoice Price";
+            // 
+            // Customer
+            // 
+            this.Customer.AutoSize = true;
+            this.Customer.Location = new System.Drawing.Point(487, 241);
+            this.Customer.Name = "Customer";
+            this.Customer.Size = new System.Drawing.Size(95, 18);
+            this.Customer.TabIndex = 22;
+            this.Customer.Text = "Customer :";
+            // 
             // BillIDPayCompo
             // 
             this.BillIDPayCompo.FormattingEnabled = true;
@@ -1699,24 +1712,6 @@
             this.label29.Size = new System.Drawing.Size(62, 18);
             this.label29.TabIndex = 10;
             this.label29.Text = "Bill ID :";
-            // 
-            // Customer
-            // 
-            this.Customer.AutoSize = true;
-            this.Customer.Location = new System.Drawing.Point(487, 241);
-            this.Customer.Name = "Customer";
-            this.Customer.Size = new System.Drawing.Size(95, 18);
-            this.Customer.TabIndex = 22;
-            this.Customer.Text = "Customer :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(389, 320);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 18);
-            this.label3.TabIndex = 23;
-            this.label3.Text = " Rest Of The Invoice Price";
             // 
             // Inventory
             // 

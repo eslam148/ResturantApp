@@ -568,17 +568,14 @@ namespace View
             AddItem.Visible = true;
             textBoxAddItemSupplier.Visible=false;
             textBoxAddItemSupplier.ReadOnly=true;
-            pictureBox7.Visible = false;
         }
 
         private void Exist_CheckedChanged(object sender, EventArgs e)
         {
             comboBoxAddItem.Visible = true;
-            dataGridViewItem.Visible = false;
             AddItem.Visible = false;
             textBoxAddItemSupplier.Visible=true;
             textBoxAddItemSupplier.ReadOnly=true;
-            pictureBox7.Visible = true;
 
 
         }
@@ -647,6 +644,7 @@ namespace View
         {
             if (Exist.Checked==true)
             {
+                dataGridViewItem.Rows.Clear();
                 if (comboBoxAddItem.SelectedIndex!=-1)
                 {
                     var item = ItemServices.GetAllItems().ToArray()[comboBoxAddItem.SelectedIndex];
@@ -654,6 +652,7 @@ namespace View
                     numericUpDownSell.Value = item.SellPrice;
                     textBoxAddItemSupplier.Text =  supplierServices.GetSuppliersByID(item.SupplierID).Name;
                     QuntatyItem.Value = 1;
+                    dataGridViewItem.Rows.Add(((ItemData)comboBoxAddItem.SelectedItem).Name, item.SellPrice.ToString(), item.BuyPrice.ToString(), item.Quantity.ToString(),((CategoryData)comboCatagory.SelectedItem).Name, textBoxAddItemSupplier.Text);
                 }
             }
         }
